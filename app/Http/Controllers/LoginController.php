@@ -17,9 +17,15 @@ class LoginController extends Controller
     {
         $credentials = $request->only(['email', 'password']);
 
+        // Login validations
+        $this->validate($request, [
+            'email' => 'required|email:rfc,dns',
+            'password' => 'required'
+        ]);
+
         if (Auth::attempt($credentials)) {
             return redirect('dashboard');
         }
-        return back()->witherrors('Whoops! Please try again!');
+        return back()->witherrors('Whoops! Invalid email or password.');
     }
 }
