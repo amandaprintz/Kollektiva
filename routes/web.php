@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-
+// hej
 // Register
 Route::view('register', 'register')->name('register')->middleware('guest');
 Route::post('register', RegisterController::class)->middleware('guest');

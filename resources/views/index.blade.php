@@ -1,3 +1,5 @@
+@include('header')
+
 @if ($errors->any())
 <p>
     <u>{{ $errors->first() }}</u>
@@ -24,3 +26,5 @@
     </form>
     <a href="{{ route('register') }}">Create an account</a>
 </div>
+
+@include('footer')
