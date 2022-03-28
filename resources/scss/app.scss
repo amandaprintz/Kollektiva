@@ -1,5 +1,26 @@
-$primary-color: blue;
+@import "./common/variables";
+@import "./common/header";
+@import "./common/footer";
+@import "./common/mixin";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
 
 body {
-    background-color: $primary-color;
+    background-color: $white;
+
+    main {
+        padding: 5rem 3rem 0 3rem;
+    }
+
+    a {
+        color: black;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

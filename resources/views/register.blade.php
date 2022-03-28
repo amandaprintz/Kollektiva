@@ -1,3 +1,4 @@
+@include('header')
 @include('errors')
 
 <a href="/">Go back</a>
@@ -19,4 +20,6 @@
     </div>
     <button type="submit">Sign up</button>
 </form>
-<a href="{{ route('login') }}">Log in here</a>
+<a href="{{ route('index') }}">Log in here</a>
+
+@include('footer')

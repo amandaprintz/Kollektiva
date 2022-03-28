@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 // Index
 Route::get('/', function () {
     return view('index');
-});
-// hej
+})->name('index');
+
 // Register
 Route::view('register', 'register')->name('register')->middleware('guest');
 Route::post('register', RegisterController::class)->middleware('guest');
