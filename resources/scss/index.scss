@@ -1,0 +1,71 @@
+// Variables
+@use "variables/colors";
+@use "variables/fonts";
+
+// Common components
+@use "common/header";
+@use "common/footer";
+@use "common/media-queries";
+
+section.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    // height: 80vh;
+
+    .hero-content {
+        position: none;
+        background-color: colors.$grey;
+        padding: 1.5rem;
+        margin: 1.5rem 1rem;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center bottom;
+        overflow: hidden;
+    }
+
+    @include media-queries.breakpoint(tablet) {
+        position: relative;
+        top: 5rem;
+        height: 80vh;
+
+        .hero-content {
+            position: absolute;
+            max-width: 40rem;
+            bottom: 2rem;
+            left: 2rem;
+            background-color: colors.$white;
+            padding: 2rem;
+            margin: 0;
+
+            h1 {
+                font-size: fonts.$h1;
+                margin-bottom: 1.25rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+                max-width: 80%;
+            }
+        }
+    }
+
+    @include media-queries.breakpoint(desktop) {
+    }
+}

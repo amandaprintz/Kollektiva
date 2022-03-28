@@ -1,24 +1,33 @@
-@import "./common/variables";
-@import "./common/header";
-@import "./common/footer";
-@import "./common/mixin";
+// Variables
+@use "variables/colors";
+@use "variables/fonts";
+
+// Common components
+@use "common/header";
+@use "common/footer";
+@use "common/media-queries";
+
+// Pages
+@use "./index.scss";
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 body {
-    background-color: $white;
+    background-color: colors.$white;
+    color: colors.$black;
 
     main {
-        padding: 5rem 3rem 0 3rem;
+        padding-top: 5rem;
     }
 
     a {
-        color: black;
+        color: colors.$black;
         &:hover {
             text-decoration: underline;
         }
