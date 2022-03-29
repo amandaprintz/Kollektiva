@@ -25,15 +25,24 @@ section.hero {
 }
 section.hero .hero-content {
   position: none;
-  background-color: #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /*         background-color: colors.$grey;
+  */
   padding: 1.5rem;
   margin: 1.5rem 1rem;
 }
-section.hero .hero-content h1 {
+section.hero .hero-content .hero-text {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+section.hero .hero-content .hero-text h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
-section.hero .hero-content p {
+section.hero .hero-content .hero-text p {
   margin-bottom: 1rem;
 }
 section.hero .hero-content a {
@@ -48,6 +57,17 @@ section.hero img {
      object-position: center bottom;
   overflow: hidden;
 }
+section.hero .hero-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+section.hero .hero-buttons button {
+  background-color: white;
+  border-style: none;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+}
 @media only screen and (min-width: 768px) {
   section.hero {
     position: relative;
@@ -59,7 +79,6 @@ section.hero img {
     max-width: 40rem;
     bottom: 2rem;
     left: 2rem;
-    background-color: #fff;
     padding: 2rem;
     margin: 0;
   }
