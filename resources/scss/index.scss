@@ -6,25 +6,24 @@
 @use "common/header";
 @use "common/footer";
 @use "common/media-queries";
+@use "common/mixin";
 
 section.hero {
-    display: flex;
-    flex-direction: column-reverse;
-    // height: 80vh;
+    @include mixin.flex(column-reverse, flex-start, 0);
 
     .hero-content {
-        position: none;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        /*         background-color: colors.$grey;
- */
-        padding: 1.5rem;
+        // display: flex;
+        // flex-direction: column;
+        // gap: 2rem;
+        @include mixin.flex(column, flex-start, 1.5rem);
         margin: 1.5rem 1rem;
 
+        a {
+            text-decoration: underline;
+        }
+
         .hero-text {
-            background-color: colors.$white;
+            background-color: colors.$grey;
             padding: 2rem;
             border-radius: 1rem;
 
@@ -38,8 +37,19 @@ section.hero {
             }
         }
 
-        a {
-            text-decoration: underline;
+        .hero-buttons {
+            // display: flex;
+            // flex-direction: column;
+            // gap: 1.5rem;
+            @include mixin.flex(column, flex-start, 1.5rem);
+
+            button {
+                background-color: colors.$grey;
+                border-style: none;
+                padding: 1rem 1.25rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
         }
     }
 
@@ -51,25 +61,13 @@ section.hero {
         overflow: hidden;
     }
 
-    .hero-buttons {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-
-        button {
-            background-color: white;
-            border-style: none;
-            padding: 1rem 1.25rem;
-            border-radius: 0.5rem;
-        }
-    }
-
     @include media-queries.breakpoint(tablet) {
         position: relative;
         top: 5rem;
         height: 80vh;
 
         .hero-content {
+            background-color: transparent;
             position: absolute;
             max-width: 40rem;
             bottom: 2rem;
@@ -77,14 +75,32 @@ section.hero {
             padding: 2rem;
             margin: 0;
 
-            h1 {
-                font-size: fonts.$h1;
-                margin-bottom: 1.25rem;
+            .hero-text {
+                background-color: colors.$white;
+
+                h1 {
+                    font-size: fonts.$h1;
+                    margin-bottom: 1.25rem;
+                }
+
+                p {
+                    margin-bottom: 1rem;
+                    max-width: 80%;
+                }
             }
 
-            p {
-                margin-bottom: 1rem;
-                max-width: 80%;
+            .hero-buttons {
+                flex-direction: row;
+
+                button {
+                    width: 50%;
+                    background-color: colors.$white;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        background-color: colors.$grey;
+                    }
+                }
             }
         }
     }

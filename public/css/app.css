@@ -22,19 +22,21 @@ header nav .nav-menu {
 section.hero {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: flex-start;
+  gap: 0;
 }
 section.hero .hero-content {
-  position: none;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  /*         background-color: colors.$grey;
-  */
-  padding: 1.5rem;
+  justify-content: flex-start;
+  gap: 1.5rem;
   margin: 1.5rem 1rem;
 }
+section.hero .hero-content a {
+  text-decoration: underline;
+}
 section.hero .hero-content .hero-text {
-  background-color: #fff;
+  background-color: #c4c4c4;
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -45,8 +47,18 @@ section.hero .hero-content .hero-text h1 {
 section.hero .hero-content .hero-text p {
   margin-bottom: 1rem;
 }
-section.hero .hero-content a {
-  text-decoration: underline;
+section.hero .hero-content .hero-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+section.hero .hero-content .hero-buttons button {
+  background-color: #c4c4c4;
+  border-style: none;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 section.hero img {
   width: 100%;
@@ -57,17 +69,6 @@ section.hero img {
      object-position: center bottom;
   overflow: hidden;
 }
-section.hero .hero-buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-section.hero .hero-buttons button {
-  background-color: white;
-  border-style: none;
-  padding: 1rem 1.25rem;
-  border-radius: 0.5rem;
-}
 @media only screen and (min-width: 768px) {
   section.hero {
     position: relative;
@@ -75,6 +76,7 @@ section.hero .hero-buttons button {
     height: 80vh;
   }
   section.hero .hero-content {
+    background-color: transparent;
     position: absolute;
     max-width: 40rem;
     bottom: 2rem;
@@ -82,13 +84,27 @@ section.hero .hero-buttons button {
     padding: 2rem;
     margin: 0;
   }
-  section.hero .hero-content h1 {
+  section.hero .hero-content .hero-text {
+    background-color: #fff;
+  }
+  section.hero .hero-content .hero-text h1 {
     font-size: 3rem;
     margin-bottom: 1.25rem;
   }
-  section.hero .hero-content p {
+  section.hero .hero-content .hero-text p {
     margin-bottom: 1rem;
     max-width: 80%;
+  }
+  section.hero .hero-content .hero-buttons {
+    flex-direction: row;
+  }
+  section.hero .hero-content .hero-buttons button {
+    width: 50%;
+    background-color: #fff;
+    transition: all 0.2s;
+  }
+  section.hero .hero-content .hero-buttons button:hover {
+    background-color: #c4c4c4;
   }
 }
 * {
