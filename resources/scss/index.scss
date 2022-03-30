@@ -67,7 +67,7 @@ section.hero {
         gap: 1rem;
 
         button {
-            background-color: white;
+            background-color: colors.$white;
             border-style: none;
             padding: 1rem 1.25rem;
             border-radius: 0.5rem;
@@ -184,7 +184,7 @@ section.four-card {
 
             .option {
                 background-color: colors.$grey;
-                padding: 1rem 1.25rem;
+                padding: 1.5rem;
                 // height: 30rem;
                 width: 25%;
             }
@@ -222,6 +222,16 @@ section.update-profile-card {
             h3 {
                 margin-bottom: 1rem;
             }
+
+            button {
+                background-color: colors.$white;
+                border-style: none;
+                padding: 1rem 1.25rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                width: 100%;
+                margin-top: 1.5rem;
+            }
         }
     }
     @include media-queries.breakpoint(tablet) {
@@ -238,6 +248,10 @@ section.update-profile-card {
 
             .update-text {
                 padding: 4rem;
+
+                button {
+                    width: 33%;
+                }
             }
         }
     }

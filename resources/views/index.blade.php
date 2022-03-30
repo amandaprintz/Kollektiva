@@ -59,6 +59,7 @@
         <div class="update-text">
             <h3>Uppdatera din profil idag</h3>
             <p>För en mer optimal upplevelse, och för att dra nytta av Kollektivas matchningssystem finns valet att ställa in preferenser för att göra letandet så mycket enklare.</p>
+            <button>Uppdatera min profil</button>
         </div>
     </div>
 </section>
