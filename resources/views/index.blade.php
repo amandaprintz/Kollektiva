@@ -69,7 +69,7 @@
     <div class="review-container">
         <div class="review">
             <h3>Elliot, 25</h3>
-
+            <!--             <img class="user-card" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2550&q=80" alt="profile image"> -->
             <p>★★★★★</p>
         </div>
         <div class="review">
@@ -78,6 +78,7 @@
         </div>
         <div class="review">
             <h3>Amie, 26</h3>
+
             <p>★★★★★</p>
         </div>
         <div class="review">

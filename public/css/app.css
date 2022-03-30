@@ -267,6 +267,7 @@ section.review-cards .review-container {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1rem;
+  padding-bottom: 10rem;
 }
 section.review-cards .review-container .review {
   background-color: #c4c4c4;

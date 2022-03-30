@@ -267,6 +267,7 @@ section.review-cards {
 
     .review-container {
         @include mixin.flex(column, flex-start, 1rem);
+        padding-bottom: 10rem;
 
         .review {
             background-color: colors.$grey;
