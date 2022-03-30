@@ -53,7 +53,7 @@
 <section class="update-profile-card">
     <div class="update-container">
         <div class="update-image">
-        <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80" alt="update image">
+            <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80" alt="update image">
 
         </div>
         <div class="update-text">
@@ -63,4 +63,32 @@
         </div>
     </div>
 </section>
- @include('footer')
+
+<section class="review-cards">
+    <h1>Omdömen och recensioner</h1>
+    <div class="review-container">
+        <div class="review">
+            <h3>Elliot, 25</h3>
+
+            <p>★★★★★</p>
+        </div>
+        <div class="review">
+            <h3>Evin, 22</h3>
+            <p>★★★★★</p>
+        </div>
+        <div class="review">
+            <h3>Amie, 26</h3>
+            <p>★★★★★</p>
+        </div>
+        <div class="review">
+            <h4>Emma, 21</h4>
+            <p>★★★★☆</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+@include('footer')

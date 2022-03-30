@@ -164,7 +164,7 @@ section.four-card .option-container .option {
   background-color: #c4c4c4;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  height: 30rem;
+  height: 20rem;
   width: 100%;
 }
 section.four-card .option-container .option p {
@@ -252,6 +252,52 @@ section.update-profile-card .update-container .update-text {
   }
   section.update-profile-card .update-container .update-text button {
     width: 33%;
+  }
+}
+
+section.review-cards {
+  padding: 1rem;
+}
+section.review-cards h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+section.review-cards .review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+section.review-cards .review-container .review {
+  background-color: #c4c4c4;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  height: 30rem;
+  width: 100%;
+}
+section.review-cards .review-container p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  section.review-cards {
+    padding: 4rem;
+  }
+  section.review-cards h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  section.review-cards .review-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  section.review-cards .review-container .review {
+    background-color: #c4c4c4;
+    padding: 1.5rem;
+    width: 25%;
   }
 }
 

@@ -162,7 +162,7 @@ section.four-card {
             background-color: colors.$grey;
             padding: 1.5rem;
             border-radius: 0.5rem;
-            height: 30rem;
+            height: 20rem;
             width: 100%;
 
             p {
@@ -252,6 +252,53 @@ section.update-profile-card {
                 button {
                     width: 33%;
                 }
+            }
+        }
+    }
+}
+
+section.review-cards {
+    padding: 1rem;
+
+    h1 {
+        font-size: fonts.$h2;
+        margin-bottom: 1.5rem;
+    }
+
+    .review-container {
+        @include mixin.flex(column, flex-start, 1rem);
+
+        .review {
+            background-color: colors.$grey;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            height: 30rem;
+            width: 100%;
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    @include media-queries.breakpoint(tablet) {
+        padding: 4rem;
+
+        h1 {
+            font-size: fonts.$h1;
+            margin-bottom: 3rem;
+        }
+
+        .review-container {
+            @include mixin.flex(row, flex-start, 3rem);
+
+            .review {
+                background-color: colors.$grey;
+                padding: 1.5rem;
+                // height: 30rem;
+                width: 25%;
             }
         }
     }
