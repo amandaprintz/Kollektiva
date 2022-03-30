@@ -61,6 +61,23 @@ section.hero {
         overflow: hidden;
     }
 
+<<<<<<< Updated upstream
+=======
+    .hero-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        button {
+            background-color: white;
+            border-style: none;
+            padding: 1rem 1.25rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+    }
+
+>>>>>>> Stashed changes
     @include media-queries.breakpoint(tablet) {
         position: relative;
         top: 5rem;
@@ -106,5 +123,28 @@ section.hero {
     }
 
     @include media-queries.breakpoint(desktop) {
+    }
+}
+
+section.two-card {
+    /*    display: flex;
+    flex-direction: row;
+    gap: 3rem; */
+    @include mixin.flex(row, flex-start, 3rem);
+    padding: 10rem;
+
+    .option {
+        background-color: #c4c4c4;
+        padding: 1rem 1.25rem;
+        border-radius: 0.5rem;
+        width: 60%;
+    }
+
+    button {
+        background-color: white;
+        border-style: none;
+        padding: 1rem 1.25rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
     }
 }

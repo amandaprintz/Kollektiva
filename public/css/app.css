@@ -70,6 +70,21 @@ section.hero img {
      object-position: center bottom;
   overflow: hidden;
 }
+<<<<<<< Updated upstream
+=======
+section.hero .hero-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+section.hero .hero-buttons button {
+  background-color: white;
+  border-style: none;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+>>>>>>> Stashed changes
 @media only screen and (min-width: 768px) {
   section.hero {
     position: relative;
@@ -108,6 +123,30 @@ section.hero img {
     background-color: #c4c4c4;
   }
 }
+section.two-card {
+  /*    display: flex;
+  flex-direction: row;
+  gap: 3rem; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3rem;
+  padding: 10rem;
+}
+section.two-card .option {
+  background-color: #c4c4c4;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  width: 60%;
+}
+section.two-card button {
+  background-color: white;
+  border-style: none;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
