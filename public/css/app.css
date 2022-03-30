@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   height: 5rem;
   padding: 2rem 3rem;
@@ -133,7 +134,7 @@ section.two-card {
 section.two-card .option {
   font-size: 1.5rem;
   background-color: #c4c4c4;
-  padding: 1rem 1.25rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   width: 60%;
   height: 40rem;
@@ -161,7 +162,7 @@ section.four-card .option-container {
 }
 section.four-card .option-container .option {
   background-color: #c4c4c4;
-  padding: 1rem 1.25rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   height: 30rem;
   width: 100%;
@@ -169,7 +170,7 @@ section.four-card .option-container .option {
 section.four-card .option-container .option p {
   margin-top: 1rem;
 }
-@media only screen and (min-width: 1335px) {
+@media only screen and (min-width: 768px) {
   section.four-card {
     padding: 4rem;
   }
@@ -187,6 +188,58 @@ section.four-card .option-container .option p {
     background-color: #c4c4c4;
     padding: 1rem 1.25rem;
     width: 25%;
+  }
+}
+
+section.update-profile-card {
+  padding: 1rem;
+}
+section.update-profile-card .update-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+  background-color: #c4c4c4;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 40rem;
+}
+section.update-profile-card .update-container .update-image,
+section.update-profile-card .update-container .update-text {
+  height: 50%;
+}
+section.update-profile-card .update-container .update-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+section.update-profile-card .update-container .update-text {
+  padding: 1.5rem;
+}
+section.update-profile-card .update-container .update-text h3 {
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  section.update-profile-card {
+    padding: 4rem;
+  }
+  section.update-profile-card .update-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0;
+    height: 40rem;
+  }
+  section.update-profile-card .update-container .update-image,
+section.update-profile-card .update-container .update-text {
+    width: 50%;
+    height: 100%;
+  }
+  section.update-profile-card .update-container .update-text {
+    padding: 4rem;
   }
 }
 
@@ -210,4 +263,7 @@ body a {
 }
 body a:hover {
   text-decoration: underline;
+}
+body p {
+  line-height: 1.25rem;
 }
