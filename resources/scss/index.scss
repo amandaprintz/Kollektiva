@@ -61,8 +61,6 @@ section.hero {
         overflow: hidden;
     }
 
-<<<<<<< Updated upstream
-=======
     .hero-buttons {
         display: flex;
         flex-direction: row;
@@ -77,7 +75,6 @@ section.hero {
         }
     }
 
->>>>>>> Stashed changes
     @include media-queries.breakpoint(tablet) {
         position: relative;
         top: 5rem;
@@ -131,13 +128,15 @@ section.two-card {
     flex-direction: row;
     gap: 3rem; */
     @include mixin.flex(row, flex-start, 3rem);
-    padding: 10rem;
+    padding: 10rem 4rem 0rem 4rem;
 
     .option {
-        background-color: #c4c4c4;
+        font-size: fonts.$h2;
+        background-color: colors.$grey;
         padding: 1rem 1.25rem;
         border-radius: 0.5rem;
         width: 60%;
+        height: 40rem;
     }
 
     button {
@@ -146,5 +145,49 @@ section.two-card {
         padding: 1rem 1.25rem;
         border-radius: 0.5rem;
         cursor: pointer;
+    }
+}
+
+section.four-card {
+    padding: 1rem;
+
+    h1 {
+        font-size: fonts.$h2;
+        margin-bottom: 1.5rem;
+    }
+    .option-container {
+        @include mixin.flex(column, flex-start, 1rem);
+
+        .option {
+            background-color: colors.$grey;
+            padding: 1rem 1.25rem;
+            border-radius: 0.5rem;
+            height: 30rem;
+            width: 100%;
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    @include media-queries.breakpoint(desktop) {
+        padding: 4rem;
+
+        h1 {
+            font-size: fonts.$h1;
+            margin-bottom: 3rem;
+        }
+
+        .option-container {
+            @include mixin.flex(row, flex-start, 3rem);
+
+            .option {
+                background-color: colors.$grey;
+                padding: 1rem 1.25rem;
+                // height: 30rem;
+                width: 25%;
+            }
+        }
     }
 }

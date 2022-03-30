@@ -7,8 +7,6 @@
     <title>Kollektiva</title>
     <!-- Styles -->
     <link rel="stylesheet" href="/css/app.css">
-    <!-- <link rel="stylesheet" href="/css/_header.css">
-    <link rel="stylesheet" href="/css/_footer.css"> -->
 </head>
 <body>
     <header>

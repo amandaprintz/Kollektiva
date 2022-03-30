@@ -6,6 +6,7 @@
 @use "common/header";
 @use "common/footer";
 @use "common/media-queries";
+@use "common/mixin";
 
 // Pages
 @use "./index.scss";

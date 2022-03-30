@@ -26,7 +26,28 @@
 
         <button>Bläddra bland annonser</button>
     </div>
+</section>
 
+<section class="four-card">
+    <h1>Hur funkar det?</h1>
+    <div class="option-container">
+        <div class="option">
+            <h2>1. Skapa konto</h2>
+            <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
+        </div>
+        <div class="option">
+            <h2>2. Annonsera bostad</h2>
+            <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
+        </div>
+        <div class="option">
+            <h2>3. Bläddra bland ansökningar</h2>
+            <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
+        </div>
+        <div class="option">
+            <h2>4. Kontakta genom Kollektiva</h2>
+            <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
+        </div>
+    </div>
 
-
-</section> @include('footer')
+</section>
+ @include('footer')
