@@ -26,7 +26,6 @@ section.hero {
             background-color: colors.$grey;
             padding: 2rem;
             border-radius: 1rem;
-
             h1 {
                 font-size: 2rem;
                 margin-bottom: 1.5rem;
@@ -49,6 +48,7 @@ section.hero {
                 padding: 1rem 1.25rem;
                 border-radius: 0.5rem;
                 cursor: pointer;
+                font-size: fonts.$p;
             }
         }
     }
