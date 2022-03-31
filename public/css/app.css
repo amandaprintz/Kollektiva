@@ -24,8 +24,25 @@ section.footer {
   padding: 1rem;
 }
 section.footer h2 {
-  font-size: 2rem;
+  font-size: 5rem;
   margin-bottom: 1.5rem;
+}
+section.footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  section.footer {
+    padding: 4rem;
+  }
+  section.footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
 }
 
 /* section.footer-card {

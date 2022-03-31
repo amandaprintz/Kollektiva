@@ -1,11 +1,11 @@
 @include('header')
 
-@if ($errors->any())
-<p>
-    <u>{{ $errors->first() }}</u>
-</p>
-@endif
 <main>
+    @if ($errors->any())
+    <p>
+        <u>{{ $errors->first() }}</u>
+    </p>
+    @endif
     <section class="login">
         <div class="login-container">
             <div class="login-intro">

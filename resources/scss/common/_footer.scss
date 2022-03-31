@@ -1,8 +1,16 @@
+// Variables
+@use "../variables/colors";
+@use "../variables/fonts";
+@use "../common/media-queries";
+
+// Mixin
+@use "./mixin";
+
 section.footer {
     padding: 1rem;
 
     h2 {
-        font-size: 2rem;
+        font-size: 5rem;
         margin-bottom: 1.5rem;
     }
     .footer-container {
