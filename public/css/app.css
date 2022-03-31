@@ -22,9 +22,10 @@ header nav .nav-menu {
 
 section.footer {
   padding: 1rem;
+  background-color: #c4c4c4;
 }
 section.footer h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 section.footer .footer-container {
@@ -32,6 +33,20 @@ section.footer .footer-container {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1rem;
+}
+section.footer .footer-container .footer-start {
+  width: 26rem;
+}
+section.footer .footer-container .footer-option {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+section.footer .footer-container .footer-option h4 {
+  margin-bottom: 2rem;
+}
+section.footer .footer-container .footer-option p {
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   section.footer {
@@ -45,53 +60,9 @@ section.footer .footer-container {
   }
 }
 
-/* section.footer-card {
-    padding: 1rem;
-
-    h1 {
-        font-size: fonts.$h2;
-        margin-bottom: 1.5rem;
-    }
-    .footer-container {
-        @include mixin.flex(column, flex-start, 1rem);
-
-        .footer-option {
-            background-color: colors.$grey;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            height: 20rem;
-            width: 100%;
-
-            p {
-                margin-top: 1rem;
-            }
-        }
-    }
-
-    @include media-queries.breakpoint(tablet) {
-        padding: 4rem;
-
-        h1 {
-            font-size: fonts.$h1;
-            margin-bottom: 3rem;
-        }
-
-        .footer-container {
-            @include mixin.flex(row, flex-start, 3rem);
-
-            .footer-option {
-                background-color: colors.$grey;
-                padding: 1.5rem;
-                // height: 30rem;
-                width: 25%;
-            }
-        }
-    }
-}
- */
 .vl {
-  border-left: 1px solid green;
-  height: 26rem;
+  border-left: 1px solid white;
+  height: 25rem;
 }
 
 section.hero {

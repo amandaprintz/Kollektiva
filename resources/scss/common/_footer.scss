@@ -8,43 +8,31 @@
 
 section.footer {
     padding: 1rem;
+    background-color: colors.$grey;
 
     h2 {
-        font-size: 5rem;
+        font-size: 3rem;
         margin-bottom: 1.5rem;
     }
+
     .footer-container {
         @include mixin.flex(column, flex-start, 1rem);
-    }
 
-    @include media-queries.breakpoint(tablet) {
-        padding: 4rem;
-
-        .footer-container {
-            @include mixin.flex(row, flex-start, 3rem);
+        .footer-start {
+            width: 26rem;
         }
-    }
-}
-
-/* section.footer-card {
-    padding: 1rem;
-
-    h1 {
-        font-size: fonts.$h2;
-        margin-bottom: 1.5rem;
-    }
-    .footer-container {
-        @include mixin.flex(column, flex-start, 1rem);
 
         .footer-option {
-            background-color: colors.$grey;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            height: 20rem;
-            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            h4 {
+                margin-bottom: 2rem;
+            }
 
             p {
-                margin-top: 1rem;
+                text-align: center;
             }
         }
     }
@@ -52,25 +40,13 @@ section.footer {
     @include media-queries.breakpoint(tablet) {
         padding: 4rem;
 
-        h1 {
-            font-size: fonts.$h1;
-            margin-bottom: 3rem;
-        }
-
         .footer-container {
             @include mixin.flex(row, flex-start, 3rem);
-
-            .footer-option {
-                background-color: colors.$grey;
-                padding: 1.5rem;
-                // height: 30rem;
-                width: 25%;
-            }
         }
     }
 }
- */
+
 .vl {
-    border-left: 1px solid green;
-    height: 26rem;
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 25rem;
 }
