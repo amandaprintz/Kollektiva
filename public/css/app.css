@@ -20,6 +20,11 @@ header nav .nav-menu {
   gap: 3rem;
 }
 
+.vl {
+  border-left: 1px solid green;
+  height: 26rem;
+}
+
 section.hero {
   display: flex;
   flex-direction: column-reverse;
