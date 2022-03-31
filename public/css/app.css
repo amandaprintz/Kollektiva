@@ -23,6 +23,8 @@ header nav .nav-menu {
 section.footer {
   padding: 1rem;
   background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
 }
 section.footer h2 {
   font-size: 3rem;
@@ -35,12 +37,19 @@ section.footer .footer-container {
   gap: 1rem;
 }
 section.footer .footer-container .footer-start {
-  width: 26rem;
+  width: 20rem;
+}
+section.footer .footer-container .footer-start .socials {
+  margin-top: 4rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
 section.footer .footer-container .footer-option {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 2rem;
 }
 section.footer .footer-container .footer-option h4 {
   margin-bottom: 2rem;
@@ -50,7 +59,7 @@ section.footer .footer-container .footer-option p {
 }
 @media only screen and (min-width: 768px) {
   section.footer {
-    padding: 4rem;
+    padding: 3rem;
   }
   section.footer .footer-container {
     display: flex;
@@ -58,11 +67,13 @@ section.footer .footer-container .footer-option p {
     justify-content: flex-start;
     gap: 3rem;
   }
-}
-
-.vl {
-  border-left: 1px solid white;
-  height: 25rem;
+  section.footer .footer-container .socials {
+    row-gap: 2rem;
+  }
+  section.footer .vl {
+    border-left: 1px solid white;
+    height: 25rem;
+  }
 }
 
 section.hero {
