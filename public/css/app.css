@@ -20,6 +20,63 @@ header nav .nav-menu {
   gap: 3rem;
 }
 
+section.footer {
+  padding: 1rem;
+}
+section.footer h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* section.footer-card {
+    padding: 1rem;
+
+    h1 {
+        font-size: fonts.$h2;
+        margin-bottom: 1.5rem;
+    }
+    .footer-container {
+        @include mixin.flex(column, flex-start, 1rem);
+
+        .footer-option {
+            background-color: colors.$grey;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            height: 20rem;
+            width: 100%;
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    @include media-queries.breakpoint(tablet) {
+        padding: 4rem;
+
+        h1 {
+            font-size: fonts.$h1;
+            margin-bottom: 3rem;
+        }
+
+        .footer-container {
+            @include mixin.flex(row, flex-start, 3rem);
+
+            .footer-option {
+                background-color: colors.$grey;
+                padding: 1.5rem;
+                // height: 30rem;
+                width: 25%;
+            }
+        }
+    }
+}
+ */
+.vl {
+  border-left: 1px solid green;
+  height: 26rem;
+}
+
 section.hero {
   display: flex;
   flex-direction: column-reverse;
