@@ -42,13 +42,14 @@ section.hero {
             // gap: 1.5rem;
             @include mixin.flex(column, flex-start, 1.5rem);
 
-            button {
-                background-color: colors.$grey;
+            .button {
+                background-color: colors.$white;
                 border-style: none;
                 padding: 1rem 1.25rem;
                 border-radius: 0.5rem;
-                cursor: pointer;
+                text-decoration: none;
                 font-size: fonts.$p;
+                text-align: center;
             }
         }
     }
@@ -59,20 +60,6 @@ section.hero {
         object-fit: cover;
         object-position: center bottom;
         overflow: hidden;
-    }
-
-    .hero-buttons {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-
-        button {
-            background-color: colors.$white;
-            border-style: none;
-            padding: 1rem 1.25rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
-        }
     }
 
     @include media-queries.breakpoint(tablet) {
@@ -106,7 +93,7 @@ section.hero {
             .hero-buttons {
                 flex-direction: row;
 
-                button {
+                .button {
                     width: 50%;
                     background-color: colors.$white;
                     transition: all 0.2s;

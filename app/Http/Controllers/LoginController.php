@@ -24,7 +24,7 @@ class LoginController extends Controller
         ]);
 
         if (Auth::attempt($credentials)) {
-            return redirect('dashboard');
+            return redirect('/');
         }
         return back()->witherrors('Whoops! Invalid email or password.');
     }

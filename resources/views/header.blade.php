@@ -16,7 +16,11 @@
                 <a class="nav-items" href="#">Om oss</a>
                 <a class="nav-items" href="#">Bostadsannonser</a>
                 <a class="nav-items" href="#">Intresseanmälningar</a>
+                @if (Auth::guest())
                 <a class="nav-items" href="#">Logga in</a>
+                @else
+                <a class="nav-items" href="{{ route('logout') }}">Logga ut</a>
+                @endif
             </div>
         </nav>
     </header>
