@@ -1,4 +1,24 @@
-section.footer-card {
+section.footer {
+    padding: 1rem;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .footer-container {
+        @include mixin.flex(column, flex-start, 1rem);
+    }
+
+    @include media-queries.breakpoint(tablet) {
+        padding: 4rem;
+
+        .footer-container {
+            @include mixin.flex(row, flex-start, 3rem);
+        }
+    }
+}
+
+/* section.footer-card {
     padding: 1rem;
 
     h1 {
@@ -41,7 +61,7 @@ section.footer-card {
         }
     }
 }
-
+ */
 .vl {
     border-left: 1px solid green;
     height: 26rem;
