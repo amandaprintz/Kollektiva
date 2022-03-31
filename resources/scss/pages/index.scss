@@ -1,12 +1,12 @@
 // Variables
-@use "variables/colors";
-@use "variables/fonts";
+@use "../variables/colors";
+@use "../variables/fonts";
 
 // Common components
-@use "common/header";
-@use "common/footer";
-@use "common/media-queries";
-@use "common/mixin";
+@use "../common/header";
+@use "../common/footer";
+@use "../common/media-queries";
+@use "../common/mixin";
 
 section.hero {
     @include mixin.flex(column-reverse, flex-start, 0);

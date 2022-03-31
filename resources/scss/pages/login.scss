@@ -1,0 +1,39 @@
+// Variables
+@use "../variables/colors";
+@use "../variables/fonts";
+
+// Common components
+@use "../common/header";
+@use "../common/footer";
+@use "../common/media-queries";
+@use "../common/mixin";
+
+section.login {
+    @include mixin.flex(column, center, 0);
+    align-items: center;
+    padding: 1.5rem;
+
+    .login-container {
+        background-color: aliceblue;
+        padding: 4rem;
+        border-radius: 0.5rem;
+
+        .login-intro {
+            @include mixin.flex(column, center, 1rem);
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .login-form {
+            a {
+                color: darkblue;
+            }
+
+            .button {
+                @include mixin.button();
+                margin: 1rem 0;
+                width: 100%;
+            }
+        }
+    }
+}

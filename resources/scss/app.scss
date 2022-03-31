@@ -9,7 +9,8 @@
 @use "common/mixin";
 
 // Pages
-@use "./index.scss";
+@use "pages/index.scss";
+@use "pages/login.scss";
 
 * {
     box-sizing: border-box;
@@ -36,5 +37,56 @@ body {
 
     p {
         line-height: 1.25rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: colors.$white;
+        color: colors.$black;
+        border: 1px solid colors.$grey;
+        border-radius: 0.25rem;
+        outline: none;
+        padding: 1rem;
+        transition: all 0.2s;
+    }
+
+    textarea {
+        height: 6rem;
+        resize: vertical;
+    }
+
+    .form {
+        margin-bottom: 1rem;
+    }
+
+    /* Removes autofill default styling*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 1000px colors.$grey inset;
+    }
+
+    input:-webkit-autofill:focus {
+        box-shadow: 0 0 0 1px colors.$grey;
+    }
+
+    input:focus {
+        border: 1px solid colors.$grey;
+        box-shadow: 0 0 0 1px colors.$grey;
+    }
+
+    label {
+        font-size: fonts.$p;
+        display: inline-block;
+        margin-bottom: 0.5rem;
     }
 }

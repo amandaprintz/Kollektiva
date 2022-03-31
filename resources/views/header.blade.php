@@ -11,13 +11,13 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="#">Kollektiva</a>
+            <a class="logo" href="{{ route('index') }}">Kollektiva</a>
             <div class="nav-menu">
                 <a class="nav-items" href="#">Om oss</a>
                 <a class="nav-items" href="#">Bostadsannonser</a>
                 <a class="nav-items" href="#">Intresseanmälningar</a>
                 @if (Auth::guest())
-                <a class="nav-items" href="#">Logga in</a>
+                <a class="nav-items" href="{{ route('login') }}">Logga in</a>
                 @else
                 <a class="nav-items" href="{{ route('logout') }}">Logga ut</a>
                 @endif

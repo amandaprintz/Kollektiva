@@ -310,6 +310,47 @@ section.review-cards .review-container p {
   }
 }
 
+section.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  align-items: center;
+  padding: 1.5rem;
+}
+section.login .login-container {
+  background-color: aliceblue;
+  padding: 4rem;
+  border-radius: 0.5rem;
+}
+section.login .login-container .login-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+section.login .login-container .login-form a {
+  color: darkblue;
+}
+section.login .login-container .login-form .button {
+  background-color: #fff;
+  border-style: none;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1.125rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin: 1rem 0;
+  width: 100%;
+}
+section.login .login-container .login-form .button:hover {
+  background-color: #c4c4c4;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -321,6 +362,7 @@ section.review-cards .review-container p {
 body {
   background-color: #fff;
   color: #000;
+  /* Removes autofill default styling*/
 }
 body main {
   padding-top: 5rem;
@@ -333,4 +375,46 @@ body a:hover {
 }
 body p {
   line-height: 1.25rem;
+}
+body input,
+body textarea {
+  width: 100%;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #c4c4c4;
+  border-radius: 0.25rem;
+  outline: none;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+body textarea {
+  height: 6rem;
+  resize: vertical;
+}
+body .form {
+  margin-bottom: 1rem;
+}
+body input:-webkit-autofill,
+body input:-webkit-autofill:hover,
+body input:-webkit-autofill:focus,
+body textarea:-webkit-autofill,
+body textarea:-webkit-autofill:hover,
+body textarea:-webkit-autofill:focus,
+body select:-webkit-autofill,
+body select:-webkit-autofill:hover,
+body select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #c4c4c4 inset;
+}
+body input:-webkit-autofill:focus {
+  box-shadow: 0 0 0 1px #c4c4c4;
+}
+body input:focus {
+  border: 1px solid #c4c4c4;
+  box-shadow: 0 0 0 1px #c4c4c4;
+}
+body label {
+  font-size: 1.125rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
