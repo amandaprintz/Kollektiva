@@ -262,12 +262,31 @@ section.review-cards .review-container .review {
   background-color: #c4c4c4;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  height: 30rem;
+  height: 35rem;
   width: 100%;
 }
+section.review-cards .review-container .review h3 {
+  margin-bottom: 1rem;
+}
+section.review-cards .review-container .review .user-card {
+  overflow: hidden;
+  height: 70%;
+}
+section.review-cards .review-container .review .user-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0.5rem;
+}
+section.review-cards .review-container .review-quote {
+  font-size: 1rem;
+}
 section.review-cards .review-container p {
-  margin-top: 1rem;
-  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
