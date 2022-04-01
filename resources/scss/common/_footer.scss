@@ -7,7 +7,7 @@
 @use "./mixin";
 
 section.footer {
-    padding: 1rem;
+    padding-top: 2rem;
     background-color: colors.$grey;
     display: flex;
     justify-content: center;
@@ -28,17 +28,21 @@ section.footer {
                 width: 70%;
                 display: flex;
                 justify-content: space-between;
+
+                svg {
+                    fill: white;
+                }
             }
         }
 
         .footer-option {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1rem;
             padding: 2rem;
 
             h4 {
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
             }
 
             p {
@@ -56,11 +60,18 @@ section.footer {
             .socials {
                 row-gap: 2rem;
             }
+
+            h4 {
+                margin-bottom: 2rem;
+            }
+            .footer-option {
+                gap: 1.5rem;
+            }
         }
 
         .vl {
             border-left: 1px solid rgb(255, 255, 255);
-            height: 25rem;
+            height: 20rem;
         }
     }
 }

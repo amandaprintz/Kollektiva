@@ -21,7 +21,7 @@ header nav .nav-menu {
 }
 
 section.footer {
-  padding: 1rem;
+  padding-top: 2rem;
   background-color: #c4c4c4;
   display: flex;
   justify-content: center;
@@ -45,14 +45,17 @@ section.footer .footer-container .footer-start .socials {
   display: flex;
   justify-content: space-between;
 }
+section.footer .footer-container .footer-start .socials svg {
+  fill: white;
+}
 section.footer .footer-container .footer-option {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   padding: 2rem;
 }
 section.footer .footer-container .footer-option h4 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 section.footer .footer-container .footer-option p {
   text-align: center;
@@ -70,9 +73,15 @@ section.footer .footer-container .footer-option p {
   section.footer .footer-container .socials {
     row-gap: 2rem;
   }
+  section.footer .footer-container h4 {
+    margin-bottom: 2rem;
+  }
+  section.footer .footer-container .footer-option {
+    gap: 1.5rem;
+  }
   section.footer .vl {
     border-left: 1px solid white;
-    height: 25rem;
+    height: 20rem;
   }
 }
 
