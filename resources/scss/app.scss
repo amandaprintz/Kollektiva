@@ -89,4 +89,22 @@ body {
         display: inline-block;
         margin-bottom: 0.5rem;
     }
+
+    .error {
+        padding: 1rem 1.5rem;
+        background-color: rgb(240, 112, 112);
+        color: colors.$white;
+        border-radius: 0.5rem;
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    .success {
+        padding: 1rem 1.5rem;
+        background-color: rgb(112, 240, 155);
+        color: colors.$white;
+        border-radius: 0.5rem;
+        text-align: center;
+        margin: 1.5rem 0;
+    }
 }

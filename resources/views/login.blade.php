@@ -1,13 +1,13 @@
 @include('header')
 
 <main>
-    @if ($errors->any())
-    <p>
-        <u>{{ $errors->first() }}</u>
-    </p>
-    @endif
     <section class="login">
         <div class="login-container">
+            @if ($errors->any())
+            <p>
+                <p class="error">{{ $errors->first() }}</p>
+            </p>
+            @endif
             <div class="login-intro">
                 <h1>Kollektiva</h1>
                 <p>Logga in på vår användarportal</p>

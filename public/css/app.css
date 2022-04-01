@@ -492,3 +492,19 @@ body label {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
+body .error {
+  padding: 1rem 1.5rem;
+  background-color: #f07070;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+body .success {
+  padding: 1rem 1.5rem;
+  background-color: #70f09b;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
