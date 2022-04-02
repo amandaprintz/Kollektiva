@@ -1,6 +1,7 @@
 // Variables
 @use "../variables/colors";
 @use "../variables/fonts";
+@use "../common/media-queries";
 
 // Mixin
 @use "./mixin";
@@ -9,16 +10,38 @@ header {
     position: fixed;
     z-index: 1;
     width: 100%;
-    height: 5rem;
-    padding: 2rem 3rem;
+    padding: 1rem 1.5rem;
     background-color: colors.$white;
 
     nav {
         width: 100%;
-        @include mixin.flex(row, space-between, 0);
+        @include mixin.flex(flex, row, space-between, 0);
+        align-items: center;
+
+        .hamburger {
+            svg {
+                stroke: colors.$black;
+                width: 1.5em;
+            }
+        }
 
         .nav-menu {
-            @include mixin.flex(row, flex-end, 3rem);
+            @include mixin.flex(none, row, flex-end, 3rem);
+        }
+    }
+
+    @include media-queries.breakpoint(tablet) {
+        padding: 2rem 3rem;
+        height: 5rem;
+        nav {
+            .hamburger {
+                display: none;
+            }
+
+            .nav-menu {
+                display: block;
+                @include mixin.flex(flex, row, flex-end, 3rem);
+            }
         }
     }
 }

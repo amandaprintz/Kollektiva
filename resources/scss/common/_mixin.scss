@@ -1,15 +1,15 @@
 @use "../variables/colors";
 @use "../variables/fonts";
 
-@mixin flex($direction, $justifyContent, $gap) {
-    display: flex;
+@mixin flex($flex, $direction, $justifyContent, $gap) {
+    display: $flex;
     flex-direction: $direction;
     justify-content: $justifyContent;
     gap: $gap;
 }
 
-@mixin button() {
-    background-color: colors.$white;
+@mixin button($color, $hoverColor) {
+    background-color: $color;
     border-style: none;
     padding: 1rem 1.25rem;
     border-radius: 0.5rem;
@@ -20,6 +20,6 @@
     transition: all 0.15s;
 
     &:hover {
-        background-color: colors.$grey;
+        background-color: $hoverColor;
     }
 }

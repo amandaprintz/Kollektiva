@@ -18,7 +18,7 @@ section.footer {
     }
 
     .footer-container {
-        @include mixin.flex(column, flex-start, 1rem);
+        @include mixin.flex(flex, column, flex-start, 1rem);
 
         .footer-start {
             width: 20rem;
@@ -51,7 +51,7 @@ section.footer {
         padding: 3rem;
 
         .footer-container {
-            @include mixin.flex(row, flex-start, 3rem);
+            @include mixin.flex(flex, row, flex-start, 3rem);
 
             .socials {
                 row-gap: 2rem;

@@ -9,7 +9,7 @@
 @use "../common/mixin";
 
 section.login {
-    @include mixin.flex(column, center, 0);
+    @include mixin.flex(flex, column, center, 0);
     align-items: center;
     padding: 1.5rem;
 
@@ -19,7 +19,7 @@ section.login {
         border-radius: 0.5rem;
 
         .login-intro {
-            @include mixin.flex(column, center, 1rem);
+            @include mixin.flex(flex, column, center, 1rem);
             align-items: center;
             margin-bottom: 2rem;
         }
@@ -30,7 +30,7 @@ section.login {
             }
 
             .button {
-                @include mixin.button();
+                @include mixin.button(colors.$grey, colors.$grey);
                 margin: 1rem 0;
                 width: 100%;
             }

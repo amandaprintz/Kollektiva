@@ -12,6 +12,13 @@
     <header>
         <nav>
             <a class="logo" href="{{ route('index') }}">Kollektiva</a>
+            <a class="hamburger" href="#">
+                <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="2" y1="5" x2="38" y2="5" stroke="" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="2" y1="17" x2="38" y2="17" stroke="" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="2" y1="29" x2="38" y2="29" stroke="" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </a>
             <div class="nav-menu">
                 <a class="nav-items" href="#">Om oss</a>
                 <a class="nav-items" href="#">Bostadsannonser</a>
