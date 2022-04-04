@@ -9,8 +9,8 @@
             </p>
             @endif
             <div class="login-intro">
-                <h1>Kollektiva</h1>
-                <p>Logga in på vår användarportal</p>
+                <h2>Vällkommen!</h2>
+                <p>Logga in för att lägga upp din annons idag</p>
             </div>
             <div class="login-form">
                 <form method="post" action="/login">
@@ -28,9 +28,18 @@
 
                     <button class="button" type="submit">Login</button>
                 </form>
-                <p>Inte medlem än? <a href="{{ route('register') }}">Ansök här</a> för att gå med idag</p>
+                <p>Inte medlem än? <a href="{{ route('register') }}">Skapa ett konto</a> idag!</p>
             </div>
         </div>
+        <div class="image-container">
+            <div class="frame">
+                <div class="text-content">
+                    <h2>Kollektiva</h2>
+                    <p>Där dina <span>drömmar</span> blir <span>verklighet</span></p>
+                </div>
+                <img src="{{ asset('images/login.jpg') }}" alt="House in the suburbs">
+            </div>
+            </div>
     </section>
 </main>
 
