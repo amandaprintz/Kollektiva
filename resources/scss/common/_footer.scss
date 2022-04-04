@@ -8,13 +8,18 @@
 
 section.footer {
     padding-top: 2rem;
-    background-color: colors.$grey;
+    background-color: colors.$blue;
+    color: colors.$base-white;
     display: flex;
     justify-content: center;
 
     h2 {
         font-size: 3rem;
         margin-bottom: 1.5rem;
+    }
+
+    a {
+        color: colors.$base-white;
     }
 
     .footer-container {
@@ -30,7 +35,7 @@ section.footer {
                 justify-content: space-between;
 
                 svg {
-                    fill: white;
+                    fill: colors.$base-white;
                 }
             }
         }
@@ -70,7 +75,7 @@ section.footer {
         }
 
         .vl {
-            border-left: 1px solid rgb(255, 255, 255);
+            border-left: 1px solid colors.$base-white;
             height: 20rem;
         }
     }

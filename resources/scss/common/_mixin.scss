@@ -8,8 +8,9 @@
     gap: $gap;
 }
 
-@mixin button($color, $hoverColor) {
+@mixin button($color, $hoverColor, $textColor) {
     background-color: $color;
+    color: $textColor;
     border-style: none;
     padding: 1rem 1.25rem;
     border-radius: 0.5rem;

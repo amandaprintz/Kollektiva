@@ -17,16 +17,17 @@
                     @csrf
                     <div>
                         <label for="email">Email</label><br>
-                        <input name="email" id="email" type="email" />
+                        <input name="email" id="email" type="email" placeholder="Ange din e-postadress" />
                     </div>
-                    <br>
-                    <br>
                     <div>
                         <label for="password"> Password</label><br>
-                        <input name="password" id="password" type="password" />
+                        <input name="password" id="password" type="password" placeholder="Ange ditt lösenord" />
                     </div>
-
-                    <button class="button" type="submit">Login</button>
+                    <div class="button-container">
+                        <button class="button" type="submit">Logga in</button>
+                        <button class="button google" type="submit"><img src="{{ asset('images/facebook.svg') }}" alt="">Logga in med Facebook</button>
+                        <button class="button facebook" type="submit"><img src="{{ asset('images/google.svg') }}" alt="">Logga in med Google</button>
+                    </div>
                 </form>
                 <p>Inte medlem än? <a href="{{ route('register') }}">Skapa ett konto</a> idag!</p>
             </div>
