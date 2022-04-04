@@ -30,7 +30,11 @@ section.login {
             }
 
             .button {
-                @include mixin.button(colors.$grey, colors.$grey);
+                @include mixin.button(
+                    colors.$grey,
+                    colors.$grey,
+                    colors.$black
+                );
                 margin: 1rem 0;
                 width: 100%;
             }

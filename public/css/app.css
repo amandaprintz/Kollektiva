@@ -42,13 +42,17 @@ header nav .nav-menu {
 
 section.footer {
   padding-top: 2rem;
-  background-color: #c4c4c4;
+  background-color: #37455d;
+  color: #f9fafb;
   display: flex;
   justify-content: center;
 }
 section.footer h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
+}
+section.footer a {
+  color: #f9fafb;
 }
 section.footer .footer-container {
   display: flex;
@@ -66,7 +70,7 @@ section.footer .footer-container .footer-start .socials {
   justify-content: space-between;
 }
 section.footer .footer-container .footer-start .socials svg {
-  fill: white;
+  fill: #f9fafb;
 }
 section.footer .footer-container .footer-option {
   display: flex;
@@ -100,7 +104,7 @@ section.footer .footer-container .footer-option p {
     gap: 1.5rem;
   }
   section.footer .vl {
-    border-left: 1px solid white;
+    border-left: 1px solid #f9fafb;
     height: 20rem;
   }
 }
@@ -119,19 +123,25 @@ section.hero .hero-content {
   margin: 1.5rem 1rem;
 }
 section.hero .hero-content a {
-  text-decoration: underline;
+  /*             text-decoration: underline;*/
+  color: #37455d;
 }
 section.hero .hero-content .hero-text {
-  background-color: #c4c4c4;
+  background-color: #37455d;
   padding: 2rem;
   border-radius: 1rem;
 }
 section.hero .hero-content .hero-text h1 {
   font-size: 2rem;
+  color: #f9fafb;
   margin-bottom: 1.5rem;
 }
 section.hero .hero-content .hero-text p {
   margin-bottom: 1rem;
+  color: #f9fafb;
+}
+section.hero .hero-content .hero-text a {
+  color: #f9fafb;
 }
 section.hero .hero-content .hero-buttons {
   display: flex;
@@ -140,7 +150,8 @@ section.hero .hero-content .hero-buttons {
   gap: 1.5rem;
 }
 section.hero .hero-content .hero-buttons .button {
-  background-color: #c4c4c4;
+  background-color: #37455d;
+  color: #f9fafb;
   border-style: none;
   padding: 1rem 1.25rem;
   border-radius: 0.5rem;
@@ -151,7 +162,7 @@ section.hero .hero-content .hero-buttons .button {
   transition: all 0.15s;
 }
 section.hero .hero-content .hero-buttons .button:hover {
-  background-color: #c4c4c4;
+  background-color: #37455d;
 }
 section.hero img {
   width: 100%;
@@ -182,17 +193,23 @@ section.hero img {
   }
   section.hero .hero-content .hero-text h1 {
     font-size: 3rem;
+    color: #37455d;
     margin-bottom: 1.25rem;
   }
   section.hero .hero-content .hero-text p {
     margin-bottom: 1rem;
+    color: #37455d;
     max-width: 80%;
+  }
+  section.hero .hero-content .hero-text a {
+    color: #37455d;
   }
   section.hero .hero-content .hero-buttons {
     flex-direction: row;
   }
   section.hero .hero-content .hero-buttons .button {
     background-color: #fff;
+    color: #37455d;
     border-style: none;
     padding: 1rem 1.25rem;
     border-radius: 0.5rem;
@@ -216,11 +233,14 @@ section.two-card {
 }
 section.two-card .option {
   font-size: 1.5rem;
-  background-color: #c4c4c4;
+  color: #37455d;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+  border: 0.5px solid #000;
+  background-color: #fff;
   padding: 1.5rem;
   border-radius: 0.5rem;
   width: 100%;
-  height: 40rem;
+  height: 23rem;
 }
 section.two-card .option button {
   background-color: white;
@@ -239,6 +259,7 @@ section.two-card .option button {
   }
   section.two-card .option {
     width: 50%;
+    height: 40rem;
   }
 }
 
@@ -247,6 +268,7 @@ section.four-card {
 }
 section.four-card h1 {
   font-size: 1.5rem;
+  color: #37455d;
   margin-bottom: 1.5rem;
 }
 section.four-card .option-container {
@@ -256,7 +278,7 @@ section.four-card .option-container {
   gap: 1rem;
 }
 section.four-card .option-container .option {
-  background-color: #c4c4c4;
+  background-color: #37455d;
   padding: 1.5rem;
   border-radius: 0.5rem;
   height: 20rem;
@@ -280,7 +302,7 @@ section.four-card .option-container .option p {
     gap: 3rem;
   }
   section.four-card .option-container .option {
-    background-color: #c4c4c4;
+    color: #f9fafb;
     padding: 1.5rem;
     width: 25%;
   }
@@ -294,7 +316,7 @@ section.update-profile-card .update-container {
   flex-direction: column;
   justify-content: flex-start;
   gap: 0;
-  background-color: #c4c4c4;
+  background-color: #37455d;
   border-radius: 0.5rem;
   overflow: hidden;
   height: 40rem;
@@ -365,7 +387,7 @@ section.review-cards .review-container {
   padding-bottom: 10rem;
 }
 section.review-cards .review-container .review {
-  background-color: #c4c4c4;
+  background-color: #37455d;
   padding: 1.5rem;
   border-radius: 0.5rem;
   height: 35rem;
@@ -410,7 +432,7 @@ section.review-cards .review-container p {
     gap: 3rem;
   }
   section.review-cards .review-container .review {
-    background-color: #c4c4c4;
+    background-color: #37455d;
     padding: 1.5rem;
     width: 25%;
   }
@@ -442,6 +464,7 @@ section.login .login-container .login-form a {
 }
 section.login .login-container .login-form .button {
   background-color: #c4c4c4;
+  color: #000;
   border-style: none;
   padding: 1rem 1.25rem;
   border-radius: 0.5rem;
@@ -466,7 +489,7 @@ section.login .login-container .login-form .button:hover {
 }
 
 body {
-  background-color: #fff;
+  background-color: #f9fafb;
   color: #000;
   /* Removes autofill default styling*/
 }
