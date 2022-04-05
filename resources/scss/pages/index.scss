@@ -265,7 +265,7 @@ section.update-profile-card {
 }
 
 section.review-cards {
-    padding: 1rem;
+    padding: 2.5rem;
 
     h1 {
         font-size: fonts.$h2;
@@ -278,18 +278,38 @@ section.review-cards {
 
         .review {
             background-color: colors.$blue;
+            display: flex;
+            flex-direction: row;
             padding: 1.5rem;
             border-radius: 0.5rem;
-            height: 35rem;
+            height: 32rem;
             width: 100%;
 
             h3 {
-                margin-bottom: 1rem;
+                margin-left: 1rem;
+                margin-top: 1rem;
+                background-color: white;
+                padding: 10%;
+                border-radius: 20px;
+                width: 7rem;
+            }
+
+            h4 {
+                margin-left: 1rem;
+                margin-top: 0.5rem;
+                background-color: white;
+                padding: 10%;
+                border-radius: 20px;
+                width: 7rem;
             }
 
             .user-card {
                 overflow: hidden;
-                height: 70%;
+                height: 10rem;
+                width: 10rem;
+                float: left;
+                margin-top: -12%;
+                margin-left: -12%;
 
                 img {
                     width: 100%;
@@ -321,13 +341,48 @@ section.review-cards {
         }
 
         .review-container {
-            @include mixin.flex(flex, row, flex-start, 3rem);
+            @include mixin.flex(flex, row, center, 2.5rem);
 
             .review {
                 background-color: colors.$blue;
                 padding: 1.5rem;
                 // height: 30rem;
-                width: 25%;
+                width: 22%;
+
+                h3 {
+                    margin-left: 1rem;
+                    margin-top: 3rem;
+                    background-color: white;
+                    padding: 10%;
+                    border-radius: 20px;
+                    width: 7rem;
+                }
+
+                h4 {
+                    margin-left: 1rem;
+                    margin-top: 0.5rem;
+                    background-color: white;
+                    padding: 10%;
+                    border-radius: 20px;
+                    width: 7rem;
+                }
+
+                .user-card {
+                    overflow: hidden;
+                    height: 12rem;
+                    width: 11rem;
+                    float: left;
+                    margin-top: -12%;
+                    margin-left: -12%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 0.5rem;
+                    }
+                }
             }
         }
     }

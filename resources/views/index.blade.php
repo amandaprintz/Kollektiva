@@ -4,7 +4,7 @@
         <div class="hero-text">
             <h1>Välkommen till Kollektiva!</h1>
             @if ($success = session('success'))
-                <p class="success">{{ $success }}</p>
+            <p class="success">{{ $success }}</p>
             @endif
             <p>Skapa ett konto idag, snabbt och enkelt.</p>
             <p>Här kan ni välja mellan att annonsera ert utrymme eller bara bläddra bland tillgängliga lokaler.</p>
@@ -70,40 +70,45 @@
     <h1>Omdömen och recensioner</h1>
     <div class="review-container">
         <div class="review">
-            <h3>Åke, 62</h3>
             <div class="user-card">
                 <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
-            <p class="review-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
-            <p> ★★★★★</p>
+            <div class="user-info">
+                <h3>John, 65</h3>
+                <h4>Pensionär</h4>
+            </div>
+
         </div>
         <div class="review">
-            <h3>Åke, 62</h3>
             <div class="user-card">
                 <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
-            <p class="review-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
-            <p> ★★★★★</p>
+            <div class="user-info">
+                <h3>John, 65</h3>
+                <h4>Pensionär</h4>
+            </div>
+
+
         </div>
         <div class="review">
-            <h3>Åke, 62</h3>
             <div class="user-card">
                 <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
-            <p class="review-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
-            <p> ★★★★★</p>
+            <div class="user-info">
+                <h3>John, 65</h3>
+                <h4>Pensionär</h4>
+            </div>
+
         </div>
         <div class="review">
-            <h3>Åke, 62</h3>
             <div class="user-card">
                 <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
-            <p class="review-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
-            <p> ★★★★★</p>
+            <div class="user-info">
+                <h3>John, 65</h3>
+                <h4>Pensionär</h4>
+            </div>
+
         </div>
 </section>
 
