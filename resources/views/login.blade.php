@@ -27,6 +27,7 @@
                         <button class="button" type="submit">Logga in</button>
                         <button class="button facebook" type="submit"><img src="{{ asset('images/google.svg') }}" alt="">Logga in med Google</button>
                         <button class="button google" type="submit"><img src="{{ asset('images/facebook.svg') }}" alt="">Logga in med Facebook</button>
+                        <button class="button google" type="submit"><img src="{{ asset('images/mobilt-bankid.svg') }}" alt="">Logga in med Facebook</button>
                     </div>
                 </form>
                 <p>Inte medlem än? <a href="{{ route('register') }}">Skapa ett konto</a> idag!</p>
@@ -40,7 +41,7 @@
                 </div>
                 <img src="{{ asset('images/login.jpg') }}" alt="House in the suburbs">
             </div>
-            </div>
+        </div>
     </section>
 </main>
 
