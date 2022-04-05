@@ -154,7 +154,7 @@ section.hero .hero-content .hero-buttons .button {
   color: #f9fafb;
   border-style: none;
   padding: 1rem 1.25rem;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
   text-align: center;
@@ -212,7 +212,7 @@ section.hero img {
     color: #37455d;
     border-style: none;
     padding: 1rem 1.25rem;
-    border-radius: 0.5rem;
+    border-radius: 1.25rem;
     text-decoration: none;
     font-size: 1.125rem;
     text-align: center;
@@ -469,6 +469,7 @@ section.login .login-container .login-form form {
 }
 section.login .login-container .login-form a {
   color: #37455d;
+  text-decoration: underline;
 }
 section.login .login-container .login-form .button-container {
   display: flex;
@@ -482,7 +483,7 @@ section.login .login-container .login-form .button-container .button {
   color: #fff;
   border-style: none;
   padding: 1rem 1.25rem;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
   text-align: center;
@@ -503,7 +504,7 @@ section.login .login-container .login-form .button-container .facebook {
   color: #000;
   border-style: none;
   padding: 1rem 1.25rem;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
   text-align: center;
@@ -554,15 +555,17 @@ section.login .image-container {
   }
   section.login .image-container .frame .text-content {
     position: absolute;
-    bottom: 30%;
-    left: 1rem;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    bottom: 20%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    background-color: rgba(55, 69, 93, 0.5);
   }
   section.login .image-container .frame .text-content h2 {
     font-size: 3rem;
-    color: #7ae7c7;
+    color: #fff;
     text-transform: uppercase;
   }
   section.login .image-container .frame .text-content p {
@@ -593,14 +596,14 @@ section.login .image-container {
 
 body {
   background-color: #f9fafb;
-  color: #000;
+  color: #37455d;
   /* Removes autofill default styling*/
 }
 body main {
   padding-top: 5rem;
 }
 body a {
-  color: #000;
+  color: #37455d;
 }
 body a:hover {
   text-decoration: underline;
@@ -613,9 +616,9 @@ body textarea {
   width: 100%;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #fff;
-  color: #000;
+  color: #37455d;
   border: 1px solid #c4c4c4;
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
   outline: none;
   padding: 1rem;
   transition: opacity 0.2s;

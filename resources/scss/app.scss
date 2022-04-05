@@ -22,14 +22,14 @@
 
 body {
     background-color: colors.$base-white;
-    color: colors.$black;
+    color: colors.$blue;
 
     main {
         padding-top: 5rem;
     }
 
     a {
-        color: colors.$black;
+        color: colors.$blue;
         &:hover {
             text-decoration: underline;
         }
@@ -45,9 +45,9 @@ body {
         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
             Roboto, "Helvetica Neue", Arial, sans-serif;
         background-color: colors.$white;
-        color: colors.$black;
+        color: colors.$blue;
         border: 1px solid colors.$grey;
-        border-radius: 0.25rem;
+        border-radius: 1.25rem;
         outline: none;
         padding: 1rem;
         transition: opacity 0.2s;
