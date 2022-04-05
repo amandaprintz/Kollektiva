@@ -9,7 +9,7 @@
             </p>
             @endif
             <div class="login-intro">
-                <h2>Vällkommen!</h2>
+                <h2>Välkommen!</h2>
                 <p>Logga in för att lägga upp din annons idag</p>
             </div>
             <div class="login-form">
