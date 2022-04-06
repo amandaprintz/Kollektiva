@@ -37,7 +37,7 @@ header nav .nav-menu .search {
 header nav .login-container {
   display: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1100px) {
   header nav {
     position: relative;
   }

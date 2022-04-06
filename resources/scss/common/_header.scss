@@ -46,7 +46,7 @@ header {
         }
     }
 
-    @include media-queries.breakpoint(tablet) {
+    @media only screen and (min-width: 1100px) {
         // height: 5rem;
         nav {
             position: relative;
