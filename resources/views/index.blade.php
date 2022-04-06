@@ -73,9 +73,19 @@
             <div class="user-card">
                 <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
-            <div class="user-info">
-                <h3>John, 65</h3>
-                <h4>Pensionär</h4>
+            <div class="user-info yellow">
+                <div class="name">
+                    <h2>John, 65</h2>
+                </div>
+                <div class="status">
+                    <h2>Pensionär</h2>
+                </div>
+            </div>
+            <div class="user-content">
+                <div class="review-star">
+                    <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
+                </div>
+                <div class="review-text"></div>
             </div>
 
         </div>
@@ -83,9 +93,18 @@
             <div class="user-card">
                 <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
-            <div class="user-info">
-                <h3>John, 65</h3>
-                <h4>Pensionär</h4>
+            <div class="user-info mint">
+                <div class="name">
+                    <h2>John, 65</h2>
+                </div>
+                <div class="status">
+                    <h2>Pensionär</h2>
+                </div>
+            </div>
+            <div class="user-content">
+                <div class="star-review">
+                    <star-rating></star-rating>
+                </div>
             </div>
 
 
@@ -94,9 +113,13 @@
             <div class="user-card">
                 <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
-            <div class="user-info">
-                <h3>John, 65</h3>
-                <h4>Pensionär</h4>
+            <div class="user-info red">
+                <div class="name">
+                    <h2>John, 65</h2>
+                </div>
+                <div class="status">
+                    <h2>Pensionär</h2>
+                </div>
             </div>
 
         </div>
@@ -104,9 +127,13 @@
             <div class="user-card">
                 <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
-            <div class="user-info">
-                <h3>John, 65</h3>
-                <h4>Pensionär</h4>
+            <div class="user-info purple">
+                <div class="name">
+                    <h2>John, 65</h2>
+                </div>
+                <div class="status">
+                    <h2>Pensionär</h2>
+                </div>
             </div>
 
         </div>

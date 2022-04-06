@@ -419,37 +419,19 @@ section.review-cards .review-container {
   padding-bottom: 10rem;
 }
 section.review-cards .review-container .review {
-  background-color: #37455d;
-  display: flex;
-  flex-direction: row;
-  padding: 1.5rem;
+  background-color: #fff;
+  position: relative;
   border-radius: 0.5rem;
   height: 32rem;
   width: 100%;
 }
-section.review-cards .review-container .review h3 {
-  margin-left: 1rem;
-  margin-top: 1rem;
-  background-color: white;
-  padding: 10%;
-  border-radius: 20px;
-  width: 7rem;
-}
-section.review-cards .review-container .review h4 {
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-  background-color: white;
-  padding: 10%;
-  border-radius: 20px;
-  width: 7rem;
-}
 section.review-cards .review-container .review .user-card {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
   overflow: hidden;
   height: 10rem;
   width: 10rem;
-  float: left;
-  margin-top: -12%;
-  margin-left: -12%;
 }
 section.review-cards .review-container .review .user-card img {
   width: 100%;
@@ -459,6 +441,53 @@ section.review-cards .review-container .review .user-card img {
   -o-object-position: center;
      object-position: center;
   border-radius: 0.5rem;
+}
+section.review-cards .review-container .review .user-info.yellow {
+  background-color: #fcfdcc;
+}
+section.review-cards .review-container .review .user-info.mint {
+  background-color: #b3eada;
+}
+section.review-cards .review-container .review .user-info.red {
+  background-color: #ffd0bc;
+}
+section.review-cards .review-container .review .user-info.purple {
+  background-color: #d9e6fb;
+}
+section.review-cards .review-container .review .user-info {
+  height: 50%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom: 1px solid #37455d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 2.5rem 1rem 1rem 1rem;
+}
+section.review-cards .review-container .review .user-info .name,
+section.review-cards .review-container .review .user-info .status {
+  width: 50%;
+  border-radius: 1.5rem;
+  background-color: #37455d;
+  padding: 0.5rem 1rem;
+}
+section.review-cards .review-container .review .user-info .name h2,
+section.review-cards .review-container .review .user-info .status h2 {
+  font-size: 1.125rem;
+  color: #fff;
+  text-align: center;
+}
+section.review-cards .review-container .review .user-content {
+  height: 50%;
+}
+section.review-cards .review-container .review .user-content .review-star {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
 }
 section.review-cards .review-container .review-quote {
   font-size: 1rem;
@@ -483,42 +512,7 @@ section.review-cards .review-container p {
     gap: 2.5rem;
   }
   section.review-cards .review-container .review {
-    background-color: #37455d;
-    padding: 1.5rem;
     width: 22%;
-  }
-  section.review-cards .review-container .review h3 {
-    margin-left: 1rem;
-    margin-top: 3rem;
-    background-color: white;
-    padding: 10%;
-    border-radius: 20px;
-    width: 7rem;
-  }
-  section.review-cards .review-container .review h4 {
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    background-color: white;
-    padding: 10%;
-    border-radius: 20px;
-    width: 7rem;
-  }
-  section.review-cards .review-container .review .user-card {
-    overflow: hidden;
-    height: 12rem;
-    width: 11rem;
-    float: left;
-    margin-top: -12%;
-    margin-left: -12%;
-  }
-  section.review-cards .review-container .review .user-card img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
-    border-radius: 0.5rem;
   }
 }
 

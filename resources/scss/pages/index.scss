@@ -277,39 +277,19 @@ section.review-cards {
         padding-bottom: 10rem;
 
         .review {
-            background-color: colors.$blue;
-            display: flex;
-            flex-direction: row;
-            padding: 1.5rem;
+            background-color: colors.$white;
+            position: relative;
             border-radius: 0.5rem;
             height: 32rem;
             width: 100%;
 
-            h3 {
-                margin-left: 1rem;
-                margin-top: 1rem;
-                background-color: white;
-                padding: 10%;
-                border-radius: 20px;
-                width: 7rem;
-            }
-
-            h4 {
-                margin-left: 1rem;
-                margin-top: 0.5rem;
-                background-color: white;
-                padding: 10%;
-                border-radius: 20px;
-                width: 7rem;
-            }
-
             .user-card {
+                position: absolute;
+                top: -1rem;
+                left: -1rem;
                 overflow: hidden;
                 height: 10rem;
                 width: 10rem;
-                float: left;
-                margin-top: -12%;
-                margin-left: -12%;
 
                 img {
                     width: 100%;
@@ -317,6 +297,64 @@ section.review-cards {
                     object-fit: cover;
                     object-position: center;
                     border-radius: 0.5rem;
+                }
+            }
+
+            .user-info.yellow {
+                background-color: colors.$yellow;
+            }
+            .user-info.mint {
+                background-color: colors.$mint;
+            }
+            .user-info.red {
+                background-color: colors.$red;
+            }
+
+            .user-info.purple {
+                background-color: colors.$purple;
+            }
+
+            .user-info {
+                height: 50%;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                // background-color: transparent;
+                border-bottom: 1px solid colors.$blue;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-end;
+                gap: 1rem;
+                padding: 2.5rem 1rem 1rem 1rem;
+
+                .name,
+                .status {
+                    width: 50%;
+                    border-radius: 1.5rem;
+                    background-color: colors.$blue;
+
+                    padding: 0.5rem 1rem;
+
+                    h2 {
+                        font-size: fonts.$p;
+                        color: colors.$white;
+                        text-align: center;
+                    }
+                }
+            }
+            .user-content {
+                height: 50%;
+
+                .review-star {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding: 2rem;
+
+                    img {
+                    }
                 }
             }
         }
@@ -344,45 +382,8 @@ section.review-cards {
             @include mixin.flex(flex, row, center, 2.5rem);
 
             .review {
-                background-color: colors.$blue;
-                padding: 1.5rem;
                 // height: 30rem;
                 width: 22%;
-
-                h3 {
-                    margin-left: 1rem;
-                    margin-top: 3rem;
-                    background-color: white;
-                    padding: 10%;
-                    border-radius: 20px;
-                    width: 7rem;
-                }
-
-                h4 {
-                    margin-left: 1rem;
-                    margin-top: 0.5rem;
-                    background-color: white;
-                    padding: 10%;
-                    border-radius: 20px;
-                    width: 7rem;
-                }
-
-                .user-card {
-                    overflow: hidden;
-                    height: 12rem;
-                    width: 11rem;
-                    float: left;
-                    margin-top: -12%;
-                    margin-left: -12%;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        object-position: center;
-                        border-radius: 0.5rem;
-                    }
-                }
             }
         }
     }
