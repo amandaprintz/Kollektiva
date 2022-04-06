@@ -15,18 +15,18 @@
             <a class="button" href="{{ route('login') }}">Logga in</a>
         </div>
     </div>
-    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80" alt="hero image">
+    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="hero image">
 </section>
 
 <section class="two-card">
     <div class="option">
         <h2>För hyresvärd</h2>
-
+        <img src="{{ asset('images/hyres.svg') }}" alt="Big icon with a hand and a house-key">
         <button>Skapa annonser</button>
     </div>
     <div class="option">
         <h2>För Bostadssökande</h2>
-
+        <img src="{{ asset('images/bostads.svg') }}" alt="Big icon a house and a place pin">
         <button>Bläddra bland annonser</button>
     </div>
 </section>
@@ -56,7 +56,7 @@
 <section class="update-profile-card">
     <div class="update-container">
         <div class="update-image">
-            <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80" alt="update image">
+            <img src="https://images.unsplash.com/photo-1616286608358-0e1b143f7d2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="update image">
         </div>
         <div class="update-text">
             <h3>Uppdatera din profil idag</h3>
@@ -73,70 +73,76 @@
             <div class="user-card">
                 <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
-            <div class="user-info yellow">
+            <<<<<<< Updated upstream <div class="user-info yellow">
                 <div class="name">
                     <h2>John, 65</h2>
                 </div>
                 <div class="status">
                     <h2>Pensionär</h2>
                 </div>
+        </div>
+        <div class="user-content">
+            <div class="review-star">
+                <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
             </div>
-            <div class="user-content">
-                <div class="review-star">
-                    <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
-                </div>
-                <div class="review-text"></div>
-            </div>
+            <div class="review-text"></div>
+        </div>
+        =======
+        <div class="user-info">
+            <h3>John, 65</h3>
+            <h4>Pensionär</h4>
+            >>>>>>> Stashed changes
 
         </div>
-        <div class="review">
-            <div class="user-card">
-                <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
-            </div>
-            <div class="user-info mint">
-                <div class="name">
-                    <h2>John, 65</h2>
-                </div>
-                <div class="status">
-                    <h2>Pensionär</h2>
-                </div>
-            </div>
-            <div class="user-content">
-                <div class="star-review">
-                    <star-rating></star-rating>
-                </div>
-            </div>
-
-
+    </div>
+    <div class="review">
+        <div class="user-card">
+            <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
         </div>
-        <div class="review">
-            <div class="user-card">
-                <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
+        <div class="user-info mint">
+            <div class="name">
+                <h2>John, 65</h2>
             </div>
-            <div class="user-info red">
-                <div class="name">
-                    <h2>John, 65</h2>
-                </div>
-                <div class="status">
-                    <h2>Pensionär</h2>
-                </div>
+            <div class="status">
+                <h2>Pensionär</h2>
             </div>
-
         </div>
-        <div class="review">
-            <div class="user-card">
-                <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
+        <div class="user-content">
+            <div class="star-review">
+                <star-rating></star-rating>
             </div>
-            <div class="user-info purple">
-                <div class="name">
-                    <h2>John, 65</h2>
-                </div>
-                <div class="status">
-                    <h2>Pensionär</h2>
-                </div>
-            </div>
-
         </div>
+
+
+    </div>
+    <div class="review">
+        <div class="user-card">
+            <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
+        </div>
+        <div class="user-info red">
+            <div class="name">
+                <h2>John, 65</h2>
+            </div>
+            <div class="status">
+                <h2>Pensionär</h2>
+            </div>
+        </div>
+
+    </div>
+    <div class="review">
+        <div class="user-card">
+            <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
+        </div>
+        <div class="user-info purple">
+            <div class="name">
+                <h2>John, 65</h2>
+            </div>
+            <div class="status">
+                <h2>Pensionär</h2>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 
