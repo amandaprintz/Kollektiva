@@ -25,11 +25,11 @@
                 @csrf
                 <div>
                     <label for="tel">Förnamn</label><br>
-                    <input name="tel" id="tel" type="tel" placeholder="Ange ditt mobilnummer" />
+                    <input name="tel" id="tel" type="tel" placeholder="Ange ditt förnamn" />
                 </div>
                 <div>
                     <label for="tel">Efternamn</label><br>
-                    <input name="tel" id="tel" type="tel" placeholder="Ange ditt mobilnummer" />
+                    <input name="tel" id="tel" type="tel" placeholder="Ange ditt efternamn" />
                 </div>
                 <div>
                     <label for="tel">Mobilnummer</label><br>
@@ -45,7 +45,7 @@
                 </div>
                 <div>
                     <label for="password">Bekräfta lösenord</label><br>
-                    <input name="password" id="password" type="password" placeholder="Ange ditt lösenord" />
+                    <input name="password" id="password" type="password" placeholder="Bekräfta ditt lösenord" />
                 </div>
                 <div class="button-container">
                     <button class="button" type="submit">Logga in</button>

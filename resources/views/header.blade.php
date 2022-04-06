@@ -20,14 +20,27 @@
                 </svg>
             </a>
             <div class="nav-menu">
-                <a class="nav-items" href="#">Om oss</a>
-                <a class="nav-items" href="#">Bostadsannonser</a>
-                <a class="nav-items" href="#">Intresseanmälningar</a>
-                @if (Auth::guest())
-                <a class="nav-items" href="{{ route('login') }}">Logga in</a>
-                @else
-                <a class="nav-items" href="{{ route('logout') }}">Logga ut</a>
-                @endif
+                <div class="link">
+                    <a class="nav-items" href="#">Hyr ut</a>
+                </div>
+                <div class="link">
+                    <a class="nav-items" href="#">Sök bostad</a>
+                </div>
+                <div class="link-last">
+                    <a class="nav-items" href="#">Om oss</a>
+                </div>
+                <div class="search">
+                <input name="search" id="search" type="search" placeholder="Skriv in ditt sökord" />
+                </div>
             </div>
+            @if (Auth::guest())
+            <div class="link-user">
+                <a class="nav-items" href="{{ route('login') }}">Logga in här</a>
+            </div>
+            @else
+            <div class="link-user">
+                <a class="nav-items" href="{{ route('logout') }}">Logga ut</a>
+            </div>
+            @endif
         </nav>
     </header>
