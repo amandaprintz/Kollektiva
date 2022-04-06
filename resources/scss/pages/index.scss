@@ -280,8 +280,9 @@ section.review-cards {
             background-color: colors.$white;
             position: relative;
             border-radius: 0.5rem;
-            height: 32rem;
+
             width: 100%;
+            // height: 33rem;
 
             .user-card {
                 position: absolute;
@@ -315,7 +316,7 @@ section.review-cards {
             }
 
             .user-info {
-                height: 50%;
+                // height: 40%;
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
                 // background-color: transparent;
@@ -326,7 +327,7 @@ section.review-cards {
                 justify-content: flex-start;
                 align-items: flex-end;
                 gap: 1rem;
-                padding: 2.5rem 1rem 1rem 1rem;
+                padding: 2.5rem 1rem;
 
                 .name,
                 .status {
@@ -344,16 +345,35 @@ section.review-cards {
                 }
             }
             .user-content {
-                height: 50%;
+                // height: 60%;
+                padding: 1rem;
 
                 .review-star {
                     width: 100%;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
-                    padding: 2rem;
+                    padding: 1.5rem 0;
+                }
 
-                    img {
+                .review-text {
+                    h2 {
+                        font-size: fonts.$h2;
+                    }
+
+                    p {
+                        font-size: fonts.$p;
+                        text-align: left;
+                        line-height: 1.25;
+                    }
+                    .button {
+                        margin-top: 2rem;
+                        display: block;
+                        @include mixin.button(
+                            colors.$blue,
+                            colors.$blue,
+                            colors.$base-white
+                        );
                     }
                 }
             }

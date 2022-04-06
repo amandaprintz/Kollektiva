@@ -85,7 +85,11 @@
                 <div class="review-star">
                     <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
                 </div>
-                <div class="review-text"></div>
+                <div class="review-text">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
+                    <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
+                </div>
             </div>
 
         </div>
@@ -102,8 +106,13 @@
                 </div>
             </div>
             <div class="user-content">
-                <div class="star-review">
-                    <star-rating></star-rating>
+                <div class="review-star">
+                    <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
+                </div>
+                <div class="review-text">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
+                    <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
                 </div>
             </div>
 
@@ -121,6 +130,16 @@
                     <h2>Pensionär</h2>
                 </div>
             </div>
+            <div class="user-content">
+                <div class="review-star">
+                    <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
+                </div>
+                <div class="review-text">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
+                    <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
+                </div>
+            </div>
 
         </div>
         <div class="review">
@@ -135,7 +154,16 @@
                     <h2>Pensionär</h2>
                 </div>
             </div>
-
+            <div class="user-content">
+                <div class="review-star">
+                    <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
+                </div>
+                <div class="review-text">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
+                    <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
+                </div>
+            </div>
         </div>
 </section>
 

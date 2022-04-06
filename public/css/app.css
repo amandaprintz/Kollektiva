@@ -422,7 +422,6 @@ section.review-cards .review-container .review {
   background-color: #fff;
   position: relative;
   border-radius: 0.5rem;
-  height: 32rem;
   width: 100%;
 }
 section.review-cards .review-container .review .user-card {
@@ -455,7 +454,6 @@ section.review-cards .review-container .review .user-info.purple {
   background-color: #d9e6fb;
 }
 section.review-cards .review-container .review .user-info {
-  height: 50%;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   border-bottom: 1px solid #37455d;
@@ -464,7 +462,7 @@ section.review-cards .review-container .review .user-info {
   justify-content: flex-start;
   align-items: flex-end;
   gap: 1rem;
-  padding: 2.5rem 1rem 1rem 1rem;
+  padding: 2.5rem 1rem;
 }
 section.review-cards .review-container .review .user-info .name,
 section.review-cards .review-container .review .user-info .status {
@@ -480,14 +478,39 @@ section.review-cards .review-container .review .user-info .status h2 {
   text-align: center;
 }
 section.review-cards .review-container .review .user-content {
-  height: 50%;
+  padding: 1rem;
 }
 section.review-cards .review-container .review .user-content .review-star {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.5rem 0;
+}
+section.review-cards .review-container .review .user-content .review-text h2 {
+  font-size: 1.5rem;
+}
+section.review-cards .review-container .review .user-content .review-text p {
+  font-size: 1.125rem;
+  text-align: left;
+  line-height: 1.25;
+}
+section.review-cards .review-container .review .user-content .review-text .button {
+  margin-top: 2rem;
+  display: block;
+  background-color: #37455d;
+  color: #f9fafb;
+  border-style: none;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  font-size: 1.125rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+section.review-cards .review-container .review .user-content .review-text .button:hover {
+  background-color: #37455d;
 }
 section.review-cards .review-container .review-quote {
   font-size: 1rem;
