@@ -119,17 +119,19 @@ section.two-card {
         border-radius: 0.5rem;
         width: 100%;
         height: 27rem;
-        display: flex;
-        flex-direction: column;
+
+        @include mixin.flex(flex, column, space-between, 0);
+        // display: flex;
+        // flex-direction: column;
         align-items: center;
 
-        button {
-            background-color: colors.$blue;
-            color: colors.$base-white;
-            border-style: none;
-            padding: 1rem 1.25rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
+        a.button {
+            width: 100%;
+            @include mixin.button(
+                colors.$blue,
+                colors.$blue,
+                colors.$base-white
+            );
         }
 
         img {
@@ -147,9 +149,20 @@ section.two-card {
             height: 40rem;
 
             img {
-                margin-top: 1.5rem;
                 width: 23rem;
                 height: 23rem;
+            }
+
+            a.button {
+                width: 80%;
+            }
+        }
+    }
+
+    @include media-queries.breakpoint(desktop) {
+        .option {
+            a.button {
+                width: 40%;
             }
         }
     }
@@ -207,6 +220,7 @@ section.update-profile-card {
     .update-container {
         @include mixin.flex(flex, column, flex-start, 0);
         background-color: colors.$blue;
+        color: colors.$white;
         border-radius: 0.5rem;
         overflow: hidden;
         height: 40rem;
@@ -226,9 +240,11 @@ section.update-profile-card {
         }
 
         .update-text {
+            @include mixin.flex(flex, column, flex-start, 0);
             padding: 1.5rem;
 
             h3 {
+                font-size: fonts.$h2;
                 margin-bottom: 1rem;
             }
 
@@ -256,6 +272,7 @@ section.update-profile-card {
             }
 
             .update-text {
+                @include mixin.flex(flex, column, center, 0);
                 padding: 4rem;
 
                 button {

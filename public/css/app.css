@@ -297,15 +297,25 @@ section.two-card .option {
   height: 27rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
   align-items: center;
 }
-section.two-card .option button {
+section.two-card .option a.button {
+  width: 100%;
   background-color: #37455d;
   color: #f9fafb;
   border-style: none;
   padding: 1rem 1.25rem;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  font-size: 1.125rem;
+  text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
+}
+section.two-card .option a.button:hover {
+  background-color: #37455d;
 }
 section.two-card .option img {
   width: 16rem;
@@ -324,9 +334,16 @@ section.two-card .option img {
     height: 40rem;
   }
   section.two-card .option img {
-    margin-top: 1.5rem;
     width: 23rem;
     height: 23rem;
+  }
+  section.two-card .option a.button {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1335px) {
+  section.two-card .option a.button {
+    width: 40%;
   }
 }
 
@@ -386,6 +403,7 @@ section.update-profile-card .update-container {
   justify-content: flex-start;
   gap: 0;
   background-color: #37455d;
+  color: #fff;
   border-radius: 0.5rem;
   overflow: hidden;
   height: 40rem;
@@ -403,9 +421,14 @@ section.update-profile-card .update-container .update-image img {
      object-position: center;
 }
 section.update-profile-card .update-container .update-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
   padding: 1.5rem;
 }
 section.update-profile-card .update-container .update-text h3 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 section.update-profile-card .update-container .update-text button {
@@ -434,6 +457,10 @@ section.update-profile-card .update-container .update-text {
     height: 100%;
   }
   section.update-profile-card .update-container .update-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
     padding: 4rem;
   }
   section.update-profile-card .update-container .update-text button {
@@ -897,7 +924,6 @@ section.register .register-container .register-form .button-container .button {
 body {
   background-color: #f9fafb;
   color: #37455d;
-  /* Removes autofill default styling*/
 }
 body main {
   padding-top: 5rem;
@@ -917,7 +943,7 @@ body textarea {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #fff;
   color: #37455d;
-  border: 1px solid #c4c4c4;
+  border: 1px solid #37455d;
   border-radius: 1.25rem;
   outline: none;
   padding: 1rem;
@@ -930,23 +956,10 @@ body textarea {
 body .form {
   margin-bottom: 1rem;
 }
-body input:-webkit-autofill,
-body input:-webkit-autofill:hover,
-body input:-webkit-autofill:focus,
-body textarea:-webkit-autofill,
-body textarea:-webkit-autofill:hover,
-body textarea:-webkit-autofill:focus,
-body select:-webkit-autofill,
-body select:-webkit-autofill:hover,
-body select:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px #c4c4c4 inset;
-}
-body input:-webkit-autofill:focus {
-  box-shadow: 0 0 0 1px #c4c4c4;
-}
 body input:focus {
-  border: 1px solid #c4c4c4;
-  box-shadow: 0 0 0 1px #c4c4c4;
+  outline: none;
+  border: 1px solid #4d90fe;
+  box-shadow: 0px 0px 5px #4d90fe;
 }
 body label {
   font-size: 1.125rem;

@@ -47,7 +47,7 @@ body {
             Roboto, "Helvetica Neue", Arial, sans-serif;
         background-color: colors.$white;
         color: colors.$blue;
-        border: 1px solid colors.$grey;
+        border: 1px solid colors.$blue;
         border-radius: 1.25rem;
         outline: none;
         padding: 1rem;
@@ -63,26 +63,12 @@ body {
         margin-bottom: 1rem;
     }
 
-    /* Removes autofill default styling*/
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    textarea:-webkit-autofill,
-    textarea:-webkit-autofill:hover,
-    textarea:-webkit-autofill:focus,
-    select:-webkit-autofill,
-    select:-webkit-autofill:hover,
-    select:-webkit-autofill:focus {
-        -webkit-box-shadow: 0 0 0px 1000px colors.$grey inset;
-    }
-
-    input:-webkit-autofill:focus {
-        box-shadow: 0 0 0 1px colors.$grey;
-    }
-
+    // Chrome default styling
     input:focus {
-        border: 1px solid colors.$grey;
-        box-shadow: 0 0 0 1px colors.$grey;
+        outline: none;
+        border: 1px solid #4d90fe;
+        -webkit-box-shadow: 0px 0px 5px #4d90fe;
+        box-shadow: 0px 0px 5px #4d90fe;
     }
 
     label {

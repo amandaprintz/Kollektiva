@@ -21,13 +21,13 @@
 <section class="two-card">
     <div class="option">
         <h2>För hyresvärd</h2>
-
-        <button>Skapa annonser</button>
+        <img src="{{ asset('images/hyres.svg') }}" alt="Big icon with a hand and a house-key">
+        <a class="button" href="{{ route('index') }}">Skapa annonser</a>
     </div>
     <div class="option">
         <h2>För Bostadssökande</h2>
-
-        <button>Bläddra bland annonser</button>
+        <img src="{{ asset('images/bostads.svg') }}" alt="Big icon a house and a place pin">
+        <a class="button" href="{{ route('index') }}">Bläddra bland annonser</a>
     </div>
 </section>
 
@@ -59,7 +59,7 @@
             <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80" alt="update image">
         </div>
         <div class="update-text">
-            <h3>Uppdatera din profil idag</h3>
+            <h3>Uppdatera din profil redan idag</h3>
             <p>För en mer optimal upplevelse, och för att dra nytta av Kollektivas matchningssystem finns valet att ställa in preferenser för att göra letandet så mycket enklare.</p>
             <button>Uppdatera min profil</button>
         </div>
