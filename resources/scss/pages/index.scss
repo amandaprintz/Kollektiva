@@ -61,7 +61,6 @@ section.hero {
 
     img {
         width: 100%;
-        height: 100%;
         object-fit: cover;
         object-position: center bottom;
         overflow: hidden;
@@ -71,6 +70,10 @@ section.hero {
         position: relative;
         top: 5rem;
         height: 80vh;
+
+        img {
+            object-position: top;
+        }
 
         .hero-content {
             background-color: transparent;
@@ -133,14 +136,23 @@ section.two-card {
         padding: 1.5rem;
         border-radius: 0.5rem;
         width: 100%;
-        height: 23rem;
+        height: 27rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         button {
-            background-color: white;
+            background-color: colors.$blue;
+            color: colors.$base-white;
             border-style: none;
             padding: 1rem 1.25rem;
             border-radius: 0.5rem;
             cursor: pointer;
+        }
+
+        img {
+            width: 16rem;
+            height: 16rem;
         }
     }
 
@@ -151,6 +163,12 @@ section.two-card {
         .option {
             width: 50%;
             height: 40rem;
+
+            img {
+                margin-top: 1.5rem;
+                width: 23rem;
+                height: 23rem;
+            }
         }
     }
 }
@@ -160,7 +178,7 @@ section.four-card {
 
     h1 {
         font-size: fonts.$h2;
-        color: colors.$blue;
+        color: colors.$base-white;
         margin-bottom: 1.5rem;
     }
     .option-container {
@@ -173,8 +191,10 @@ section.four-card {
             height: 20rem;
             width: 100%;
 
+            h2,
             p {
                 margin-top: 1rem;
+                color: colors.$base-white;
             }
         }
     }
@@ -291,6 +311,10 @@ section.review-cards {
                 overflow: hidden;
                 height: 10rem;
                 width: 10rem;
+
+                .user-info {
+                    width: 100%;
+                }
 
                 img {
                     width: 100%;

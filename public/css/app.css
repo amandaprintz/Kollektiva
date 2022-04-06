@@ -198,7 +198,6 @@ section.hero .hero-content .hero-buttons .button:hover {
 }
 section.hero img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center bottom;
@@ -210,6 +209,10 @@ section.hero img {
     position: relative;
     top: 5rem;
     height: 80vh;
+  }
+  section.hero img {
+    -o-object-position: top;
+       object-position: top;
   }
   section.hero .hero-content {
     background-color: transparent;
@@ -272,14 +275,22 @@ section.two-card .option {
   padding: 1.5rem;
   border-radius: 0.5rem;
   width: 100%;
-  height: 23rem;
+  height: 27rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 section.two-card .option button {
-  background-color: white;
+  background-color: #37455d;
+  color: #f9fafb;
   border-style: none;
   padding: 1rem 1.25rem;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+section.two-card .option img {
+  width: 16rem;
+  height: 16rem;
 }
 @media only screen and (min-width: 768px) {
   section.two-card {
@@ -293,6 +304,11 @@ section.two-card .option button {
     width: 50%;
     height: 40rem;
   }
+  section.two-card .option img {
+    margin-top: 1.5rem;
+    width: 23rem;
+    height: 23rem;
+  }
 }
 
 section.four-card {
@@ -300,7 +316,7 @@ section.four-card {
 }
 section.four-card h1 {
   font-size: 1.5rem;
-  color: #37455d;
+  color: #f9fafb;
   margin-bottom: 1.5rem;
 }
 section.four-card .option-container {
@@ -316,8 +332,10 @@ section.four-card .option-container .option {
   height: 20rem;
   width: 100%;
 }
+section.four-card .option-container .option h2,
 section.four-card .option-container .option p {
   margin-top: 1rem;
+  color: #f9fafb;
 }
 @media only screen and (min-width: 768px) {
   section.four-card {
@@ -431,6 +449,9 @@ section.review-cards .review-container .review .user-card {
   overflow: hidden;
   height: 10rem;
   width: 10rem;
+}
+section.review-cards .review-container .review .user-card .user-info {
+  width: 100%;
 }
 section.review-cards .review-container .review .user-card img {
   width: 100%;
