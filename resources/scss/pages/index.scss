@@ -24,22 +24,24 @@ section.hero {
         }
 
         .hero-text {
-            background-color: colors.$blue;
+            background-color: colors.$base-white-opacity;
+            color: colors.$blue;
             padding: 2rem;
             border-radius: 1rem;
+            margin-top: -21rem;
+            z-index: 1;
+
             h1 {
                 font-size: 2rem;
-                color: colors.$base-white;
                 margin-bottom: 1.5rem;
             }
 
             p {
                 margin-bottom: 1rem;
-                color: colors.$base-white;
             }
 
             a {
-                color: colors.$base-white;
+                /*  */
             }
         }
 
@@ -61,7 +63,7 @@ section.hero {
 
     img {
         width: 100%;
-        height: 26rem;
+        height: 37rem;
         object-fit: cover;
         object-position: center bottom;
         overflow: hidden;
@@ -86,22 +88,14 @@ section.hero {
             margin: 0;
 
             .hero-text {
-                background-color: colors.$white;
-
                 h1 {
                     font-size: fonts.$h1;
-                    color: colors.$blue;
                     margin-bottom: 1.25rem;
                 }
 
                 p {
                     margin-bottom: 1rem;
-                    color: colors.$blue;
                     max-width: 80%;
-                }
-
-                a {
-                    color: colors.$blue;
                 }
             }
 
@@ -126,7 +120,7 @@ section.hero {
 
 section.two-card {
     @include mixin.flex(flex, column, flex-start, 3rem);
-    padding: 5rem 1.5rem 0rem 1.5rem;
+    padding: 2rem 1.5rem 0rem 1.5rem;
 
     .option {
         font-size: fonts.$h2;
