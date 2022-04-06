@@ -32,22 +32,22 @@
 </section>
 
 <section class="four-card">
-    <h1>Hur funkar det?</h1>
+    <h2>Hur funkar det?</h2>
     <div class="option-container">
         <div class="option yellow">
-            <h2>1. Skapa konto</h2>
+            <h3>1. Skapa konto</h3>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
         <div class="option mint">
-            <h2>2. Annonsera bostad</h2>
+            <h3>2. Annonsera bostad</h3>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
         <div class="option red">
-            <h2>3. Bläddra bland ansökningar</h2>
+            <h3>3. Bläddra bland ansökningar</h3>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
         <div class="option purple">
-            <h2>4. Kontakta genom Kollektiva</h2>
+            <h3>4. Kontakta genom Kollektiva</h3>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
     </div>
@@ -59,7 +59,7 @@
             <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80" alt="update image">
         </div>
         <div class="update-text">
-            <h3>Uppdatera din profil redan idag</h3>
+            <h2>Uppdatera din profil redan idag</h2>
             <p>För en mer optimal upplevelse, och för att dra nytta av Kollektivas matchningssystem finns valet att ställa in preferenser för att göra letandet så mycket enklare.</p>
             <button>Uppdatera min profil</button>
         </div>

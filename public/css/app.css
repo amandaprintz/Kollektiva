@@ -22,7 +22,7 @@ header nav .hamburger {
   padding: 1.5rem 1.5rem 1.5rem 0;
 }
 header nav .hamburger svg {
-  stroke: #37455d;
+  stroke: #f9fafb;
   width: 1.5em;
 }
 header nav .nav-menu {
@@ -228,7 +228,7 @@ section.hero .hero-content .hero-buttons .button {
   background-color: #37455d;
   color: #f9fafb;
   border-style: none;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -286,8 +286,8 @@ section.two-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 3rem;
-  padding: 2rem 1.5rem 0rem 1.5rem;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 section.two-card .option {
   display: flex;
@@ -310,7 +310,7 @@ section.two-card .option a.button {
   background-color: #37455d;
   color: #f9fafb;
   border-style: none;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -331,11 +331,12 @@ section.two-card .option img {
     flex-direction: row;
     justify-content: flex-start;
     gap: 3rem;
-    padding: 10rem 4rem 0rem 4rem;
+    padding: 4rem;
   }
   section.two-card .option {
     width: 50%;
     height: 40rem;
+    padding: 3rem;
   }
   section.two-card .option img {
     width: 23rem;
@@ -354,9 +355,9 @@ section.two-card .option img {
 section.four-card {
   padding: 1rem;
 }
-section.four-card h1 {
-  font-size: 1.5rem;
-  color: #f9fafb;
+section.four-card h2 {
+  font-size: 2.5rem;
+  color: #37455d;
   margin-bottom: 1.5rem;
 }
 section.four-card .option-container {
@@ -371,7 +372,7 @@ section.four-card .option-container .option {
   height: 20rem;
   width: 100%;
 }
-section.four-card .option-container .option h2,
+section.four-card .option-container .option h3,
 section.four-card .option-container .option p {
   margin-top: 1rem;
   color: #37455d;
@@ -442,9 +443,13 @@ section.update-profile-card .update-container .update-text {
   gap: 0;
   padding: 1.5rem;
 }
-section.update-profile-card .update-container .update-text h3 {
-  font-size: 1.5rem;
+section.update-profile-card .update-container .update-text h2 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+}
+section.update-profile-card .update-container .update-text p {
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 section.update-profile-card .update-container .update-text button {
   background-color: #fff;
@@ -487,7 +492,7 @@ section.review-cards {
   padding: 2.5rem;
 }
 section.review-cards h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 section.review-cards .review-container {
@@ -570,7 +575,7 @@ section.review-cards .review-container .review .user-content .review-star {
   padding: 1.5rem 0;
 }
 section.review-cards .review-container .review .user-content .review-text h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 section.review-cards .review-container .review .user-content .review-text p {
   font-size: 1.125rem;
@@ -583,7 +588,7 @@ section.review-cards .review-container .review .user-content .review-text .butto
   background-color: #37455d;
   color: #f9fafb;
   border-style: none;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -665,7 +670,7 @@ section.login .login-container .login-form .button-container .button {
   background-color: #37455d;
   color: #fff;
   border-style: none;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -686,7 +691,7 @@ section.login .login-container .login-form .button-container .facebook {
   background-color: #fff;
   color: #000;
   border-style: none;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -813,7 +818,7 @@ section.register .register-container .register-form .button-container .button {
   background-color: #37455d;
   color: #fff;
   border-style: none;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -834,7 +839,7 @@ section.register .register-container .register-form .button-container .facebook 
   background-color: #fff;
   color: #000;
   border-style: none;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
