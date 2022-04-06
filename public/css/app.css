@@ -405,7 +405,7 @@ section.update-profile-card .update-container .update-text {
 }
 
 section.review-cards {
-  padding: 1rem;
+  padding: 2.5rem;
 }
 section.review-cards h1 {
   font-size: 1.5rem;
@@ -420,17 +420,36 @@ section.review-cards .review-container {
 }
 section.review-cards .review-container .review {
   background-color: #37455d;
+  display: flex;
+  flex-direction: row;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  height: 35rem;
+  height: 32rem;
   width: 100%;
 }
 section.review-cards .review-container .review h3 {
-  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+  padding: 10%;
+  border-radius: 20px;
+  width: 7rem;
+}
+section.review-cards .review-container .review h4 {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  background-color: white;
+  padding: 10%;
+  border-radius: 20px;
+  width: 7rem;
 }
 section.review-cards .review-container .review .user-card {
   overflow: hidden;
-  height: 70%;
+  height: 10rem;
+  width: 10rem;
+  float: left;
+  margin-top: -12%;
+  margin-left: -12%;
 }
 section.review-cards .review-container .review .user-card img {
   width: 100%;
@@ -460,13 +479,46 @@ section.review-cards .review-container p {
   section.review-cards .review-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 3rem;
+    justify-content: center;
+    gap: 2.5rem;
   }
   section.review-cards .review-container .review {
     background-color: #37455d;
     padding: 1.5rem;
-    width: 25%;
+    width: 22%;
+  }
+  section.review-cards .review-container .review h3 {
+    margin-left: 1rem;
+    margin-top: 3rem;
+    background-color: white;
+    padding: 10%;
+    border-radius: 20px;
+    width: 7rem;
+  }
+  section.review-cards .review-container .review h4 {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    background-color: white;
+    padding: 10%;
+    border-radius: 20px;
+    width: 7rem;
+  }
+  section.review-cards .review-container .review .user-card {
+    overflow: hidden;
+    height: 12rem;
+    width: 11rem;
+    float: left;
+    margin-top: -12%;
+    margin-left: -12%;
+  }
+  section.review-cards .review-container .review .user-card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    border-radius: 0.5rem;
   }
 }
 
