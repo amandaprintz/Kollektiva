@@ -12,41 +12,34 @@ section.hero {
     @include mixin.flex(flex, column-reverse, flex-start, 0);
 
     .hero-content {
-        // display: flex;
-        // flex-direction: column;
-        // gap: 2rem;
+        position: absolute;
         @include mixin.flex(flex, column, flex-start, 1.5rem);
-        margin: 1.5rem 1rem;
+        margin: 1rem;
 
         a {
-            /*             text-decoration: underline;*/
             color: colors.$blue;
+            text-decoration: underline;
         }
 
         .hero-text {
-            background-color: colors.$blue;
+            background-color: colors.$base-white-opacity;
+            color: colors.$blue;
             padding: 2rem;
             border-radius: 1rem;
+            // z-index: 1;
+
             h1 {
                 font-size: 2rem;
-                color: colors.$base-white;
                 margin-bottom: 1.5rem;
             }
 
             p {
                 margin-bottom: 1rem;
-                color: colors.$base-white;
-            }
-
-            a {
-                color: colors.$base-white;
             }
         }
 
         .hero-buttons {
-            // display: flex;
-            // flex-direction: column;
-            // gap: 1.5rem;
+            // margin-top: 2rem;
             @include mixin.flex(flex, column, flex-start, 1.5rem);
 
             .button {
@@ -61,6 +54,7 @@ section.hero {
 
     img {
         width: 100%;
+        height: 80vh;
         object-fit: cover;
         object-position: center bottom;
         overflow: hidden;
@@ -68,16 +62,17 @@ section.hero {
 
     @include media-queries.breakpoint(tablet) {
         position: relative;
-        top: 5rem;
+        // top: 5rem;
         height: 80vh;
 
         img {
             object-position: top;
+            object-fit: cover;
         }
 
         .hero-content {
             background-color: transparent;
-            position: absolute;
+            // position: absolute;
             max-width: 40rem;
             bottom: 2rem;
             left: 2rem;
@@ -85,22 +80,14 @@ section.hero {
             margin: 0;
 
             .hero-text {
-                background-color: colors.$white;
-
                 h1 {
                     font-size: fonts.$h1;
-                    color: colors.$blue;
                     margin-bottom: 1.25rem;
                 }
 
                 p {
                     margin-bottom: 1rem;
-                    color: colors.$blue;
                     max-width: 80%;
-                }
-
-                a {
-                    color: colors.$blue;
                 }
             }
 
@@ -108,11 +95,6 @@ section.hero {
                 flex-direction: row;
 
                 .button {
-                    @include mixin.button(
-                        colors.$white,
-                        colors.$grey,
-                        colors.$blue
-                    );
                     width: 50%;
                 }
             }
@@ -125,7 +107,7 @@ section.hero {
 
 section.two-card {
     @include mixin.flex(flex, column, flex-start, 3rem);
-    padding: 5rem 1.5rem 0rem 1.5rem;
+    padding: 2rem 1.5rem 0rem 1.5rem;
 
     .option {
         font-size: fonts.$h2;

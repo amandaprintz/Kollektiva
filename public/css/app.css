@@ -2,8 +2,6 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  padding: 1rem 1.5rem;
-  background-color: #fff;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.04);
 }
 header nav {
@@ -14,6 +12,13 @@ header nav {
   justify-content: space-between;
   gap: 0;
   align-items: center;
+  background-color: #fff;
+}
+header nav .logo {
+  padding: 1.5rem 0 1.5rem 1.5rem;
+}
+header nav .hamburger {
+  padding: 1.5rem 1.5rem 1.5rem 0;
 }
 header nav .hamburger svg {
   stroke: #37455d;
@@ -27,34 +32,71 @@ header nav .nav-menu {
   align-items: center;
 }
 header nav .nav-menu .search {
-  width: 16rem;
+  display: none;
+}
+header nav .login-container {
+  display: none;
 }
 @media only screen and (min-width: 768px) {
-  header {
-    padding: 2rem 3rem;
-  }
   header nav {
     position: relative;
   }
   header nav .hamburger {
     display: none;
   }
-  header nav .nav-menu {
+  header nav .logo {
+    padding: 1.5rem 0 1.5rem 4rem;
+  }
+  header nav .nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  header nav .nav .nav-menu {
+    margin-right: 12rem;
+    padding: 2rem 3rem;
     display: block;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 0;
   }
-  header nav .nav-menu .link {
+  header nav .nav .nav-menu .link {
     padding: 1rem 2rem;
     border-left: 1px solid #7ae7c7;
   }
-  header nav .nav-menu .link-last {
+  header nav .nav .nav-menu .link-last {
     padding: 1rem 2rem;
     margin-right: 2rem;
     border-left: 1px solid #7ae7c7;
     border-right: 1px solid #7ae7c7;
+  }
+  header nav .nav .nav-menu .search {
+    display: block;
+    width: 16rem;
+  }
+  header nav .nav .nav-menu .search input {
+    background-image: url(/images/search.svg?ed282d8c868df0e57fbf326063245375);
+    background-repeat: no-repeat;
+    background-position: right 5% center;
+    background-size: 1.5rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+  }
+  header nav .nav .login-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12rem;
+    height: 9rem;
+    background-color: #d9e6fb;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
   }
   header .link-user {
     position: absolute;
@@ -148,32 +190,29 @@ section.hero {
   gap: 0;
 }
 section.hero .hero-content {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
-  margin: 1.5rem 1rem;
+  margin: 1rem;
 }
 section.hero .hero-content a {
-  /*             text-decoration: underline;*/
   color: #37455d;
+  text-decoration: underline;
 }
 section.hero .hero-content .hero-text {
-  background-color: #37455d;
+  background-color: #f9fafbeb;
+  color: #37455d;
   padding: 2rem;
   border-radius: 1rem;
 }
 section.hero .hero-content .hero-text h1 {
   font-size: 2rem;
-  color: #f9fafb;
   margin-bottom: 1.5rem;
 }
 section.hero .hero-content .hero-text p {
   margin-bottom: 1rem;
-  color: #f9fafb;
-}
-section.hero .hero-content .hero-text a {
-  color: #f9fafb;
 }
 section.hero .hero-content .hero-buttons {
   display: flex;
@@ -198,6 +237,7 @@ section.hero .hero-content .hero-buttons .button:hover {
 }
 section.hero img {
   width: 100%;
+  height: 80vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center bottom;
@@ -207,56 +247,35 @@ section.hero img {
 @media only screen and (min-width: 768px) {
   section.hero {
     position: relative;
-    top: 5rem;
     height: 80vh;
   }
   section.hero img {
     -o-object-position: top;
        object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   section.hero .hero-content {
     background-color: transparent;
-    position: absolute;
     max-width: 40rem;
     bottom: 2rem;
     left: 2rem;
     padding: 2rem;
     margin: 0;
   }
-  section.hero .hero-content .hero-text {
-    background-color: #fff;
-  }
   section.hero .hero-content .hero-text h1 {
     font-size: 3rem;
-    color: #37455d;
     margin-bottom: 1.25rem;
   }
   section.hero .hero-content .hero-text p {
     margin-bottom: 1rem;
-    color: #37455d;
     max-width: 80%;
-  }
-  section.hero .hero-content .hero-text a {
-    color: #37455d;
   }
   section.hero .hero-content .hero-buttons {
     flex-direction: row;
   }
   section.hero .hero-content .hero-buttons .button {
-    background-color: #fff;
-    color: #37455d;
-    border-style: none;
-    padding: 1rem 1.25rem;
-    border-radius: 1.25rem;
-    text-decoration: none;
-    font-size: 1.125rem;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.15s;
     width: 50%;
-  }
-  section.hero .hero-content .hero-buttons .button:hover {
-    background-color: #c4c4c4;
   }
 }
 section.two-card {
@@ -264,7 +283,7 @@ section.two-card {
   flex-direction: column;
   justify-content: flex-start;
   gap: 3rem;
-  padding: 5rem 1.5rem 0rem 1.5rem;
+  padding: 2rem 1.5rem 0rem 1.5rem;
 }
 section.two-card .option {
   font-size: 1.5rem;

@@ -10,9 +10,8 @@ header {
     position: fixed;
     z-index: 1;
     width: 100%;
-    padding: 1rem 1.5rem;
+    // padding: 1rem 1.5rem;
 
-    background-color: colors.$white;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.04);
 
     nav {
@@ -20,8 +19,14 @@ header {
         height: auto;
         @include mixin.flex(flex, row, space-between, 0);
         align-items: center;
+        background-color: colors.$white;
+
+        .logo {
+            padding: 1.5rem 0 1.5rem 1.5rem;
+        }
 
         .hamburger {
+            padding: 1.5rem 1.5rem 1.5rem 0;
             svg {
                 stroke: colors.$blue;
                 width: 1.5em;
@@ -33,13 +38,15 @@ header {
             align-items: center;
 
             .search {
-                width: 16rem;
+                display: none;
             }
+        }
+        .login-container {
+            display: none;
         }
     }
 
     @include media-queries.breakpoint(tablet) {
-        padding: 2rem 3rem;
         // height: 5rem;
         nav {
             position: relative;
@@ -47,19 +54,64 @@ header {
                 display: none;
             }
 
-            .nav-menu {
-                display: block;
-                @include mixin.flex(flex, row, flex-end, 0);
+            .logo {
+                padding: 1.5rem 0 1.5rem 4rem;
+            }
 
-                .link {
-                    padding: 1rem 2rem;
-                    border-left: 1px solid colors.$turquoise;
+            .nav {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+
+                .nav-menu {
+                    margin-right: 12rem;
+                    padding: 2rem 3rem;
+                    display: block;
+                    @include mixin.flex(flex, row, flex-end, 0);
+
+                    .link {
+                        padding: 1rem 2rem;
+                        border-left: 1px solid colors.$turquoise;
+                    }
+                    .link-last {
+                        padding: 1rem 2rem;
+                        margin-right: 2rem;
+                        border-left: 1px solid colors.$turquoise;
+                        border-right: 1px solid colors.$turquoise;
+                    }
+
+                    .search {
+                        display: block;
+                        width: 16rem;
+
+                        input {
+                            background-image: url(../../../public/images/search.svg);
+                            background-repeat: no-repeat;
+                            background-position: right 5% center;
+                            background-size: 1.5rem;
+                            padding-right: 1rem;
+
+                            border-radius: 0.5rem;
+                        }
+                    }
                 }
-                .link-last {
-                    padding: 1rem 2rem;
-                    margin-right: 2rem;
-                    border-left: 1px solid colors.$turquoise;
-                    border-right: 1px solid colors.$turquoise;
+
+                .login-container {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 12rem;
+                    height: 9rem;
+                    background-color: colors.$skyblue;
+                    padding: 1rem;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    border-bottom-left-radius: 1.5rem;
+                    border-bottom-right-radius: 1.5rem;
                 }
             }
         }
