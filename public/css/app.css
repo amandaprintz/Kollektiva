@@ -12,9 +12,10 @@ header nav {
   justify-content: space-between;
   gap: 0;
   align-items: center;
-  background-color: #fff;
+  background-color: #37455d;
 }
 header nav .logo {
+  color: #fff;
   padding: 1.5rem 0 1.5rem 1.5rem;
 }
 header nav .hamburger {
@@ -30,6 +31,9 @@ header nav .nav-menu {
   justify-content: center;
   gap: 3rem;
   align-items: center;
+}
+header nav .nav-menu .nav-items {
+  color: #fff;
 }
 header nav .nav-menu .search {
   display: none;
@@ -286,6 +290,10 @@ section.two-card {
   padding: 2rem 1.5rem 0rem 1.5rem;
 }
 section.two-card .option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
   font-size: 1.5rem;
   color: #37455d;
   box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
@@ -295,10 +303,6 @@ section.two-card .option {
   border-radius: 0.5rem;
   width: 100%;
   height: 27rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 0;
   align-items: center;
 }
 section.two-card .option a.button {
@@ -362,7 +366,6 @@ section.four-card .option-container {
   gap: 1rem;
 }
 section.four-card .option-container .option {
-  background-color: #37455d;
   padding: 1.5rem;
   border-radius: 0.5rem;
   height: 20rem;
@@ -371,7 +374,19 @@ section.four-card .option-container .option {
 section.four-card .option-container .option h2,
 section.four-card .option-container .option p {
   margin-top: 1rem;
-  color: #f9fafb;
+  color: #37455d;
+}
+section.four-card .option-container .option.yellow {
+  background-color: #fcfdcc;
+}
+section.four-card .option-container .option.mint {
+  background-color: #b3eada;
+}
+section.four-card .option-container .option.red {
+  background-color: #ffd0bc;
+}
+section.four-card .option-container .option.purple {
+  background-color: #d9e6fb;
 }
 @media only screen and (min-width: 768px) {
   section.four-card {

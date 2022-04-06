@@ -110,6 +110,8 @@ section.two-card {
     padding: 2rem 1.5rem 0rem 1.5rem;
 
     .option {
+        @include mixin.flex(flex, column, space-between, 0);
+
         font-size: fonts.$h2;
         color: colors.$blue;
         box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
@@ -119,10 +121,6 @@ section.two-card {
         border-radius: 0.5rem;
         width: 100%;
         height: 27rem;
-
-        @include mixin.flex(flex, column, space-between, 0);
-        // display: flex;
-        // flex-direction: column;
         align-items: center;
 
         a.button {
@@ -180,7 +178,6 @@ section.four-card {
         @include mixin.flex(flex, column, flex-start, 1rem);
 
         .option {
-            background-color: colors.$blue;
             padding: 1.5rem;
             border-radius: 0.5rem;
             height: 20rem;
@@ -189,8 +186,22 @@ section.four-card {
             h2,
             p {
                 margin-top: 1rem;
-                color: colors.$base-white;
+                color: colors.$blue;
             }
+        }
+
+        .option.yellow {
+            background-color: colors.$yellow;
+        }
+        .option.mint {
+            background-color: colors.$mint;
+        }
+        .option.red {
+            background-color: colors.$red;
+        }
+
+        .option.purple {
+            background-color: colors.$purple;
         }
     }
 

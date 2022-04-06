@@ -34,19 +34,19 @@
 <section class="four-card">
     <h1>Hur funkar det?</h1>
     <div class="option-container">
-        <div class="option">
+        <div class="option yellow">
             <h2>1. Skapa konto</h2>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
-        <div class="option">
+        <div class="option mint">
             <h2>2. Annonsera bostad</h2>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
-        <div class="option">
+        <div class="option red">
             <h2>3. Bläddra bland ansökningar</h2>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
-        <div class="option">
+        <div class="option purple">
             <h2>4. Kontakta genom Kollektiva</h2>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
