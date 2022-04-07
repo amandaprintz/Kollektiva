@@ -7,3 +7,14 @@
 @use "../common/footer";
 @use "../common/media-queries";
 @use "../common/mixin";
+
+section.preview-intro {
+    background-color: colors.$blue;
+    padding: 1.5rem;
+    margin-top: 5rem;
+
+    h2 {
+        text-align: center;
+        color: colors.$base-white;
+    }
+}

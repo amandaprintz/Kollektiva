@@ -1003,6 +1003,16 @@ section.register .register-container .register-form .button-container .button {
   }
 }
 
+section.preview-intro {
+  background-color: #37455d;
+  padding: 1.5rem;
+  margin-top: 5rem;
+}
+section.preview-intro h2 {
+  text-align: center;
+  color: #f9fafb;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
