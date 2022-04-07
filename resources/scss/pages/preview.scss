@@ -1,0 +1,9 @@
+// Variables
+@use "../variables/colors";
+@use "../variables/fonts";
+
+// Common components
+@use "../common/header";
+@use "../common/footer";
+@use "../common/media-queries";
+@use "../common/mixin";
