@@ -296,7 +296,7 @@ section.two-card .option {
   gap: 0;
   font-size: 1.5rem;
   color: #37455d;
-  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.15);
   border: 0.5px solid #000;
   background-color: #fff;
   padding: 1.5rem;
@@ -371,6 +371,7 @@ section.four-card .option-container .option {
   border-radius: 0.5rem;
   height: 20rem;
   width: 100%;
+  filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
 }
 section.four-card .option-container .option h3,
 section.four-card .option-container .option p {
@@ -864,7 +865,7 @@ section.register .image-container {
 }
 @media only screen and (min-width: 768px) {
   section.register {
-    padding: 2rem 4rem 4rem 4rem;
+    padding: 4rem;
   }
   section.register .register-container {
     padding: 4rem 0;

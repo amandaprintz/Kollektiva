@@ -114,7 +114,7 @@ section.two-card {
 
         font-size: fonts.$h3;
         color: colors.$blue;
-        box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.15);
         border: 0.5px solid colors.$black;
         background-color: colors.$white;
         padding: 1.5rem;
@@ -183,6 +183,7 @@ section.four-card {
             border-radius: 0.5rem;
             height: 20rem;
             width: 100%;
+            filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
 
             h3,
             p {
