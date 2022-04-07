@@ -35,22 +35,37 @@
     <h2>Hur funkar det?</h2>
     <div class="option-container">
         <div class="option yellow">
-            <h3>1. Skapa konto</h3>
+            <div class="option-top">
+                <h2>1.</h2>
+                <h3>Skapa konto</h2>
+            </div>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
         <div class="option mint">
-            <h3>2. Annonsera bostad</h3>
+            <div class="option-top">
+                <h2>2.</h2>
+                <h3>Annonsera bostad</h3>
+            </div>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
+
         </div>
         <div class="option red">
-            <h3>3. Bläddra bland ansökningar</h3>
+            <div class="option-top">
+                <h2>3.</h2>
+                <h3>Bläddra bland ansökningar</h3>
+            </div>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
+
+
         <div class="option purple">
-            <h3>4. Kontakta genom Kollektiva</h3>
+            <div class="option-top">
+                <h2>4.</h2>
+                <h3>Bläddra bland ansökningar</h2>
+            </div>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>
-    </div>
+
 </section>
 
 <section class="update-profile-card">

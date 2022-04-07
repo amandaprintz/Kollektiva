@@ -381,14 +381,82 @@ section.four-card .option-container .option p {
 section.four-card .option-container .option.yellow {
   background-color: #fcfdcc;
 }
+section.four-card .option-container .option.yellow .option-top {
+  display: flex;
+  flex-direction: row;
+}
+section.four-card .option-container .option.yellow .option-top h2 {
+  background-color: #37455d;
+  color: #fcfdcc;
+  border-radius: 0.8rem;
+  padding: 1.7rem;
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+section.four-card .option-container .option.yellow .option-top h3 {
+  color: #37455d;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
 section.four-card .option-container .option.mint {
   background-color: #b3eada;
+}
+section.four-card .option-container .option.mint .option-top {
+  display: flex;
+  flex-direction: row;
+}
+section.four-card .option-container .option.mint .option-top h2 {
+  background-color: #37455d;
+  color: #b3eada;
+  border-radius: 0.8rem;
+  padding: 1.7rem;
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+section.four-card .option-container .option.mint .option-top h3 {
+  color: #37455d;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 section.four-card .option-container .option.red {
   background-color: #ffd0bc;
 }
+section.four-card .option-container .option.red .option-top {
+  display: flex;
+  flex-direction: row;
+}
+section.four-card .option-container .option.red .option-top h2 {
+  background-color: #37455d;
+  color: #ffd0bc;
+  border-radius: 0.8rem;
+  padding: 1.7rem;
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+section.four-card .option-container .option.red .option-top h3 {
+  color: #37455d;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
 section.four-card .option-container .option.purple {
   background-color: #d9e6fb;
+}
+section.four-card .option-container .option.purple .option-top {
+  display: flex;
+  flex-direction: row;
+}
+section.four-card .option-container .option.purple .option-top h2 {
+  background-color: #37455d;
+  color: #d9e6fb;
+  border-radius: 0.8rem;
+  padding: 1.7rem;
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+section.four-card .option-container .option.purple .option-top h3 {
+  color: #37455d;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 @media only screen and (min-width: 768px) {
   section.four-card {
@@ -454,6 +522,7 @@ section.update-profile-card .update-container .update-text p {
 }
 section.update-profile-card .update-container .update-text button {
   background-color: #fff;
+  font-size: 1.125rem;
   border-style: none;
   padding: 1rem 1.25rem;
   border-radius: 0.5rem;
