@@ -1,10 +1,30 @@
+@-webkit-keyframes hideMessage {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-4rem);
+  }
+}
+@keyframes hideMessage {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-4rem);
+  }
+}
 header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.04);
 }
-header nav {
+header .nav-container {
+  background-color: #37455d;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.04);
+  z-index: 2;
+}
+header .nav-container nav {
   width: 100%;
   height: auto;
   display: flex;
@@ -12,51 +32,49 @@ header nav {
   justify-content: space-between;
   gap: 0;
   align-items: center;
-  background-color: #37455d;
 }
-header nav .logo {
+header .nav-container nav .logo {
   color: #fff;
   padding: 1.5rem 0 1.5rem 1.5rem;
 }
-header nav .hamburger {
+header .nav-container nav .hamburger {
   padding: 1.5rem 1.5rem 1.5rem 0;
 }
-header nav .hamburger svg {
+header .nav-container nav .hamburger svg {
   stroke: #f9fafb;
   width: 1.5em;
 }
-header nav .nav-menu {
+header .nav-container nav .nav-menu {
   display: none;
   flex-direction: row;
   justify-content: center;
   gap: 3rem;
   align-items: center;
 }
-header nav .nav-menu .nav-items {
+header .nav-container nav .nav-menu .nav-items {
   color: #fff;
 }
-header nav .nav-menu .search {
+header .nav-container nav .nav-menu .search {
   display: none;
 }
-header nav .login-container {
+header .nav-container nav .login-container {
   display: none;
 }
 @media only screen and (min-width: 1100px) {
-  header nav {
+  header .nav-container nav {
     position: relative;
   }
-  header nav .hamburger {
+  header .nav-container nav .hamburger {
     display: none;
   }
-  header nav .logo {
+  header .nav-container nav .logo {
     padding: 1.5rem 0 1.5rem 4rem;
   }
-  header nav .nav {
-    position: relative;
+  header .nav-container nav .nav {
     display: flex;
     flex-direction: row;
   }
-  header nav .nav .nav-menu {
+  header .nav-container nav .nav .nav-menu {
     margin-right: 12rem;
     padding: 2rem 3rem;
     display: block;
@@ -65,21 +83,21 @@ header nav .login-container {
     justify-content: flex-end;
     gap: 0;
   }
-  header nav .nav .nav-menu .link {
+  header .nav-container nav .nav .nav-menu .link {
     padding: 1rem 2rem;
     border-left: 1px solid #7ae7c7;
   }
-  header nav .nav .nav-menu .link-last {
+  header .nav-container nav .nav .nav-menu .link-last {
     padding: 1rem 2rem;
     margin-right: 2rem;
     border-left: 1px solid #7ae7c7;
     border-right: 1px solid #7ae7c7;
   }
-  header nav .nav .nav-menu .search {
+  header .nav-container nav .nav .nav-menu .search {
     display: block;
     width: 16rem;
   }
-  header nav .nav .nav-menu .search input {
+  header .nav-container nav .nav .nav-menu .search input {
     background-image: url(/images/search.svg?ed282d8c868df0e57fbf326063245375);
     background-repeat: no-repeat;
     background-position: left 5% center;
@@ -87,7 +105,7 @@ header nav .login-container {
     padding-left: 2.5rem;
     border-radius: 0.5rem;
   }
-  header nav .nav .login-container {
+  header .nav-container nav .nav .login-container {
     position: absolute;
     top: 0;
     right: 0;
@@ -102,7 +120,7 @@ header nav .login-container {
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
   }
-  header .link-user {
+  header .nav-container .link-user {
     position: absolute;
     top: 0;
     right: 0;
@@ -112,10 +130,33 @@ header nav .login-container {
     height: 120px;
     background-color: #d9e6fb;
   }
-  header .link-user a {
+  header .nav-container .link-user a {
     display: block;
     margin: 2rem 0;
   }
+}
+header .success {
+  position: absolute;
+  top: 7rem;
+  z-index: -1;
+  width: 100%;
+  height: 4rem;
+  background-color: #b3eada;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  -webkit-animation: hideMessage 1s ease-in;
+          animation: hideMessage 1s ease-in;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+header .success p {
+  color: #37455d;
+  text-align: center;
+  padding: 1rem;
 }
 
 section.footer {
@@ -234,7 +275,6 @@ section.hero .hero-content .hero-buttons .button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.15s;
 }
 section.hero .hero-content .hero-buttons .button:hover {
   background-color: #37455d;
@@ -316,7 +356,6 @@ section.two-card .option a.button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.15s;
 }
 section.two-card .option a.button:hover {
   background-color: #37455d;
@@ -664,7 +703,6 @@ section.review-cards .review-container .review .user-content .review-text .butto
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.15s;
 }
 section.review-cards .review-container .review .user-content .review-text .button:hover {
   background-color: #37455d;
@@ -746,7 +784,6 @@ section.login .login-container .login-form .button-container .button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.15s;
   margin: 0;
   width: 100%;
   display: flex;
@@ -767,7 +804,6 @@ section.login .login-container .login-form .button-container .facebook {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.15s;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -894,7 +930,6 @@ section.register .register-container .register-form .button-container .button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.15s;
   margin: 0;
   width: 100%;
   display: flex;
@@ -915,7 +950,6 @@ section.register .register-container .register-form .button-container .facebook 
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.15s;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1021,9 +1055,14 @@ section.preview-intro h2 {
   font-family: sans-serif;
 }
 
+html {
+  background-color: #37455d;
+}
+
 body {
   background-color: #f9fafb;
   color: #37455d;
+  font-size: 1.125rem;
 }
 body main {
   padding-top: 5rem;
@@ -1047,7 +1086,6 @@ body textarea {
   border-radius: 1.25rem;
   outline: none;
   padding: 1rem;
-  transition: opacity 0.2s;
 }
 body textarea {
   height: 6rem;
@@ -1069,14 +1107,6 @@ body label {
 body .error {
   padding: 1rem 1.5rem;
   background-color: #f07070;
-  color: #fff;
-  border-radius: 0.5rem;
-  text-align: center;
-  margin: 1.5rem 0;
-}
-body .success {
-  padding: 1rem 1.5rem;
-  background-color: #70f09b;
   color: #fff;
   border-radius: 0.5rem;
   text-align: center;

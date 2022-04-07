@@ -3,9 +3,6 @@
     <div class="hero-content">
         <div class="hero-text">
             <h1>Välkommen till Kollektiva!</h1>
-            @if ($success = session('success'))
-            <p class="success">{{ $success }}</p>
-            @endif
             <p>Skapa ett konto idag, snabbt och enkelt.</p>
             <p>Här kan ni välja mellan att annonsera ert utrymme eller bara bläddra bland tillgängliga lokaler.</p>
             <a href="#">Läs mer om Kollektiva</a>

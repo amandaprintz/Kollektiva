@@ -19,18 +19,22 @@ class RegisterController extends Controller
     {
         // Here we validate input, this also generates error messages automagically
         $this->validate($request, [
-            'name' => 'required|max:50',
+            'first_name' => 'required|max:50',
+            'last_name' => 'required|max:50',
+            'tel' => 'required|min:10|numeric',
             'email' => 'required|unique:users|email:rfc,dns|max:255',
-            'password' => 'required|min:7',
+            'password' => 'required|confirmed|min:7',
         ]);
 
         // Send to db
         $register = new User();
-        $register->name = $request->input('name');
+        $register->first_name = $request->input('first_name');
+        $register->last_name = $request->input('last_name');
+        $register->tel = $request->input('tel');
         $register->email = $request->input('email');
         $register->password = Hash::make($request->input('password'));
         $register->save();
 
-        return redirect('/')->with('success', "You're all set. Please log in!");
+        return redirect('login')->with('success', "Ny konto har skapats! Vänligen logga in för att komma igång.");
     }
 }

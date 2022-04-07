@@ -22,9 +22,14 @@
     font-family: sans-serif;
 }
 
+html {
+    background-color: colors.$blue;
+}
+
 body {
     background-color: colors.$base-white;
     color: colors.$blue;
+    font-size: fonts.$p;
 
     main {
         padding-top: 5rem;
@@ -52,7 +57,6 @@ body {
         border-radius: 1.25rem;
         outline: none;
         padding: 1rem;
-        transition: opacity 0.2s;
     }
 
     textarea {
@@ -81,15 +85,6 @@ body {
     .error {
         padding: 1rem 1.5rem;
         background-color: rgb(240, 112, 112);
-        color: colors.$white;
-        border-radius: 0.5rem;
-        text-align: center;
-        margin: 1.5rem 0;
-    }
-
-    .success {
-        padding: 1rem 1.5rem;
-        background-color: rgb(112, 240, 155);
         color: colors.$white;
         border-radius: 0.5rem;
         text-align: center;
