@@ -82,9 +82,9 @@ header nav .login-container {
   header nav .nav .nav-menu .search input {
     background-image: url(/images/search.svg?ed282d8c868df0e57fbf326063245375);
     background-repeat: no-repeat;
-    background-position: right 5% center;
+    background-position: left 5% center;
     background-size: 1.5rem;
-    padding-right: 1rem;
+    padding-left: 2.5rem;
     border-radius: 0.5rem;
   }
   header nav .nav .login-container {
