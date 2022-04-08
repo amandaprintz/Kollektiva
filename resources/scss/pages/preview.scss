@@ -9,12 +9,109 @@
 @use "../common/mixin";
 
 section.preview-intro {
+    margin-top: 2rem;
     background-color: colors.$blue;
     padding: 1.5rem;
-    margin-top: 5rem;
 
     h2 {
         text-align: center;
         color: colors.$base-white;
+    }
+
+    @include media-queries.breakpoint(tablet) {
+        margin-top: 5rem;
+
+        h2 {
+            text-align: center;
+            color: colors.$base-white;
+        }
+    }
+}
+
+section.preview-ad-card {
+    padding: 1rem;
+
+    .preview-container {
+        @include mixin.flex(flex, column, flex-start, 0);
+        background-color: colors.$base-white;
+        box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.15);
+        color: colors.$blue;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        height: 60rem;
+
+        hr {
+            margin-top: 2rem;
+        }
+
+        .preview-image,
+        .preview-text {
+            height: 50%;
+        }
+
+        .preview-image {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .preview-text {
+            @include mixin.flex(flex, column, flex-start, 0);
+            padding-left: 1.5rem;
+
+            padding-right: 4rem;
+            margin-top: 3rem;
+
+            h2 {
+                font-size: fonts.$h3;
+                margin-bottom: 1.2rem;
+            }
+
+            p {
+                font-size: fonts.$p;
+                line-height: 1.5;
+            }
+
+            .tag-container {
+                gap: 0.5rem;
+                .tags {
+                    background-color: colors.$white;
+                    font-size: fonts.$p;
+                    border-style: solid;
+                    padding: 0.6rem 0.5rem;
+                    border-color: colors.$blue;
+                    border-radius: 1.2rem;
+                    /*      cursor: pointer; */
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+    @include media-queries.breakpoint(tablet) {
+        padding: 4rem;
+
+        hr {
+            display: none;
+        }
+
+        .preview-container {
+            @include mixin.flex(flex, row, flex-start, 0);
+            height: 30rem;
+
+            .preview-image,
+            .preview-text {
+                width: 50%;
+                height: 100%;
+            }
+
+            .preview-text {
+                @include mixin.flex(flex, column, center, 0);
+                padding-left: 4rem;
+                margin-top: -4rem;
+            }
+        }
     }
 }
