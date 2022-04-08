@@ -34,6 +34,8 @@ Route::post('login', LoginController::class)->name('login');
 // Logout
 Route::get('logout', LogoutController::class)->name('logout')->middleware('auth');
 
+// Post ad
+Route::view('create-ad', 'ad')->name('ad');
 
 // Preview
 Route::view('/preview', 'preview')->name('preview');

@@ -133,6 +133,7 @@ section.hero {
         .profile-container {
             top: auto;
             bottom: 2rem;
+            padding: 1.5rem 4rem;
             .profile-content {
                 @include mixin.flex(flex, row, flex-start, 2rem);
                 align-items: center;
@@ -140,6 +141,7 @@ section.hero {
                     display: initial;
                     overflow: hidden;
                     border-radius: 1rem;
+                    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
                     img {
                         display: block;
                         width: 6rem;

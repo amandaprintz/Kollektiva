@@ -1,9 +1,9 @@
 @include('partials.header')
 
 <section class="hero">
+    @if (Auth::guest())
+    @else
     <div class="profile-container">
-        @if (Auth::guest())
-        @else
         <h3>Hej {{ Auth::user()->first_name }} </h3>
         <div class="profile-content">
             <div class="profile-links">
@@ -19,8 +19,8 @@
                 <img src="https://images.unsplash.com/photo-1590031905406-f18a426d772d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2144&q=80" alt="">
             </div>
         </div>
-        @endif
     </div>
+    @endif
     <div class="hero-content">
         <div class="hero-text">
             <h1>Välkommen till Kollektiva!</h1>
@@ -43,7 +43,7 @@
     <div class="option">
         <h2>För hyresvärd</h2>
         <img src="{{ asset('images/hyres.svg') }}" alt="Big icon with a hand and a house-key">
-        <a class="button" href="{{ route('index') }}">Skapa annonser</a>
+        <a class="button" href="{{ route('ad') }}">Skapa annonser</a>
     </div>
     <div class="option">
         <h2>För Bostadssökande</h2>

@@ -12,6 +12,7 @@
 @use "pages/index.scss";
 @use "pages/login.scss";
 @use "pages/register.scss";
+@use "pages/ad.scss";
 @use "pages/preview.scss";
 
 * {
@@ -32,7 +33,7 @@ body {
     font-size: fonts.$p;
 
     main {
-        padding-top: 5rem;
+        padding-top: 7rem;
     }
 
     a {
@@ -44,6 +45,14 @@ body {
 
     p {
         line-height: 1.5rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    span.helper {
+        font-size: 0.875rem;
     }
 
     input,

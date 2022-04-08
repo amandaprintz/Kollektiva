@@ -359,6 +359,7 @@ section.hero img {
   section.hero .profile-container {
     top: auto;
     bottom: 2rem;
+    padding: 1.5rem 4rem;
   }
   section.hero .profile-container .profile-content {
     display: flex;
@@ -371,6 +372,7 @@ section.hero img {
     display: initial;
     overflow: hidden;
     border-radius: 1rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.24);
   }
   section.hero .profile-container .profile-content .profile-image img {
     display: block;
@@ -1124,6 +1126,265 @@ section.register .register-container .register-form .button-container .button {
   }
 }
 
+section.ad .section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+}
+section.ad .section-title h1 {
+  font-size: 3rem;
+}
+@media only screen and (min-width: 768px) {
+  section.ad .section-title {
+    align-items: center;
+  }
+}
+section.ad .ad-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+section.ad .ad-container .upload-container {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+section.ad .ad-container .upload-container .button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+section.ad .ad-container .upload-container .button-container form {
+  display: block;
+  flex-wrap: wrap;
+  width: calc(50% - 0.5rem);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background-color: #d9e6fb;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+section.ad .ad-container .upload-container .button-container form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+section.ad .ad-container .form-container {
+  width: 100%;
+  padding: 0 1.5rem 4rem 1.5rem;
+  border-radius: 0.5rem;
+}
+section.ad .ad-container .form-container .ad-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+section.ad .ad-container .form-container .ad-intro h2 {
+  font-size: 3rem;
+}
+section.ad .ad-container .form-container .ad-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+section.ad .ad-container .form-container .ad-form form .checkboxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0;
+  flex-wrap: wrap;
+  /* Customize the label (the container) */
+}
+section.ad .ad-container .form-container .ad-form form .checkboxes .check-container {
+  display: block;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1.125rem;
+  width: 50%;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+section.ad .ad-container .form-container .ad-form form .checkboxes .check-container .input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.ad .ad-container .form-container .ad-form form .checkboxes .check-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #c3c1c1;
+  border-radius: 1rem;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+section.ad .ad-container .form-container .ad-form form .checkboxes .check-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+section.ad .ad-container .form-container .ad-form form .checkboxes .check-container input:checked ~ .checkmark {
+  background-color: #37455d;
+}
+section.ad .ad-container .form-container .ad-form form .checkboxes .check-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+section.ad .ad-container .form-container .ad-form form .checkboxes .check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+section.ad .ad-container .form-container .ad-form form .checkboxes .check-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+section.ad .ad-container .form-container .ad-form form p {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+section.ad .ad-container .form-container .ad-form a {
+  color: #37455d;
+  text-decoration: underline;
+}
+section.ad .ad-container .form-container .ad-form .buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+section.ad .ad-container .form-container .ad-form .buttons-container .button {
+  background-color: #37455d;
+  color: #fff;
+  border-style: none;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  font-size: 1.125rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.ad .ad-container .form-container .ad-form .buttons-container .button:hover {
+  background-color: #37455d;
+}
+section.ad .ad-container .form-container .ad-form .buttons-container .google,
+section.ad .ad-container .form-container .ad-form .buttons-container .facebook {
+  background-color: #fff;
+  color: #000;
+  border-style: none;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  font-size: 1.125rem;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid #c3c1c1;
+}
+section.ad .ad-container .form-container .ad-form .buttons-container .google:hover,
+section.ad .ad-container .form-container .ad-form .buttons-container .facebook:hover {
+  background-color: #fff;
+}
+section.ad .ad-container .form-container .ad-form p {
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  section.ad .ad-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 4rem 4rem 4rem;
+  }
+  section.ad .ad-container .section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+  section.ad .ad-container .upload-container {
+    width: 50%;
+    padding: 4rem 0;
+  }
+  section.ad .ad-container .upload-container .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  section.ad .ad-container .upload-container .button-container form {
+    width: 100%;
+    padding: 3rem;
+  }
+  section.ad .ad-container .form-container {
+    padding: 4rem 0;
+  }
+}
+@media only screen and (min-width: 1335px) {
+  section.ad .ad-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  section.ad .ad-container .upload-container {
+    width: 25%;
+  }
+  section.ad .ad-container .form-container .ad-form form,
+section.ad .ad-container .form-container .ad-form .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  section.ad .ad-container .form-container .ad-form form div,
+section.ad .ad-container .form-container .ad-form form .button,
+section.ad .ad-container .form-container .ad-form .buttons-container div,
+section.ad .ad-container .form-container .ad-form .buttons-container .button {
+    width: calc(50% - 1.5rem);
+  }
+}
+
 section.preview-intro {
   background-color: #37455d;
   padding: 1.5rem;
@@ -1152,7 +1413,7 @@ body {
   font-size: 1.125rem;
 }
 body main {
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 body a {
   color: #37455d;
@@ -1162,6 +1423,12 @@ body a:hover {
 }
 body p {
   line-height: 1.5rem;
+}
+body .hidden {
+  display: none;
+}
+body span.helper {
+  font-size: 0.875rem;
 }
 body input,
 body textarea {

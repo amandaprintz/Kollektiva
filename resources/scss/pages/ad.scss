@@ -1,0 +1,246 @@
+// Variables
+@use "../variables/colors";
+@use "../variables/fonts";
+
+// Common components
+@use "../common/header";
+@use "../common/footer";
+@use "../common/media-queries";
+@use "../common/mixin";
+
+section.ad {
+    .section-title {
+        @include mixin.flex(flex, column, center, 1rem);
+        align-items: flex-start;
+        padding: 3rem 1rem;
+
+        h1 {
+            font-size: fonts.$h1;
+        }
+
+        @include media-queries.breakpoint(tablet) {
+            align-items: center;
+        }
+    }
+    .ad-container {
+        @include mixin.flex(flex, column, center, 2rem);
+        // align-items: center;
+        .upload-container {
+            width: 100%;
+            padding: 0 1.5rem;
+            .button-container {
+                @include mixin.flex(flex, row, space-between, 1rem);
+                flex-wrap: wrap;
+                padding: 1rem 0;
+
+                form {
+                    display: block;
+                    flex-wrap: wrap;
+                    width: calc(50% - 0.5rem);
+                    text-align: center;
+                    padding: 1.5rem 2rem;
+                    background-color: colors.$skyblue;
+                    border-radius: 1.5rem;
+                    cursor: pointer;
+
+                    label {
+                        @include mixin.flex(flex, column, center, 1rem);
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .form-container {
+            width: 100%;
+            padding: 0 1.5rem 4rem 1.5rem;
+            border-radius: 0.5rem;
+
+            .ad-intro {
+                @include mixin.flex(flex, column, center, 1rem);
+                align-items: center;
+                margin-bottom: 4rem;
+
+                h2 {
+                    font-size: fonts.$h1;
+                }
+            }
+
+            .ad-form {
+                form {
+                    @include mixin.flex(flex, column, center, 1.5rem);
+
+                    .checkboxes {
+                        width: 100%;
+                        @include mixin.flex(flex, row, space-between, 0);
+                        flex-wrap: wrap;
+                        /* Customize the label (the container) */
+                        .check-container {
+                            display: block;
+                            position: relative;
+                            padding-left: 2rem;
+                            margin-bottom: 1rem;
+                            cursor: pointer;
+                            user-select: none;
+                            font-size: fonts.$p;
+                            width: 50%;
+
+                            /* Hide the browser's default checkbox */
+                            .input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                            }
+
+                            /* Create a custom checkbox */
+                            .checkmark {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                background-color: colors.$light-grey;
+                                border-radius: 1rem;
+                                box-shadow: inset 0px 4px 4px
+                                    rgba(0, 0, 0, 0.25);
+                            }
+
+                            /* On mouse-over, add a grey background color */
+                            &:hover input ~ .checkmark {
+                                background-color: #ccc;
+                            }
+                            /* When the checkbox is checked, add a blue background */
+                            input:checked ~ .checkmark {
+                                background-color: colors.$blue;
+                            }
+
+                            /* Create the checkmark/indicator (hidden when not checked) */
+                            .checkmark:after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                            }
+
+                            /* Show the checkmark when checked */
+                            input:checked ~ .checkmark:after {
+                                display: block;
+                            }
+
+                            /* Style the checkmark/indicator */
+                            .checkmark:after {
+                                left: 9px;
+                                top: 5px;
+                                width: 5px;
+                                height: 10px;
+                                border: solid white;
+                                border-width: 0 3px 3px 0;
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+
+                    p {
+                        text-align: left;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                a {
+                    color: colors.$blue;
+                    text-decoration: underline;
+                }
+
+                .buttons-container {
+                    @include mixin.flex(flex, column, center, 1.5rem);
+                    margin-bottom: 1.5rem;
+
+                    .button {
+                        @include mixin.button(
+                            colors.$blue,
+                            colors.$blue,
+                            colors.$white
+                        );
+
+                        margin: 0;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .google,
+                    .facebook {
+                        @include mixin.button(
+                            colors.$white,
+                            colors.$white,
+                            colors.$black
+                        );
+
+                        @include mixin.flex(flex, row, center, 0.5rem);
+                        border: 1px solid colors.$light-grey;
+                    }
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        @include media-queries.breakpoint(tablet) {
+            @include mixin.flex(flex, row, center, 2rem);
+            padding: 0 4rem 4rem 4rem;
+
+            .section-title {
+                @include mixin.flex(flex, column, center, 1rem);
+                align-items: center;
+                padding: 3rem 1rem;
+            }
+
+            .upload-container {
+                width: 50%;
+                padding: 4rem 0;
+
+                .button-container {
+                    @include mixin.flex(flex, column, flex-start, 1rem);
+                    form {
+                        width: 100%;
+                        padding: 3rem;
+                    }
+                }
+            }
+
+            .form-container {
+                padding: 4rem 0;
+            }
+        }
+
+        @include media-queries.breakpoint(desktop) {
+            max-width: 1440px;
+            margin: 0 auto;
+
+            .upload-container {
+                width: 25%;
+            }
+
+            .form-container {
+                .ad-form {
+                    form,
+                    .buttons-container {
+                        width: 100%;
+                        @include mixin.flex(flex, row, center, 1.5rem);
+                        flex-wrap: wrap;
+
+                        div,
+                        .button {
+                            width: calc(50% - 1.5rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
