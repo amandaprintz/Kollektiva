@@ -58,7 +58,7 @@
         <div class="option purple">
             <div class="option-top">
                 <h2>4.</h2>
-                <h3>Bläddra bland ansökningar</h2>
+                <h3>Kontakta genom Kollektiva</h2>
             </div>
             <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
         </div>

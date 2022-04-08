@@ -281,7 +281,7 @@ section.hero .hero-content .hero-buttons .button:hover {
 }
 section.hero img {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center bottom;
@@ -327,7 +327,7 @@ section.two-card {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
-  padding: 2rem 1.5rem;
+  padding: 3rem 1rem;
 }
 section.two-card .option {
   display: flex;
@@ -336,8 +336,7 @@ section.two-card .option {
   gap: 0;
   font-size: 1.5rem;
   color: #37455d;
-  box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.15);
-  border: 0.5px solid #000;
+  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.16);
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -392,7 +391,7 @@ section.two-card .option img {
 }
 
 section.four-card {
-  padding: 1rem;
+  padding: 2rem 1rem 3rem 1rem;
 }
 section.four-card h2 {
   font-size: 2.5rem;
@@ -403,14 +402,14 @@ section.four-card .option-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 2rem;
 }
 section.four-card .option-container .option {
   padding: 1.5rem;
   border-radius: 0.5rem;
   height: 20rem;
   width: 100%;
-  filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.12);
 }
 section.four-card .option-container .option h3,
 section.four-card .option-container .option p {
@@ -499,7 +498,7 @@ section.four-card .option-container .option.purple .option-top h3 {
 }
 @media only screen and (min-width: 768px) {
   section.four-card {
-    padding: 4rem;
+    padding: 3rem;
   }
   section.four-card h1 {
     font-size: 3rem;
@@ -519,7 +518,7 @@ section.four-card .option-container .option.purple .option-top h3 {
 }
 
 section.update-profile-card {
-  padding: 1rem;
+  padding: 3rem 1rem;
 }
 section.update-profile-card .update-container {
   display: flex;
@@ -530,7 +529,8 @@ section.update-profile-card .update-container {
   color: #fff;
   border-radius: 0.5rem;
   overflow: hidden;
-  height: 40rem;
+  height: 45rem;
+  filter: drop-shadow(8px 16px 16px rgba(0, 0, 0, 0.16));
 }
 section.update-profile-card .update-container .update-image,
 section.update-profile-card .update-container .update-text {
@@ -598,17 +598,17 @@ section.update-profile-card .update-container .update-text {
 }
 
 section.review-cards {
-  padding: 2.5rem;
+  padding: 2rem 1rem 1rem 2rem;
 }
 section.review-cards h1 {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 section.review-cards .review-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 5rem;
   padding-bottom: 10rem;
 }
 section.review-cards .review-container .review {
@@ -616,6 +616,7 @@ section.review-cards .review-container .review {
   position: relative;
   border-radius: 0.5rem;
   width: 100%;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.12);
 }
 section.review-cards .review-container .review .user-card {
   position: absolute;
@@ -674,17 +675,17 @@ section.review-cards .review-container .review .user-info .status h2 {
   text-align: center;
 }
 section.review-cards .review-container .review .user-content {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 section.review-cards .review-container .review .user-content .review-star {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
 }
 section.review-cards .review-container .review .user-content .review-text h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 section.review-cards .review-container .review .user-content .review-text p {
   font-size: 1.125rem;

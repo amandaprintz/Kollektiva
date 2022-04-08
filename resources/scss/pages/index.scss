@@ -54,7 +54,7 @@ section.hero {
 
     img {
         width: 100%;
-        height: 80vh;
+        height: 90vh;
         object-fit: cover;
         object-position: center bottom;
         overflow: hidden;
@@ -107,15 +107,14 @@ section.hero {
 
 section.two-card {
     @include mixin.flex(flex, column, flex-start, 1.5rem);
-    padding: 2rem 1.5rem;
+    padding: 3rem 1rem;
 
     .option {
         @include mixin.flex(flex, column, space-between, 0);
 
         font-size: fonts.$h3;
         color: colors.$blue;
-        box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.15);
-        border: 0.5px solid colors.$black;
+        box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.16);
         background-color: colors.$white;
         padding: 1.5rem;
         border-radius: 0.5rem;
@@ -168,7 +167,7 @@ section.two-card {
 }
 
 section.four-card {
-    padding: 1rem;
+    padding: 2rem 1rem 3rem 1rem;
 
     h2 {
         font-size: fonts.$h2;
@@ -176,14 +175,14 @@ section.four-card {
         margin-bottom: 1.5rem;
     }
     .option-container {
-        @include mixin.flex(flex, column, flex-start, 1rem);
+        @include mixin.flex(flex, column, flex-start, 2rem);
 
         .option {
             padding: 1.5rem;
             border-radius: 0.5rem;
             height: 20rem;
             width: 100%;
-            filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+            box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.12);
 
             h3,
             p {
@@ -286,7 +285,7 @@ section.four-card {
     }
 
     @include media-queries.breakpoint(tablet) {
-        padding: 4rem;
+        padding: 3rem;
 
         h1 {
             font-size: fonts.$h1;
@@ -306,7 +305,7 @@ section.four-card {
 }
 
 section.update-profile-card {
-    padding: 1rem;
+    padding: 3rem 1rem;
 
     .update-container {
         @include mixin.flex(flex, column, flex-start, 0);
@@ -314,7 +313,8 @@ section.update-profile-card {
         color: colors.$white;
         border-radius: 0.5rem;
         overflow: hidden;
-        height: 40rem;
+        height: 45rem;
+        filter: drop-shadow(8px 16px 16px rgba(0, 0, 0, 0.16));
 
         .update-image,
         .update-text {
@@ -381,15 +381,15 @@ section.update-profile-card {
 }
 
 section.review-cards {
-    padding: 2.5rem;
+    padding: 2rem 1rem 1rem 2rem;
 
     h1 {
         font-size: fonts.$h2;
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
     }
 
     .review-container {
-        @include mixin.flex(flex, column, flex-start, 1rem);
+        @include mixin.flex(flex, column, flex-start, 5rem);
         padding-bottom: 10rem;
 
         .review {
@@ -399,6 +399,7 @@ section.review-cards {
 
             width: 100%;
             // height: 33rem;
+            box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.12);
 
             .user-card {
                 position: absolute;
@@ -466,19 +467,19 @@ section.review-cards {
             }
             .user-content {
                 // height: 60%;
-                padding: 1rem;
+                padding: 1.5rem;
 
                 .review-star {
                     width: 100%;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
-                    padding: 1.5rem 0;
+                    padding-bottom: 1.5rem;
                 }
 
                 .review-text {
                     h2 {
-                        font-size: fonts.$h2;
+                        font-size: fonts.$h3;
                     }
 
                     p {
