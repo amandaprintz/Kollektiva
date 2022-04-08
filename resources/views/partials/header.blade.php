@@ -33,8 +33,8 @@
                             <a href="{{ route('login') }}">Logga in här</a>
                         </div>
                     @else
-                    <div class="link-user">
-                        <a class="nav-items" href="{{ route('logout') }}">Logga ut</a>
+                    <div class="login-container">
+                        <a href="{{ route('logout') }}">Logga ut</a>
                     </div>
                     @endif
                 </div>

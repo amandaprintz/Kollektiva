@@ -1,4 +1,4 @@
-@include('header')
+@include('partials.header')
 
 <section class="hero">
     <div class="hero-content">
@@ -184,4 +184,4 @@
 
 
 
-@include('footer')
+@include('partials.footer')

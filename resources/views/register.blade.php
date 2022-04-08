@@ -1,5 +1,4 @@
-@include('header')
-@include('errors')
+@include('partials.header')
 <main>
 <section class="register">
     <div class="image-container">
@@ -21,7 +20,7 @@
             <h2>Registrera dig!</h2>
         </div>
         <div class="register-form">
-            <form method="post" action="/register">
+            <form method="post" action="{{ route('register') }}">
                 @csrf
                 <div>
                     <label for="first_name">Förnamn</label><br>
@@ -62,4 +61,4 @@
 
 </main>
 
-@include('footer')
+@include('partials.footer')

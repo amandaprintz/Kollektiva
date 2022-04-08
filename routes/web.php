@@ -25,11 +25,11 @@ Route::get('/', function () {
 
 // Register
 Route::view('register', 'register')->name('register')->middleware('guest');
-Route::post('register', RegisterController::class)->middleware('guest');
+Route::post('register', RegisterController::class)->name('register')->middleware('guest');
 
 // Login
 Route::view('login', 'login')->name('login')->middleware('guest');
-Route::post('login', LoginController::class);
+Route::post('login', LoginController::class)->name('login');
 
 // Logout
 Route::get('logout', LogoutController::class)->name('logout')->middleware('auth');

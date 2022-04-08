@@ -1,4 +1,4 @@
-@include('header')
+@include('partials.header')
 
 <main>
     <section class="login">
@@ -13,7 +13,7 @@
                 <p>Logga in för att skapa en annons eller leta efter boende idag</p>
             </div>
             <div class="login-form">
-                <form method="post" action="/login">
+                <form method="post" action="{{ route('login') }}">
                     @csrf
                     <div>
                         <label for="email">E-postadress</label><br>
@@ -45,4 +45,4 @@
     </section>
 </main>
 
-@include('footer')
+@include('partials.footer')
