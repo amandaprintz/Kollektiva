@@ -7,11 +7,8 @@
 @use "./mixin";
 
 section.footer {
-    padding-top: 2rem;
     background-color: colors.$blue;
     color: colors.$base-white;
-    display: flex;
-    justify-content: center;
 
     h2 {
         font-size: 3rem;
@@ -22,14 +19,19 @@ section.footer {
         color: colors.$base-white;
     }
 
+    p {
+        line-height: 1.5;
+    }
+
     .footer-container {
         @include mixin.flex(flex, column, flex-start, 1rem);
+        padding: 2rem 1rem 4rem 1rem;
 
         .footer-start {
             width: 20rem;
 
             .socials {
-                margin-top: 4rem;
+                margin: 4rem 0;
                 width: 70%;
                 display: flex;
                 justify-content: space-between;
@@ -41,10 +43,7 @@ section.footer {
         }
 
         .footer-option {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            padding: 2rem;
+            @include mixin.flex(flex, column, flex-start, 1rem);
 
             h4 {
                 margin-bottom: 1rem;
@@ -56,21 +55,25 @@ section.footer {
         }
     }
 
-    @include media-queries.breakpoint(tablet) {
-        padding: 3rem;
-
+    @media only screen and (min-width: 1100px) {
         .footer-container {
-            @include mixin.flex(flex, row, flex-start, 3rem);
-
-            .socials {
-                row-gap: 2rem;
-            }
+            @include mixin.max-width();
+            padding: 4rem;
+            @include mixin.flex(flex, row, space-between, 0);
 
             h4 {
                 margin-bottom: 2rem;
             }
             .footer-option {
                 gap: 1.5rem;
+            }
+
+            .footer-start {
+                width: 20rem;
+
+                .socials {
+                    margin: 4rem 0 0 0;
+                }
             }
         }
 

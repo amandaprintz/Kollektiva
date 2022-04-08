@@ -160,11 +160,8 @@ header .success p {
 }
 
 section.footer {
-  padding-top: 2rem;
   background-color: #37455d;
   color: #f9fafb;
-  display: flex;
-  justify-content: center;
 }
 section.footer h2 {
   font-size: 3rem;
@@ -173,17 +170,21 @@ section.footer h2 {
 section.footer a {
   color: #f9fafb;
 }
+section.footer p {
+  line-height: 1.5;
+}
 section.footer .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 1rem;
+  padding: 2rem 1rem 4rem 1rem;
 }
 section.footer .footer-container .footer-start {
   width: 20rem;
 }
 section.footer .footer-container .footer-start .socials {
-  margin-top: 4rem;
+  margin: 4rem 0;
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -194,8 +195,8 @@ section.footer .footer-container .footer-start .socials svg {
 section.footer .footer-container .footer-option {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 1rem;
-  padding: 2rem;
 }
 section.footer .footer-container .footer-option h4 {
   margin-bottom: 1rem;
@@ -203,24 +204,27 @@ section.footer .footer-container .footer-option h4 {
 section.footer .footer-container .footer-option p {
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
-  section.footer {
-    padding: 3rem;
-  }
+@media only screen and (min-width: 1100px) {
   section.footer .footer-container {
+    max-width: 1568px;
+    margin: 0 auto;
+    padding: 4rem;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 3rem;
-  }
-  section.footer .footer-container .socials {
-    row-gap: 2rem;
+    justify-content: space-between;
+    gap: 0;
   }
   section.footer .footer-container h4 {
     margin-bottom: 2rem;
   }
   section.footer .footer-container .footer-option {
     gap: 1.5rem;
+  }
+  section.footer .footer-container .footer-start {
+    width: 20rem;
+  }
+  section.footer .footer-container .footer-start .socials {
+    margin: 4rem 0 0 0;
   }
   section.footer .vl {
     border-left: 1px solid #f9fafb;
@@ -303,8 +307,7 @@ section.hero img {
     background-color: transparent;
     max-width: 40rem;
     bottom: 2rem;
-    left: 2rem;
-    padding: 2rem;
+    left: 4rem;
     margin: 0;
   }
   section.hero .hero-content .hero-text h1 {
@@ -360,14 +363,16 @@ section.two-card .option a.button:hover {
   background-color: #37455d;
 }
 section.two-card .option img {
-  width: 16rem;
-  height: 16rem;
+  min-width: 12rem;
+  min-height: 12rem;
 }
 @media only screen and (min-width: 768px) {
   section.two-card {
+    max-width: 1568px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 3rem;
     padding: 4rem;
   }
@@ -377,8 +382,8 @@ section.two-card .option img {
     padding: 3rem;
   }
   section.two-card .option img {
-    width: 23rem;
-    height: 23rem;
+    max-width: 100%;
+    max-height: auto;
   }
   section.two-card .option a.button {
     width: 80%;
@@ -498,7 +503,7 @@ section.four-card .option-container .option.purple .option-top h3 {
 }
 @media only screen and (min-width: 768px) {
   section.four-card {
-    padding: 3rem;
+    padding: 4rem;
   }
   section.four-card h1 {
     font-size: 3rem;
@@ -507,13 +512,23 @@ section.four-card .option-container .option.purple .option-top h3 {
   section.four-card .option-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 3rem;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
   section.four-card .option-container .option {
     color: #f9fafb;
     padding: 1.5rem;
-    width: 25%;
+    width: calc(50% - 1rem);
+  }
+}
+@media only screen and (min-width: 1335px) {
+  section.four-card {
+    max-width: 1568px;
+    margin: 0 auto;
+  }
+  section.four-card .option-container .option {
+    width: calc(25% - 1.5rem);
   }
 }
 
@@ -571,6 +586,8 @@ section.update-profile-card .update-container .update-text button {
 }
 @media only screen and (min-width: 768px) {
   section.update-profile-card {
+    max-width: 1568px;
+    margin: 0 auto;
     padding: 4rem;
   }
   section.update-profile-card .update-container {
@@ -593,12 +610,17 @@ section.update-profile-card .update-container .update-text {
     padding: 4rem;
   }
   section.update-profile-card .update-container .update-text button {
-    width: 33%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1335px) {
+  section.update-profile-card .update-container .update-text button {
+    width: 50%;
   }
 }
 
 section.review-cards {
-  padding: 2rem 1rem 1rem 2rem;
+  padding: 2rem 1rem 8rem 1rem;
 }
 section.review-cards h1 {
   font-size: 2.5rem;
@@ -609,7 +631,6 @@ section.review-cards .review-container {
   flex-direction: column;
   justify-content: flex-start;
   gap: 5rem;
-  padding-bottom: 10rem;
 }
 section.review-cards .review-container .review {
   background-color: #fff;
@@ -621,7 +642,7 @@ section.review-cards .review-container .review {
 section.review-cards .review-container .review .user-card {
   position: absolute;
   top: -1rem;
-  left: -1rem;
+  left: 1rem;
   overflow: hidden;
   height: 10rem;
   width: 10rem;
@@ -718,7 +739,9 @@ section.review-cards .review-container p {
 }
 @media only screen and (min-width: 768px) {
   section.review-cards {
-    padding: 4rem;
+    max-width: 1568px;
+    margin: 0 auto;
+    padding: 4rem 4rem 8rem 4rem;
   }
   section.review-cards h1 {
     font-size: 3rem;
@@ -728,10 +751,19 @@ section.review-cards .review-container p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
   section.review-cards .review-container .review {
-    width: 22%;
+    width: calc(50% - 1rem);
+  }
+  section.review-cards .review-container .review .user-card {
+    left: -1rem;
+  }
+}
+@media only screen and (min-width: 1335px) {
+  section.review-cards .review-container .review {
+    width: calc(25% - 1.5rem);
   }
 }
 

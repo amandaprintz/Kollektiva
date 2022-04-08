@@ -8,6 +8,11 @@
     gap: $gap;
 }
 
+@mixin max-width() {
+    max-width: 1568px;
+    margin: 0 auto;
+}
+
 @mixin button($color, $hoverColor, $textColor) {
     background-color: $color;
     color: $textColor;
