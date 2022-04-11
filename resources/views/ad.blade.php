@@ -58,12 +58,12 @@
                             <div class="checkboxes">
                                 <label class="check-container">
                                     <span>Möblerat</span>
-                                    <input type="checkbox" class="hidden">
+                                    <input type="radio" name="furniture" class="hidden" checked>
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="check-container">
                                     <span>Omöblerat</span>
-                                    <input type="checkbox" class="hidden">
+                                    <input type="radio" name="furniture" class="hidden">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
@@ -73,22 +73,22 @@
                             <div class="checkboxes">
                                 <label class="check-container">
                                     <span>Lägenheten</span>
-                                    <input type="checkbox" class="hidden">
+                                    <input type="radio" name="type-of-living" class="hidden" checked>
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="check-container">
                                     <span>Parhus</span>
-                                    <input type="checkbox" class="hidden">
+                                    <input type="radio" name="type-of-living" class="hidden">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="check-container">
                                     <span>Villa</span>
-                                    <input type="checkbox" class="hidden">
+                                    <input type="radio" name="type-of-living" class="hidden">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="check-container">
                                     <span>Radhus</span>
-                                    <input type="checkbox" class="hidden">
+                                    <input type="radio" name="type-of-living" class="hidden">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
@@ -115,10 +115,9 @@
                             <textarea name="extra_info" id="extra_info" cols="30" rows="10"></textarea>
                         </div>
                         <div class="buttons-container">
-                            <button class="button" type="submit">Logga in</button>
+                            <button class="button" type="submit">Förhandsgranska annons</button>
                         </div>
                     </form>
-                    <p>Redan medlem? <a href="{{ route('login') }}">Logga in</a> här!</p>
                 </div>
             </div>
         </div>

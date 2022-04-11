@@ -46,6 +46,7 @@ section.ad {
                     label {
                         @include mixin.flex(flex, column, center, 1rem);
                         align-items: center;
+                        cursor: pointer;
                     }
                 }
             }
@@ -101,15 +102,14 @@ section.ad {
                                 left: 0;
                                 width: 1.5rem;
                                 height: 1.5rem;
-                                background-color: colors.$light-grey;
+                                background-color: colors.$white;
+                                border: 1px solid colors.$blue;
                                 border-radius: 1rem;
-                                box-shadow: inset 0px 4px 4px
-                                    rgba(0, 0, 0, 0.25);
                             }
 
                             /* On mouse-over, add a grey background color */
                             &:hover input ~ .checkmark {
-                                background-color: #ccc;
+                                background-color: rgb(239, 239, 239);
                             }
                             /* When the checkbox is checked, add a blue background */
                             input:checked ~ .checkmark {
@@ -130,12 +130,12 @@ section.ad {
 
                             /* Style the checkmark/indicator */
                             .checkmark:after {
-                                left: 9px;
-                                top: 5px;
-                                width: 5px;
-                                height: 10px;
+                                left: 0.4375rem;
+                                top: 0.1875rem;
+                                width: 0.3125rem;
+                                height: 0.625rem;
                                 border: solid white;
-                                border-width: 0 3px 3px 0;
+                                border-width: 0 0.1875rem 0.1875rem 0;
                                 -webkit-transform: rotate(45deg);
                                 -ms-transform: rotate(45deg);
                                 transform: rotate(45deg);
