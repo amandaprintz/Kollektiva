@@ -1221,20 +1221,12 @@ section.ad .ad-container .form-container .ad-form form .checkboxes .check-contai
           user-select: none;
   font-size: 1.125rem;
   width: 50%;
-  /* Hide the browser's default checkbox */
   /* Create a custom checkbox */
   /* On mouse-over, add a grey background color */
   /* When the checkbox is checked, add a blue background */
   /* Create the checkmark/indicator (hidden when not checked) */
   /* Show the checkmark when checked */
   /* Style the checkmark/indicator */
-}
-section.ad .ad-container .form-container .ad-form form .checkboxes .check-container .input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
 }
 section.ad .ad-container .form-container .ad-form form .checkboxes .check-container .checkmark {
   position: absolute;
@@ -1243,7 +1235,7 @@ section.ad .ad-container .form-container .ad-form form .checkboxes .check-contai
   width: 1.5rem;
   height: 1.5rem;
   background-color: #fff;
-  border: 1px solid #37455d;
+  border: 1px solid #d9e6fb;
   border-radius: 1rem;
 }
 section.ad .ad-container .form-container .ad-form form .checkboxes .check-container:hover input ~ .checkmark {
@@ -1269,6 +1261,21 @@ section.ad .ad-container .form-container .ad-form form .checkboxes .check-contai
   border-width: 0 0.1875rem 0.1875rem 0;
   transform: rotate(45deg);
 }
+section.ad .ad-container .form-container .ad-form form input#rent,
+section.ad .ad-container .form-container .ad-form form input#rooms,
+section.ad .ad-container .form-container .ad-form form input#space {
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+section.ad .ad-container .form-container .ad-form form input#rent {
+  background-image: url(/images/st.svg?f054e320792ed0d2d58a775061306fad);
+}
+section.ad .ad-container .form-container .ad-form form input#rooms {
+  background-image: url(/images/sek.svg?2a5fd664007b6cbb88eb1fc09ab56065);
+}
+section.ad .ad-container .form-container .ad-form form input#space {
+  background-image: url(/images/m2.svg?fee32b687409cdcd93fe944e125a8e6d);
+}
 section.ad .ad-container .form-container .ad-form form p {
   text-align: left;
   margin-bottom: 1rem;
@@ -1279,10 +1286,17 @@ section.ad .ad-container .form-container .ad-form a {
 }
 section.ad .ad-container .form-container .ad-form .buttons-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column-reverse;
+  justify-content: space-between;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
+}
+section.ad .ad-container .form-container .ad-form .buttons-container .slogan h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+section.ad .ad-container .form-container .ad-form .buttons-container .slogan p {
+  font-size: 1.125rem;
 }
 section.ad .ad-container .form-container .ad-form .buttons-container .button {
   background-color: #37455d;
@@ -1374,7 +1388,7 @@ section.ad .ad-container .form-container .ad-form .buttons-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 1.5rem;
     flex-wrap: wrap;
   }
@@ -1535,8 +1549,8 @@ body textarea {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #fff;
   color: #37455d;
-  border: 1px solid #37455d;
-  border-radius: 1.25rem;
+  border: 1px solid #d9e6fb;
+  border-radius: 1.125rem;
   outline: none;
   padding: 1rem;
 }

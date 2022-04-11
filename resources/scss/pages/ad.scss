@@ -86,15 +86,6 @@ section.ad {
                             font-size: fonts.$p;
                             width: 50%;
 
-                            /* Hide the browser's default checkbox */
-                            .input {
-                                position: absolute;
-                                opacity: 0;
-                                cursor: pointer;
-                                height: 0;
-                                width: 0;
-                            }
-
                             /* Create a custom checkbox */
                             .checkmark {
                                 position: absolute;
@@ -103,7 +94,7 @@ section.ad {
                                 width: 1.5rem;
                                 height: 1.5rem;
                                 background-color: colors.$white;
-                                border: 1px solid colors.$blue;
+                                border: 1px solid colors.$skyblue;
                                 border-radius: 1rem;
                             }
 
@@ -143,6 +134,25 @@ section.ad {
                         }
                     }
 
+                    input#rent,
+                    input#rooms,
+                    input#space {
+                        background-repeat: no-repeat;
+                        background-position: right center;
+                    }
+
+                    input#rent {
+                        background-image: url(../../../public/images/st.svg);
+                    }
+
+                    input#rooms {
+                        background-image: url(../../../public/images/sek.svg);
+                    }
+
+                    input#space {
+                        background-image: url(../../../public/images/m2.svg);
+                    }
+
                     p {
                         text-align: left;
                         margin-bottom: 1rem;
@@ -155,8 +165,24 @@ section.ad {
                 }
 
                 .buttons-container {
-                    @include mixin.flex(flex, column, center, 1.5rem);
+                    @include mixin.flex(
+                        flex,
+                        column-reverse,
+                        space-between,
+                        1.5rem
+                    );
                     margin-bottom: 1.5rem;
+
+                    .slogan {
+                        h2 {
+                            font-size: fonts.$h3;
+                            text-transform: uppercase;
+                        }
+
+                        p {
+                            font-size: fonts.$p;
+                        }
+                    }
 
                     .button {
                         @include mixin.button(
@@ -231,7 +257,7 @@ section.ad {
                     form,
                     .buttons-container {
                         width: 100%;
-                        @include mixin.flex(flex, row, center, 1.5rem);
+                        @include mixin.flex(flex, row, flex-end, 1.5rem);
                         flex-wrap: wrap;
 
                         div,

@@ -47,7 +47,7 @@
                 @endif
 
                 <div class="ad-form">
-                    <form method="post" action="{{ route('register') }}">
+                    <form method="view" action="{{ route('preview') }}">
                         @csrf
                         <div>
                             <label for="adress">Adress <span class="helper">(Används som titel på annonsen)</span></label><br>
@@ -95,27 +95,31 @@
                         </div>
 
                         <div>
-                            <label for="rent">Önskad hyra</label><br>
-                            <input name="rent" id="rent" type="rent" placeholder="Ange önskat pris" value="{{ old('rent') }}" />
+                            <label for="rent">Önskad hyra</label>
+                            <input name="rent" id="rent" type="rent" placeholder="Ange önskat pris" value="{{ old('rent') }}"  />
                         </div>
                         <div>
-                            <label for="rooms">Hur många rum ska hyras ut?</label><br>
+                            <label for="rooms">Hur många rum ska hyras ut?</label>
                             <input name="rooms" id="rooms" type="rooms" placeholder="Ange antal rum" value="{{ old('rooms') }}" />
                         </div>
                         <div>
-                            <label for="space">Hur stor yta?</label><br>
+                            <label for="space">Hur stor yta?</label>
                             <input name="space" id="space" type="space" placeholder="Ange yta" value="{{ old('space') }}" />
                         </div>
                         <div>
-                            <label for="floor">Våning</label><br>
+                            <label for="floor">Våning</label>
                             <input name="floor" id="floor" type="floor" placeholder="Ange våning" value="{{ old('floor') }}" />
                         </div>
                         <div>
-                            <label for="extra_info">Extra information, allergier, etc.</label><br>
+                            <label for="extra_info">Extra information, allergier, etc.</label>
                             <textarea name="extra_info" id="extra_info" cols="30" rows="10"></textarea>
                         </div>
                         <div class="buttons-container">
-                            <button class="button" type="submit">Förhandsgranska annons</button>
+                            <div class="slogan">
+                                <h2>Kollektiva</h2>
+                                <p>Där dina drömmar blir verklighet</p>
+                            </div>
+                            <a href="{{ route('preview') }}" class="button" type="submit">Förhandsgranska annons</a>
                         </div>
                     </form>
                 </div>
