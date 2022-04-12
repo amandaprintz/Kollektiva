@@ -19,7 +19,7 @@
                             <a class="nav-items" href="#">Hyr ut</a>
                         </div>
                         <div class="link">
-                            <a class="nav-items" href="#">Sök bostad</a>
+                            <a class="nav-items" href="{{ route('ad-list') }}">Sök bostad</a>
                         </div>
                         <div class="link-last">
                             <a class="nav-items" href="#">Om oss</a>

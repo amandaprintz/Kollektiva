@@ -39,3 +39,6 @@ Route::view('create-ad', 'ad')->name('ad');
 
 // Preview
 Route::view('/preview', 'preview')->name('preview');
+
+// Ad list
+Route::view('/ad-list', 'ad-list')->name('ad-list');

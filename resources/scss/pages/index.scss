@@ -15,8 +15,8 @@ section.hero {
         position: absolute;
         top: 15%;
         right: 0;
-        background-color: colors.$blue;
-        color: colors.$white;
+        background-color: #f9fafbeb;
+        color: colors.$blue;
         padding: 1.5rem 1rem;
 
         border-bottom-left-radius: 1.5rem;
@@ -31,7 +31,11 @@ section.hero {
             a {
                 @include mixin.flex(flex, row, flex-start, 0.5rem);
                 align-items: center;
-                color: colors.$white;
+                color: colors.$blue;
+
+                svg {
+                    fill: colors.$blue;
+                }
             }
         }
 
