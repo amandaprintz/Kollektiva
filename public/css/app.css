@@ -1268,13 +1268,13 @@ section.ad .ad-container .form-container .ad-form form input#space {
   background-position: right center;
 }
 section.ad .ad-container .form-container .ad-form form input#rent {
-  background-image: url(/images/st.svg?f054e320792ed0d2d58a775061306fad);
+  background-image: url(/images/st.svg?31d6cfe0d16ae931b73c59d7e0c089c0);
 }
 section.ad .ad-container .form-container .ad-form form input#rooms {
-  background-image: url(/images/sek.svg?2a5fd664007b6cbb88eb1fc09ab56065);
+  background-image: url(/images/sek.svg?31d6cfe0d16ae931b73c59d7e0c089c0);
 }
 section.ad .ad-container .form-container .ad-form form input#space {
-  background-image: url(/images/m2.svg?fee32b687409cdcd93fe944e125a8e6d);
+  background-image: url(/images/m2.svg?31d6cfe0d16ae931b73c59d7e0c089c0);
 }
 section.ad .ad-container .form-container .ad-form form p {
   text-align: left;
@@ -1432,14 +1432,18 @@ section.preview-ad-card .preview-container {
   color: #37455d;
   border-radius: 0.5rem;
   overflow: hidden;
-  height: 60rem;
+  height: 55rem;
+  /*     .preview-image,
+  .preview-text {
+      height: 50%;
+      height: 65%;
+  } */
 }
 section.preview-ad-card .preview-container hr {
-  margin-top: 2rem;
-}
-section.preview-ad-card .preview-container .preview-image,
-section.preview-ad-card .preview-container .preview-text {
-  height: 50%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid;
+  width: 20rem;
 }
 section.preview-ad-card .preview-container .preview-image img {
   width: 100%;
@@ -1462,9 +1466,18 @@ section.preview-ad-card .preview-container .preview-text h2 {
   font-size: 1.5rem;
   margin-bottom: 1.2rem;
 }
+section.preview-ad-card .preview-container .preview-text h3 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
 section.preview-ad-card .preview-container .preview-text p {
   font-size: 1.125rem;
   line-height: 1.5;
+}
+section.preview-ad-card .preview-container .preview-text .details-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 section.preview-ad-card .preview-container .preview-text .tag-container {
   gap: 0.5rem;
@@ -1479,6 +1492,18 @@ section.preview-ad-card .preview-container .preview-text .tag-container .tags {
   /*      cursor: pointer; */
   margin-top: 1.5rem;
 }
+section.preview-ad-card .preview-container .preview-text .ad-icons {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+section.preview-ad-card .preview-container .preview-text .ad-icons svg {
+  fill: #37455d;
+  height: 3rem;
+}
 @media only screen and (min-width: 768px) {
   section.preview-ad-card {
     padding: 4rem;
@@ -1491,7 +1516,7 @@ section.preview-ad-card .preview-container .preview-text .tag-container .tags {
     flex-direction: row;
     justify-content: flex-start;
     gap: 0;
-    height: 30rem;
+    height: 40rem;
   }
   section.preview-ad-card .preview-container .preview-image,
 section.preview-ad-card .preview-container .preview-text {
@@ -1505,6 +1530,10 @@ section.preview-ad-card .preview-container .preview-text {
     gap: 0;
     padding-left: 4rem;
     margin-top: -4rem;
+  }
+  section.preview-ad-card .preview-container .preview-text h3 {
+    font-size: 1rem;
+    margin-top: 1.2rem;
   }
 }
 

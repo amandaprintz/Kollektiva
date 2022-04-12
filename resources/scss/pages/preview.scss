@@ -38,16 +38,20 @@ section.preview-ad-card {
         color: colors.$blue;
         border-radius: 0.5rem;
         overflow: hidden;
-        height: 60rem;
+        height: 55rem;
 
         hr {
-            margin-top: 2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid;
+            width: 20rem;
         }
 
-        .preview-image,
+        /*     .preview-image,
         .preview-text {
             height: 50%;
-        }
+            height: 65%;
+        } */
 
         .preview-image {
             img {
@@ -70,11 +74,21 @@ section.preview-ad-card {
                 margin-bottom: 1.2rem;
             }
 
+            h3 {
+                font-size: fonts.$h4;
+                margin-bottom: 1.2rem;
+            }
+
             p {
                 font-size: fonts.$p;
                 line-height: 1.5;
             }
 
+            .details-container {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+            }
             .tag-container {
                 gap: 0.5rem;
                 .tags {
@@ -88,6 +102,20 @@ section.preview-ad-card {
                     margin-top: 1.5rem;
                 }
             }
+
+            .ad-icons {
+                margin-top: 1rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+
+                svg {
+                    fill: colors.$blue;
+                    height: 3rem;
+                }
+            }
         }
     }
     @include media-queries.breakpoint(tablet) {
@@ -99,7 +127,7 @@ section.preview-ad-card {
 
         .preview-container {
             @include mixin.flex(flex, row, flex-start, 0);
-            height: 30rem;
+            height: 40rem;
 
             .preview-image,
             .preview-text {
@@ -111,6 +139,11 @@ section.preview-ad-card {
                 @include mixin.flex(flex, column, center, 0);
                 padding-left: 4rem;
                 margin-top: -4rem;
+
+                h3 {
+                    font-size: fonts.$h4;
+                    margin-top: 1.2rem;
+                }
             }
         }
     }
