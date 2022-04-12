@@ -38,7 +38,7 @@ section.preview-ad-card {
         color: colors.$blue;
         border-radius: 0.5rem;
         overflow: hidden;
-        height: 55rem;
+        height: 57rem;
 
         hr {
             margin-top: 0.5rem;
@@ -91,6 +91,8 @@ section.preview-ad-card {
             }
             .tag-container {
                 gap: 0.5rem;
+                margin-top: 2.5rem;
+
                 .tags {
                     background-color: colors.$white;
                     font-size: fonts.$p;
@@ -118,6 +120,27 @@ section.preview-ad-card {
             }
         }
     }
+
+    .preview-buttons {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .button {
+            background-color: colors.$blue;
+            color: colors.$base-white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 4rem;
+            margin: auto 0;
+            text-align: center;
+            border-radius: 0.5rem;
+        }
+    }
+
     @include media-queries.breakpoint(tablet) {
         padding: 4rem;
 
@@ -138,12 +161,44 @@ section.preview-ad-card {
             .preview-text {
                 @include mixin.flex(flex, column, center, 0);
                 padding-left: 4rem;
-                margin-top: -4rem;
+                margin-top: 0rem;
 
                 h3 {
                     font-size: fonts.$h4;
                     margin-top: 1.2rem;
                 }
+
+                .ad-icons {
+                    margin-top: 1rem;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.5rem;
+
+                    svg {
+                        fill: colors.$blue;
+                        height: 3rem;
+                    }
+                }
+            }
+        }
+
+        .preview-buttons {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: row;
+            gap: 54.5rem;
+
+            .button {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 21rem;
+                height: 6rem;
+                margin: auto 0;
+                text-align: center;
+                border-radius: 0.5rem;
             }
         }
     }
