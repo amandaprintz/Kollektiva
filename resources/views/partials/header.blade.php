@@ -16,7 +16,7 @@
                 <div class="nav">
                     <div class="nav-menu">
                         <div class="link">
-                            <a class="nav-items" href="#">Hyr ut</a>
+                            <a class="nav-items" href="{{ route('create-ad') }}">Hyr ut</a>
                         </div>
                         <div class="link">
                             <a class="nav-items" href="{{ route('ad-list') }}">Sök bostad</a>
@@ -25,7 +25,7 @@
                             <a class="nav-items" href="#">Om oss</a>
                         </div>
                         <div class="search">
-                        <input name="search" id="search" type="search" placeholder="Skriv in ditt sökord" />
+                            <input name="search" id="search" type="search" placeholder="Skriv in ditt sökord" />
                         </div>
                     </div>
                     @if (Auth::guest())
@@ -38,7 +38,7 @@
                     </div>
                     @endif
                 </div>
-                <a class="hamburger" href="#">
+                <a class="menu-toggle" href="#">
                     <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="2" y1="5" x2="38" y2="5" stroke="" stroke-width="4" stroke-linecap="round"/>
                         <line x1="2" y1="17" x2="38" y2="17" stroke="" stroke-width="4" stroke-linecap="round"/>
@@ -47,6 +47,18 @@
                 </a>
             </nav>
         </div>
+        <nav class="menu-hamburger">
+            <div class="menu-item">
+                <div class="search-mobile">
+                    <input name="search" id="search" type="search" placeholder="Skriv in ditt sökord" />
+                </div>
+                <a href="{{ route('index') }}">Hem</a>
+                <a href="{{ route('create-ad') }}">Hyr ut</a>
+                <a href="{{ route('ad-list') }}">Sök bostad</a>
+                <a href="{{ route('ad-list') }}">Om oss</a>
+                <a href="{{ route('ad-list') }}">Kontakta oss</a>
+            </div>
+        </nav>
 
         @if ($success = session('success'))
        <div class="success">

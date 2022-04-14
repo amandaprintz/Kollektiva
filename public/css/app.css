@@ -14,10 +14,56 @@
     transform: translateY(-4rem);
   }
 }
+.nav-open nav {
+  transform: translate(0, 0);
+  transition-delay: 0.1s;
+}
+
 header {
   position: fixed;
   z-index: 1;
   width: 100%;
+}
+header nav.menu-hamburger {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #37455d;
+  transform: translate(100%, 0);
+  transition: transform 0.5s 0s;
+  z-index: 1;
+}
+header nav.menu-hamburger.open {
+  transform: translate(0, 0);
+  transition-delay: 0.1s;
+}
+header nav.menu-hamburger .menu-item {
+  width: 100%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: flex-end;
+  padding: 4rem 1.5rem 1.5rem 2.5rem;
+}
+header nav.menu-hamburger .menu-item .search-mobile {
+  width: 100%;
+}
+header nav.menu-hamburger .menu-item .search-mobile input {
+  background-image: url(/images/search.svg?ed282d8c868df0e57fbf326063245375);
+  background-repeat: no-repeat;
+  background-position: left 1rem center;
+  background-size: 1.5rem;
+  padding-left: 3rem;
+  border-radius: 0.5rem;
+}
+header nav.menu-hamburger .menu-item a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 header .nav-container {
   background-color: #37455d;
@@ -37,10 +83,10 @@ header .nav-container nav .logo {
   color: #fff;
   padding: 1.5rem 0 1.5rem 1.5rem;
 }
-header .nav-container nav .hamburger {
+header .nav-container nav .menu-toggle {
   padding: 1.5rem 1.5rem 1.5rem 0;
 }
-header .nav-container nav .hamburger svg {
+header .nav-container nav .menu-toggle svg {
   stroke: #f9fafb;
   width: 1.5em;
 }
@@ -61,10 +107,16 @@ header .nav-container nav .login-container {
   display: none;
 }
 @media only screen and (min-width: 1100px) {
+  header .nav-container nav.menu-hamburger {
+    display: none;
+  }
+  header .nav-container nav.menu-hamburger.open {
+    display: none;
+  }
   header .nav-container nav {
     position: relative;
   }
-  header .nav-container nav .hamburger {
+  header .nav-container nav .menu-toggle {
     display: none;
   }
   header .nav-container nav .logo {
@@ -278,7 +330,7 @@ section.hero .hero-content {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
-  margin: 1rem;
+  padding: 1rem;
 }
 section.hero .hero-content a {
   color: #37455d;
@@ -307,7 +359,7 @@ section.hero .hero-content .hero-buttons .button {
   background-color: #37455d;
   color: #f9fafb;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -412,7 +464,7 @@ section.two-card .option a.button {
   background-color: #37455d;
   color: #f9fafb;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -779,7 +831,7 @@ section.review-cards .review-container .review .user-content .review-text .butto
   background-color: #37455d;
   color: #f9fafb;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -871,7 +923,7 @@ section.login .login-container .login-form .button-container .button {
   background-color: #37455d;
   color: #fff;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -891,7 +943,7 @@ section.login .login-container .login-form .button-container .facebook {
   background-color: #fff;
   color: #000;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -1017,7 +1069,7 @@ section.register .register-container .register-form .button-container .button {
   background-color: #37455d;
   color: #fff;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -1037,7 +1089,7 @@ section.register .register-container .register-form .button-container .facebook 
   background-color: #fff;
   color: #000;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -1306,7 +1358,7 @@ section.ad .ad-container .form-container .ad-form .buttons-container .button {
   background-color: #37455d;
   color: #fff;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -1326,7 +1378,7 @@ section.ad .ad-container .form-container .ad-form .buttons-container .facebook {
   background-color: #fff;
   color: #000;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -1637,7 +1689,7 @@ section.filter .preferences-group .button-container .button {
   background-color: #37455d;
   color: #fff;
   border-style: none;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
   font-size: 1.125rem;
@@ -1682,7 +1734,7 @@ section.filter .preferences-group .button-container .button:hover {
     background-color: #37455d;
     color: #fff;
     border-style: none;
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 2rem;
     border-radius: 1.25rem;
     text-decoration: none;
     font-size: 1.125rem;

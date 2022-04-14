@@ -47,7 +47,7 @@ section.hero {
     .hero-content {
         position: absolute;
         @include mixin.flex(flex, column, flex-start, 1.5rem);
-        margin: 1rem;
+        padding: 1rem;
 
         a {
             color: colors.$blue;

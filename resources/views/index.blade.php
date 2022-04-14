@@ -43,7 +43,7 @@
     <div class="option">
         <h2>För hyresvärd</h2>
         <img src="{{ asset('images/bostads.svg') }}" alt="Big icon with a hand and a house-key">
-        <a class="button" href="{{ route('ad') }}">Skapa annonser</a>
+        <a class="button" href="{{ route('create-ad') }}">Skapa annonser</a>
     </div>
     <div class="option">
         <h2>För Bostadssökande</h2>

@@ -19,6 +19,7 @@
         "sass-loader": "^12.6.0"
     },
     "dependencies": {
-        "easy-star-rating": "^1.0.1"
+        "easy-star-rating": "^1.0.1",
+        "hamburgers": "^1.2.1"
     }
 }
