@@ -54,7 +54,7 @@
 
 
     </footer>
-    <script src="../../js/app.js"></script>
     </body>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     </html>

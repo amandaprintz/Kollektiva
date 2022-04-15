@@ -9,14 +9,12 @@
 
 // require('./bootstrap');
 // Hamburger toggle
-var bodyTag = document.querySelector("body");
-var menuToggle = document.querySelector("a.menu-toggle");
+var menuToggle = document.querySelector(".menu-toggle");
 var menuHamburger = document.querySelector(".menu-hamburger"); // Listen for click
 
 menuToggle.addEventListener("click", function () {
   menuHamburger.classList.toggle("open");
-  console.log(bodyTag.classList.toggle(".open"));
-  console.log("nav-open");
+  console.log("open menu");
 });
 
 /***/ }),
