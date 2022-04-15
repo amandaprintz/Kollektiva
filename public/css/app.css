@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Promixa-Nova Regular";
+  src: url(/fonts/proxima-nova-reg.woff2?690d58cdab1cbe791ecd6fccaf290e50) format("woff2"), url(/fonts/proxima-nova-reg.woff?c629d5b328296ce804db76c4750a4ecc) format("woff");
+}
+@font-face {
+  font-family: "Promixa-Nova Semi-Bold";
+  src: url(/fonts/proxima-nova-semi.woff2?f5955c6f79f5cf906be822eba3c9661b) format("woff2"), url(/fonts/proxima-nova-semi.woff?d3179f3a39194207a6abb4a21b9f5b9c) format("woff");
+}
+@font-face {
+  font-family: "Promixa-Nova Bold";
+  src: url(/fonts/proxima-nova-bold.woff2?d9e7c45cb6d1855fddd1f43f31a2a9d3) format("woff2"), url(/fonts/proxima-nova-bold.woff?d8ca65b6fc4a855c053acb7aac663daa) format("woff");
+}
 @-webkit-keyframes hideMessage {
   from {
     transform: translateY(0);
@@ -2052,7 +2064,7 @@ section.ad-list .list-container .preview-container .preview-text .ad-icons svg {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Proxima-Nova Regular";
 }
 
 html {
