@@ -1640,6 +1640,189 @@ section.preview-ad-card .preview-container .preview-text {
   }
 }
 
+section.final-intro {
+  margin-top: 1rem;
+  color: #37455d;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+}
+section.final-intro h2 {
+  font-size: 1.5rem;
+  color: #37455d;
+}
+@media only screen and (min-width: 768px) {
+  section.final-intro {
+    margin-top: 5rem;
+  }
+  section.final-intro h2 {
+    margin-left: 2.5rem;
+  }
+}
+
+section.final-ad-card {
+  padding: 1rem;
+}
+section.final-ad-card .final-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+  background-color: #f9fafb;
+  box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.15);
+  color: #37455d;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 57rem;
+  /*     .preview-image,
+  .preview-text {
+      height: 50%;
+      height: 65%;
+  } */
+}
+section.final-ad-card .final-container hr {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid;
+  width: 20rem;
+}
+section.final-ad-card .final-container .final-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+section.final-ad-card .final-container .final-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+  padding-left: 1.5rem;
+  padding-right: 4rem;
+  margin-top: 3rem;
+}
+section.final-ad-card .final-container .final-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+section.final-ad-card .final-container .final-text h3 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+section.final-ad-card .final-container .final-text p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+section.final-ad-card .final-container .final-text .final-details-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+section.final-ad-card .final-container .final-text .tag-container {
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+section.final-ad-card .final-container .final-text .tag-container .tags {
+  background-color: #fff;
+  font-size: 1.125rem;
+  border-style: solid;
+  padding: 0.6rem 0.5rem;
+  border-color: #37455d;
+  border-radius: 1.2rem;
+  /*      cursor: pointer; */
+  margin-top: 1.5rem;
+}
+section.final-ad-card .final-container .final-text .ad-icons {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+section.final-ad-card .final-container .final-text .ad-icons svg {
+  fill: #37455d;
+  height: 3rem;
+}
+section.final-ad-card .final-buttons {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section.final-ad-card .final-buttons .button {
+  background-color: #37455d;
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 4rem;
+  margin: auto 0;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  section.final-ad-card {
+    padding: 1rem 4rem 2rem 4rem;
+  }
+  section.final-ad-card hr {
+    display: none;
+  }
+  section.final-ad-card .final-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0;
+    height: 40rem;
+  }
+  section.final-ad-card .final-container .final-image,
+section.final-ad-card .final-container .final-text {
+    width: 50%;
+    height: 100%;
+  }
+  section.final-ad-card .final-container .final-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    padding-left: 4rem;
+    margin-top: 0rem;
+  }
+  section.final-ad-card .final-container .final-text h3 {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+  }
+  section.final-ad-card .final-container .final-text .ad-icons {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  section.final-ad-card .final-container .final-text .ad-icons svg {
+    fill: #37455d;
+    height: 3rem;
+  }
+  section.final-ad-card .final-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 54.5rem;
+  }
+  section.final-ad-card .final-buttons .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 21rem;
+    height: 6rem;
+    margin: auto 0;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+}
+
 section.filter {
   padding: 0 1rem;
 }

@@ -1,22 +1,22 @@
 @include('partials.header')
 <main>
 
-    <section class="preview-intro">
-        <h2>Förhandsgranskning annons</h2>
+    <section class="final-intro">
+        <h2> ❮ Bläddra bland fler annonser</h2>
     </section>
 
 
 
-    <section class="preview-ad-card">
-        <div class="preview-container">
-            <div class="preview-image">
+    <section class="final-ad-card">
+        <div class="final-container">
+            <div class="final-image">
                 <img src="https://images.unsplash.com/photo-1593604341107-12f3981d929b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="update image">
             </div>
-            <div class="preview-text">
+            <div class="final-text">
                 <h2>Trädgårdsgatan 43</h2>
                 <p>Centrala Hisingen, Göteborg</p>
                 <hr>
-                <div class="details-container">
+                <div class="final-details-container">
                     <h3> 11.000 kr/mån </h3>
                     <h3> 124 m² </h3>
                     <h3> 6 rok </h3>
@@ -58,10 +58,10 @@
 
 
 
-        <div class="preview-buttons">
-            <a href="{{ route('preview') }}" class="button" type="submit">Gå tillbaka</a>
+        <div class="final-buttons">
+            <a href="{{ route('preview') }}" class="button" type="submit">Lägg till i favoriter ♡ </a>
 
-            <a href="{{ route('preview') }}" class="button" type="submit">Spara annons</a>
+            <a href="{{ route('preview') }}" class="button" type="submit">Skicka intresseanmälan</a>
         </div>
     </section>
 
