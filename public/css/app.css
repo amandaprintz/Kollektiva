@@ -72,7 +72,7 @@ header nav.menu-hamburger .menu-item a {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1260px) {
   header nav.menu-hamburger {
     display: none;
   }
@@ -104,6 +104,21 @@ header .nav-container nav .logo {
   color: #fff;
   padding: 1.5rem 0 1.5rem 1.5rem;
 }
+header .nav-container nav .logo .desktop-logo,
+header .nav-container nav .logo .mobile-logo {
+  height: 3rem;
+}
+header .nav-container nav .logo .desktop-logo {
+  display: none;
+}
+@media only screen and (min-width: 1260px) {
+  header .nav-container nav .logo .mobile-logo {
+    display: none;
+  }
+  header .nav-container nav .logo .desktop-logo {
+    display: block;
+  }
+}
 header .nav-container nav .menu-toggle {
   padding: 1.5rem 1.5rem 1.5rem 0;
 }
@@ -127,7 +142,7 @@ header .nav-container nav .nav-menu .search {
 header .nav-container nav .login-container {
   display: none;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1260px) {
   header .nav-container nav {
     position: relative;
   }
@@ -2064,7 +2079,7 @@ section.ad-list .list-container .preview-container .preview-text .ad-icons svg {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Proxima-Nova Regular";
+  font-family: "Promixa-Nova Regular";
 }
 
 html {
@@ -2097,7 +2112,7 @@ body span.helper {
 body input,
 body textarea {
   width: 100%;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Proxima-Nova Regular";
   background-color: #fff;
   color: #37455d;
   border: 1px solid #d9e6fb;

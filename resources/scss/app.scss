@@ -7,7 +7,6 @@
 @use "common/footer";
 @use "common/media-queries";
 @use "common/mixin";
-@use "common/hamburgers-settings.scss";
 
 // Pages
 @use "pages/index.scss";
@@ -23,7 +22,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: fonts.$regular;
+    font-family: "Promixa-Nova Regular";
 }
 
 html {
@@ -61,8 +60,7 @@ body {
     input,
     textarea {
         width: 100%;
-        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-            Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-family: "Proxima-Nova Regular";
         background-color: colors.$white;
         color: colors.$blue;
         border: 1px solid colors.$skyblue;
