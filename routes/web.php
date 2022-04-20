@@ -35,13 +35,13 @@ Route::post('login', LoginController::class)->name('login');
 Route::get('logout', LogoutController::class)->name('logout')->middleware('auth');
 
 // Post ad
-Route::view('/ad', 'ad')->name('ad');
+Route::view('/ad', 'ad')->name('ad')->middleware('auth');
 
 // Preview
-Route::view('/preview', 'preview')->name('preview');
+Route::view('/preview', 'preview')->name('preview')->middleware('auth');
 
 // Final
-Route::view('/final', 'final')->name('final');
+Route::view('/final', 'final')->name('final')->middleware('auth');
 
 // Ad list
 Route::view('/ad-list', 'ad-list')->name('ad-list');
