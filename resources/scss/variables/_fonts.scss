@@ -1,25 +1,25 @@
 // @font-face
 
 @font-face {
-    font-family: "Promixa-Nova Regular";
+    font-family: "Proxima-Nova Regular";
     src: url(../../../public/fonts/proxima-nova-reg.woff2) format("woff2"),
         url(../../../public/fonts/proxima-nova-reg.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Promixa-Nova Semi-Bold";
+    font-family: "Proxima-Nova Semi-Bold";
     src: url(../../../public/fonts/proxima-nova-semi.woff2) format("woff2"),
         url(../../../public/fonts/proxima-nova-semi.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Promixa-Nova Bold";
+    font-family: "Proxima-Nova Bold";
     src: url(../../../public/fonts/proxima-nova-bold.woff2) format("woff2"),
         url(../../../public/fonts/proxima-nova-bold.woff) format("woff");
 }
 
 // Font family
-$regular: "Proxima-Nova Regular";
+$regular: "Proxima-Nova Regular", san-serif;
 $semi-bold: "Proxima-Nova Semi-Bold";
 $bold: "Proxima-Nova Bold";
 

@@ -22,7 +22,13 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Promixa-Nova Regular";
+    font-family: fonts.$regular;
+}
+
+h1,
+h2,
+h3 {
+    font-family: fonts.$bold;
 }
 
 html {
