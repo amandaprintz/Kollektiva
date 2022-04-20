@@ -30,10 +30,16 @@
     @endif
     <div class="hero-content">
         <div class="hero-text">
-            <h1>Välkommen till Kollektiva!</h1>
-            <p>Skapa ett konto idag, snabbt och enkelt.</p>
-            <p>Här kan ni välja mellan att annonsera ert utrymme eller bara bläddra bland tillgängliga lokaler.</p>
-            <a href="#">Läs mer om Kollektiva</a>
+            @if (Auth::guest())
+                <h1>Välkommen till Kollektiva!</h1>
+                <p>Skapa ett konto idag, snabbt och enkelt.</p>
+                <p>Här kan ni välja mellan att annonsera ert utrymme eller bara bläddra bland tillgängliga lokaler.</p>
+                <a href="#">Läs mer om Kollektiva</a>
+            @else
+                <h1>Välkommen tillbaka, {{ Auth::user()->first_name }}!</h1>
+                <p>Till höger kan du se notifikationer angående de annonser du har lagt upp, samt hur du snabbt kan uppdatera din profil för att enklare finna matchande annonser.</p>
+                <a href="#">Läs mer om Kollektiva</a>
+            @endif
         </div>
         @if (Auth::guest())
         <div class="hero-buttons">
