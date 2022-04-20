@@ -118,7 +118,7 @@
             </div>
             <div class="user-info yellow">
                 <div class="name">
-                    <h2>John, 65</h2>
+                    <h2>Åke, 85</h2>
                 </div>
                 <div class="status">
                     <h2>Pensionär</h2>
@@ -129,7 +129,7 @@
                     <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
                 </div>
                 <div class="review-text">
-                    <h2>Lorem ipsum</h2>
+                    <h2>Trygg uthyrning!</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
                     <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
                 </div>
@@ -142,7 +142,7 @@
             </div>
             <div class="user-info mint">
                 <div class="name">
-                    <h2>John, 65</h2>
+                    <h2>Joar, 65</h2>
                 </div>
                 <div class="status">
                     <h2>Pensionär</h2>
@@ -153,7 +153,7 @@
                     <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
                 </div>
                 <div class="review-text">
-                    <h2>Lorem ipsum</h2>
+                    <h2>"Så smidigt och enkelt!"</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
                     <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
                 </div>
@@ -167,7 +167,7 @@
             </div>
             <div class="user-info red">
                 <div class="name">
-                    <h2>John, 65</h2>
+                    <h2>Kerstin, 55</h2>
                 </div>
                 <div class="status">
                     <h2>Pensionär</h2>
@@ -178,7 +178,7 @@
                     <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
                 </div>
                 <div class="review-text">
-                    <h2>Lorem ipsum</h2>
+                    <h2>"Toppentjänst!"</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
                     <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
                 </div>
@@ -191,7 +191,7 @@
             </div>
             <div class="user-info purple">
                 <div class="name">
-                    <h2>John, 65</h2>
+                    <h2>Elsie, 49</h2>
                 </div>
                 <div class="status">
                     <h2>Pensionär</h2>
@@ -202,7 +202,7 @@
                     <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
                 </div>
                 <div class="review-text">
-                    <h2>Lorem ipsum</h2>
+                    <h2>Redo att hyra ut!</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
                     <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
                 </div>

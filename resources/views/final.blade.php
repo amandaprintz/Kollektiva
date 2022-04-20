@@ -34,8 +34,7 @@
 
                 <div class="tag-container">
                     <button class="tags">Hus</button>
-                    <button class="tags">Hiss</button>
-                    <button class="tags">Fiber</button>
+                    <button class="tags">Omöblerat</button>
                     <button class="tags">Balkong</button>
                 </div>
 
