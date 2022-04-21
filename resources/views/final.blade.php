@@ -2,7 +2,7 @@
 <main>
 
     <section class="final-intro">
-        <h2> ❮ Bläddra bland fler annonser</h2>
+        <a href="{{ route('ad-list') }}"> ❮ Bläddra bland fler annonser</a>
     </section>
 
 

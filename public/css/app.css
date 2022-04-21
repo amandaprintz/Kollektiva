@@ -392,6 +392,7 @@ section.hero .hero-content .hero-buttons .button {
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -499,6 +500,7 @@ section.two-card .option a.button {
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -722,6 +724,7 @@ section.update-profile-card .update-container .update-text p {
 }
 section.update-profile-card .update-container .update-text button {
   background-color: #fff;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   border-style: none;
   padding: 1rem 1.25rem;
@@ -868,6 +871,7 @@ section.review-cards .review-container .review .user-content .review-text .butto
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -962,6 +966,7 @@ section.login .login-container .login-form .button-container .button {
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -984,6 +989,7 @@ section.login .login-container .login-form .button-container .facebook {
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -1112,6 +1118,7 @@ section.register .register-container .register-form .button-container .button {
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -1134,6 +1141,7 @@ section.register .register-container .register-form .button-container .facebook 
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -1405,6 +1413,7 @@ section.ad .ad-container .form-container .ad-form .buttons-container .button {
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -1427,6 +1436,7 @@ section.ad .ad-container .form-container .ad-form .buttons-container .facebook {
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -1617,6 +1627,7 @@ section.preview-ad-card .preview-buttons .button {
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -1686,6 +1697,7 @@ section.preview-ad-card .preview-container .preview-text {
     padding: 1.25rem 2rem;
     border-radius: 1.25rem;
     text-decoration: none;
+    font-family: "Proxima-Nova Semi-Bold";
     font-size: 1.125rem;
     text-align: center;
     cursor: pointer;
@@ -1702,8 +1714,9 @@ section.final-intro {
   color: #37455d;
   padding: 0rem 1.5rem 0rem 1.5rem;
 }
-section.final-intro h2 {
+section.final-intro a {
   font-size: 1.5rem;
+  font-family: "Proxima-Nova Semi-Bold";
   color: #37455d;
 }
 @media only screen and (min-width: 768px) {
@@ -1728,18 +1741,12 @@ section.final-ad-card .final-container {
   color: #37455d;
   border-radius: 0.5rem;
   overflow: hidden;
-  height: 57rem;
-  /*     .preview-image,
-  .preview-text {
-      height: 50%;
-      height: 65%;
-  } */
 }
 section.final-ad-card .final-container hr {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid;
-  width: 20rem;
+  width: 100%;
 }
 section.final-ad-card .final-container .final-image img {
   width: 100%;
@@ -1754,9 +1761,7 @@ section.final-ad-card .final-container .final-text {
   flex-direction: column;
   justify-content: flex-start;
   gap: 0;
-  padding-left: 1.5rem;
-  padding-right: 4rem;
-  margin-top: 3rem;
+  padding: 2rem 1rem;
 }
 section.final-ad-card .final-container .final-text h2 {
   font-size: 1.5rem;
@@ -1805,23 +1810,33 @@ section.final-ad-card .final-buttons {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
   gap: 1rem;
 }
 section.final-ad-card .final-buttons .button {
   background-color: #37455d;
-  color: #f9fafb;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 4rem;
-  margin: auto 0;
+  color: #fff;
+  border-style: none;
+  padding: 1.25rem 2rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
+  font-size: 1.125rem;
   text-align: center;
-  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin: auto 0;
+}
+section.final-ad-card .final-buttons .button:hover {
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 @media only screen and (min-width: 768px) {
   section.final-ad-card {
-    padding: 1rem 4rem 2rem 4rem;
+    max-width: 1568px;
+    margin: 0 auto;
+    padding: 4rem;
   }
   section.final-ad-card hr {
     display: none;
@@ -1866,17 +1881,26 @@ section.final-ad-card .final-container .final-text {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
-    gap: 54.5rem;
+    justify-content: space-between;
+    gap: 0;
   }
   section.final-ad-card .final-buttons .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 21rem;
-    height: 6rem;
-    margin: auto 0;
+    width: 25%;
+    background-color: #37455d;
+    color: #fff;
+    border-style: none;
+    padding: 1.25rem 2rem;
+    border-radius: 1.25rem;
+    text-decoration: none;
+    font-family: "Proxima-Nova Semi-Bold";
+    font-size: 1.125rem;
     text-align: center;
-    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  section.final-ad-card .final-buttons .button:hover {
+    background-color: #d9e6fb;
+    color: #37455d;
   }
 }
 
@@ -1938,6 +1962,7 @@ section.filter .preferences-group .button-container .button {
   padding: 1.25rem 2rem;
   border-radius: 1.25rem;
   text-decoration: none;
+  font-family: "Proxima-Nova Semi-Bold";
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
@@ -1992,6 +2017,7 @@ section.filter .preferences-group .button-container .button:hover {
     padding: 1.25rem 2rem;
     border-radius: 1.25rem;
     text-decoration: none;
+    font-family: "Proxima-Nova Semi-Bold";
     font-size: 1.125rem;
     text-align: center;
     cursor: pointer;
