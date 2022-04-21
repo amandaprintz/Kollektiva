@@ -31,14 +31,14 @@
     <div class="hero-content">
         <div class="hero-text">
             @if (Auth::guest())
-                <h1>Välkommen till Kollektiva!</h1>
-                <p>Skapa ett konto idag, snabbt och enkelt.</p>
-                <p>Här kan ni välja mellan att annonsera ert utrymme eller bara bläddra bland tillgängliga lokaler.</p>
-                <a href="#">Läs mer om Kollektiva</a>
+            <h1>Välkommen till Kollektiva!</h1>
+            <p>Skapa ett konto idag, snabbt och enkelt.</p>
+            <p>Här kan ni välja mellan att annonsera ert utrymme eller bara bläddra bland tillgängliga lokaler.</p>
+            <a href="#">Läs mer om Kollektiva</a>
             @else
-                <h1>Välkommen tillbaka, {{ Auth::user()->first_name }}!</h1>
-                <p>Till höger kan du se notifikationer angående de annonser du har lagt upp, samt hur du snabbt kan uppdatera din profil för att enklare finna matchande annonser.</p>
-                <a href="#">Läs mer om Kollektiva</a>
+            <h1>Välkommen tillbaka, {{ Auth::user()->first_name }}!</h1>
+            <p>Till höger kan du se notifikationer angående de annonser du har lagt upp, samt hur du snabbt kan uppdatera din profil för att enklare finna matchande annonser.</p>
+            <a href="#">Läs mer om Kollektiva</a>
             @endif
         </div>
         @if (Auth::guest())
@@ -61,7 +61,7 @@
     <div class="option">
         <h2>För Bostadssökande</h2>
         <img src="{{ asset('images/hyres.svg') }}" alt="Big icon a house and a place pin">
-        <a class="button" href="{{ route('index') }}">Bläddra bland annonser</a>
+        <a class="button" href="{{ route('ad-list') }}">Bläddra bland annonser</a>
     </div>
 </section>
 
@@ -80,7 +80,7 @@
                 <h2>2.</h2>
                 <h3>Annonsera bostad</h3>
             </div>
-            <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
+            <p>Hyr ut din bostad genom att skapa en annons snabbt och enkelt på under fem minuter. </p>
 
         </div>
         <div class="option red">
@@ -88,7 +88,7 @@
                 <h2>3.</h2>
                 <h3>Bläddra bland ansökningar</h3>
             </div>
-            <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
+            <p>Du som söker bostad kan själv ställa in preferenser och söka efter ditt nya drömhem.</p>
         </div>
 
 
@@ -97,7 +97,7 @@
                 <h2>4.</h2>
                 <h3>Kontakta genom Kollektiva</h2>
             </div>
-            <p>Du kan enkelt skapa ett konto med bara mail och lösenord, det är självklart gratis!</p>
+            <p>All kontakt samt kontrakt sker via Kollektiva så ni får en trygg och smidig uthyrning. </p>
         </div>
 
 </section>
@@ -120,11 +120,11 @@
     <div class="review-container">
         <div class="review">
             <div class="user-card">
-                <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
+                <img src="https://images.unsplash.com/photo-1534180477871-5d6cc81f3920?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="profile-image">
             </div>
             <div class="user-info yellow">
                 <div class="name">
-                    <h2>Åke, 85</h2>
+                    <h2>Ina, 65</h2>
                 </div>
                 <div class="status">
                     <h2>Pensionär</h2>
@@ -136,7 +136,8 @@
                 </div>
                 <div class="review-text">
                     <h2>Trygg uthyrning!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
+                    <p> Som nybliven pensionär är jag numera boende i Spanien och hyr ut tryggt ut min bostad hemma i Sverige med Kollektiva.
+                    </p>
                     <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
                 </div>
             </div>
@@ -144,14 +145,14 @@
         </div>
         <div class="review">
             <div class="user-card">
-                <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
+                <img src="https://images.unsplash.com/flagged/photo-1577474810448-82eb81a48d13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80" alt="profile-image">
             </div>
             <div class="user-info mint">
                 <div class="name">
-                    <h2>Joar, 65</h2>
+                    <h2>Jon & Eva, 74</h2>
                 </div>
                 <div class="status">
-                    <h2>Pensionär</h2>
+                    <h2>Pensionärer</h2>
                 </div>
             </div>
             <div class="user-content">
@@ -160,7 +161,8 @@
                 </div>
                 <div class="review-text">
                     <h2>"Så smidigt och enkelt!"</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
+                    <p>Nu är barnen vuxna och utflygna, så vårt hus kan absolut kommas till bättre användning. Därför är
+                        Kollektiva ett bra val för oss. </p>
                     <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
                 </div>
             </div>
@@ -169,11 +171,11 @@
         </div>
         <div class="review">
             <div class="user-card">
-                <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
+                <img src="https://images.unsplash.com/photo-1615477081663-8498d3827bc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
             <div class="user-info red">
                 <div class="name">
-                    <h2>Kerstin, 55</h2>
+                    <h2>Roland, 75</h2>
                 </div>
                 <div class="status">
                     <h2>Pensionär</h2>
@@ -184,8 +186,9 @@
                     <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
                 </div>
                 <div class="review-text">
-                    <h2>"Toppentjänst!"</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
+                    <h2>"Viva la Kollektiva!"</h2>
+                    <p>Nu kan jag njuta av pensionen på playan med gott samvete medan ungdomarna
+                        får hitta en värdig bostad. Win win säger jag!</p>
                     <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
                 </div>
             </div>
@@ -193,14 +196,14 @@
         </div>
         <div class="review">
             <div class="user-card">
-                <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
+                <img src="https://images.unsplash.com/photo-1596529840651-195c0d89432b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="profile-image">
             </div>
             <div class="user-info purple">
                 <div class="name">
-                    <h2>Elsie, 49</h2>
+                    <h2>Anna & Ina, 29</h2>
                 </div>
                 <div class="status">
-                    <h2>Pensionär</h2>
+                    <h2>Studerande</h2>
                 </div>
             </div>
             <div class="user-content">
@@ -208,8 +211,9 @@
                     <img src="{{ asset('images/rating.svg') }}" alt="review stars" />
                 </div>
                 <div class="review-text">
-                    <h2>Redo att hyra ut!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor consectetur laoreet tellus libero ornare proin feugiat.</p>
+                    <h2>Tacksamt för studenter!</h2>
+                    <p>Tack vare Kollektiva slipper vi stå i flera års kö och kan istället fokusera på att
+                        starta familj och börja bygga på vårt liv tillsammans. </p>
                     <a class="button" href="{{ route('index') }}">Läs fler omdömen</a>
                 </div>
             </div>

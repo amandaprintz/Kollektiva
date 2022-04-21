@@ -9,11 +9,11 @@
                     <ul>
                         <li>
                             <h4>Hyra</h4>
-                            <a class="values" href="#">Max 4000</a>
+                            <a class="values" href="#">Max 12.000 kr/mån</a>
                         </li>
                         <li>
                             <h4>Storlek</h4>
-                            <a class="values" href="#">20-30 m2</a>
+                            <a class="values" href="#">60-200 m2</a>
                         </li>
                         <li>
                             <h4>Husdjur</h4>
@@ -21,7 +21,7 @@
                         </li>
                         <li>
                             <h4>Rökning</h4>
-                            <a class="values" href="#">Tillåtet</a>
+                            <a class="values" href="#">Ej tillåtet</a>
                         </li>
                         <li>
                             <h4>Område</h4>
@@ -234,25 +234,25 @@
 
             <div class="preview-container">
                 <div class="preview-image">
-                    <img src="https://images.unsplash.com/photo-1593604341107-12f3981d929b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="update image">
+                    <img src="https://images.unsplash.com/photo-1586982599726-11708daaceca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="update image">
                 </div>
                 <div class="preview-text">
-                    <h2>Trädgårdsgatan 43</h2>
-                    <p>Centrala Hisingen, Göteborg</p>
+                    <h2>Solgatan 10 </h2>
+                    <p>Örgryte, Göteborg</p>
                     <hr>
                     <div class="details-container">
-                        <p>11.000 kr/mån</p>
-                        <p>124 m²</p>
-                        <p>6 rok</p>
+                        <p>12.000 kr/mån</p>
+                        <p>180 m²</p>
+                        <p>7 rok</p>
                     </div>
                     <hr>
 
                     <br>
 
-                    <p>Välkommen till denna pärla perfekt belägen på centrala Hisingen.
-                        Tack vare bostadens läge i huset ges ett ostört läge så gott som fritt från insyn.
-                        Bostaden präglas av fint ljusinsläpp från stora fönsterpartier med utsikt mot vackert
-                        ljus och blommande grönska.
+                    <p> Välkommen till ett drömhem mitt i hjärtat av Skår, Örgryte. Här finner du ro med en generös
+                        bostad med flera finare finesser så som uteplats, trädgårdsland och takterrass. Bostaden som
+                        gått i arv under generationer är väl bevarad och ligger i privat läge med närhet till natur då
+                        Skatås och Delsjön endast ligger en promenad bort.
                         <BR>
                     </p>
 
@@ -283,25 +283,28 @@
 
             <div class="preview-container">
                 <div class="preview-image">
-                    <img src="https://images.unsplash.com/photo-1593604341107-12f3981d929b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="update image">
+                    <img src="https://images.unsplash.com/photo-1622653533660-a1538fe8424c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="update image">
                 </div>
                 <div class="preview-text">
-                    <h2>Trädgårdsgatan 43</h2>
-                    <p>Centrala Hisingen, Göteborg</p>
+                    <h2>Kapellgatan 33</h2>
+                    <p>Johanneberg, Göteborg</p>
                     <hr>
                     <div class="details-container">
-                        <p>11.000 kr/mån</p>
-                        <p>124 m²</p>
-                        <p>6 rok</p>
+                        <p>9.000 kr/mån</p>
+                        <p>67 m²</p>
+                        <p>4 rok</p>
                     </div>
                     <hr>
 
                     <br>
 
-                    <p>Välkommen till denna pärla perfekt belägen på centrala Hisingen.
-                        Tack vare bostadens läge i huset ges ett ostört läge så gott som fritt från insyn.
-                        Bostaden präglas av fint ljusinsläpp från stora fönsterpartier med utsikt mot vackert
-                        ljus och blommande grönska.
+                    <p>
+
+
+                        Välplanerad funkispärla högst upp i huset med härligt ljusinsläpp och tillgång till soldränkt takterrass.
+                        Lägenheten är positionerad i ett lugnt men ändå centralt läge alldeles intill Chalmers. Stabil familjär
+                        förening och ett väl underhållet hus som skriver sin historia från 1936. I huset
+                        finns även tillgång till gym och gemensam festlokal.
                         <BR>
                     </p>
 
@@ -309,7 +312,6 @@
                         <button class="tags">Hus</button>
                         <button class="tags">Hiss</button>
                         <button class="tags">Fiber</button>
-                        <button class="tags">Balkong</button>
                     </div>
 
                     <div class="ad-icons">
