@@ -42,11 +42,7 @@ section.register {
                 margin-bottom: 1.5rem;
 
                 .button {
-                    @include mixin.button(
-                        colors.$blue,
-                        colors.$blue,
-                        colors.$white
-                    );
+                    @include mixin.button(colors.$blue, colors.$white);
 
                     margin: 0;
                     width: 100%;
@@ -56,11 +52,7 @@ section.register {
                 }
                 .google,
                 .facebook {
-                    @include mixin.button(
-                        colors.$white,
-                        colors.$white,
-                        colors.$black
-                    );
+                    @include mixin.button(colors.$white, colors.$black);
 
                     @include mixin.flex(flex, row, center, 0.5rem);
                     border: 1px solid colors.$light-grey;

@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-@mixin button($color, $hoverColor, $textColor) {
+@mixin button($color, $textColor) {
     background-color: $color;
     color: $textColor;
     border-style: none;
@@ -23,8 +23,10 @@
     font-size: fonts.$p;
     text-align: center;
     cursor: pointer;
+    transition: all 0.15s;
 
     &:hover {
-        background-color: $hoverColor;
+        background-color: colors.$skyblue;
+        color: colors.$blue;
     }
 }

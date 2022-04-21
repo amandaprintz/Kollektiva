@@ -57,11 +57,7 @@ section.filter {
 
             .button {
                 padding: 1rem 2rem;
-                @include mixin.button(
-                    colors.$blue,
-                    colors.$blue,
-                    colors.$white
-                );
+                @include mixin.button(colors.$blue, colors.$white);
             }
         }
     }
@@ -102,11 +98,7 @@ section.filter {
             .button {
                 display: inline-block;
                 height: auto;
-                @include mixin.button(
-                    colors.$blue,
-                    colors.$blue,
-                    colors.$white
-                );
+                @include mixin.button(colors.$blue, colors.$white);
             }
         }
     }

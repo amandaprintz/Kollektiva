@@ -29,7 +29,7 @@ section.preview-intro {
 }
 
 section.preview-ad-card {
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
 
     .preview-container {
         @include mixin.flex(flex, column, flex-start, 0);
@@ -38,20 +38,13 @@ section.preview-ad-card {
         color: colors.$blue;
         border-radius: 0.5rem;
         overflow: hidden;
-        height: 57rem;
 
         hr {
             margin-top: 0.5rem;
             margin-bottom: 1rem;
             border: 1px solid;
-            width: 20rem;
+            width: 100%;
         }
-
-        /*     .preview-image,
-        .preview-text {
-            height: 50%;
-            height: 65%;
-        } */
 
         .preview-image {
             img {
@@ -64,10 +57,7 @@ section.preview-ad-card {
 
         .preview-text {
             @include mixin.flex(flex, column, flex-start, 0);
-            padding-left: 1.5rem;
-
-            padding-right: 4rem;
-            margin-top: 3rem;
+            padding: 2rem 1rem;
 
             h2 {
                 font-size: fonts.$h3;
@@ -91,7 +81,6 @@ section.preview-ad-card {
             }
             .tag-container {
                 gap: 0.5rem;
-                margin-top: 2.5rem;
 
                 .tags {
                     background-color: colors.$white;
@@ -99,6 +88,7 @@ section.preview-ad-card {
                     border-style: solid;
                     padding: 0.6rem 0.5rem;
                     border-color: colors.$blue;
+                    color: colors.$blue;
                     border-radius: 1.2rem;
                     /*      cursor: pointer; */
                     margin-top: 1.5rem;
@@ -124,24 +114,16 @@ section.preview-ad-card {
     .preview-buttons {
         margin-top: 1.5rem;
         margin-bottom: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        @include mixin.flex(flex, column-reverse, flex-start, 1rem);
 
         .button {
-            background-color: colors.$blue;
-            color: colors.$base-white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 4rem;
-            margin: auto 0;
-            text-align: center;
-            border-radius: 0.5rem;
+            padding: 1rem 2rem;
+            @include mixin.button(colors.$blue, colors.$white);
         }
     }
 
     @include media-queries.breakpoint(tablet) {
+        @include mixin.max-width();
         padding: 4rem;
 
         hr {
@@ -186,19 +168,11 @@ section.preview-ad-card {
 
         .preview-buttons {
             margin-top: 1.5rem;
-            display: flex;
-            flex-direction: row;
-            gap: 54.5rem;
+            @include mixin.flex(flex, row, space-between, 0);
 
             .button {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 21rem;
-                height: 6rem;
-                margin: auto 0;
-                text-align: center;
-                border-radius: 0.5rem;
+                width: 25%;
+                @include mixin.button(colors.$blue, colors.$white);
             }
         }
     }

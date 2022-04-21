@@ -75,11 +75,7 @@ section.hero {
             @include mixin.flex(flex, column, flex-start, 1.5rem);
 
             .button {
-                @include mixin.button(
-                    colors.$blue,
-                    colors.$blue,
-                    colors.$base-white
-                );
+                @include mixin.button(colors.$blue, colors.$base-white);
             }
         }
     }
@@ -176,11 +172,7 @@ section.two-card {
 
         a.button {
             width: 100%;
-            @include mixin.button(
-                colors.$blue,
-                colors.$blue,
-                colors.$base-white
-            );
+            @include mixin.button(colors.$blue, colors.$base-white);
         }
 
         img {
@@ -562,11 +554,7 @@ section.review-cards {
                     .button {
                         margin-top: 2rem;
                         display: block;
-                        @include mixin.button(
-                            colors.$blue,
-                            colors.$blue,
-                            colors.$base-white
-                        );
+                        @include mixin.button(colors.$blue, colors.$base-white);
                     }
                 }
             }

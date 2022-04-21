@@ -94,7 +94,7 @@ section.ad {
                                 width: 1.5rem;
                                 height: 1.5rem;
                                 background-color: colors.$white;
-                                border: 1px solid colors.$skyblue;
+                                border: 1px solid colors.$blue;
                                 border-radius: 1rem;
                             }
 
@@ -185,11 +185,7 @@ section.ad {
                     }
 
                     .button {
-                        @include mixin.button(
-                            colors.$blue,
-                            colors.$blue,
-                            colors.$white
-                        );
+                        @include mixin.button(colors.$blue, colors.$white);
 
                         margin: 0;
                         width: 100%;
@@ -199,11 +195,7 @@ section.ad {
                     }
                     .google,
                     .facebook {
-                        @include mixin.button(
-                            colors.$white,
-                            colors.$white,
-                            colors.$black
-                        );
+                        @include mixin.button(colors.$white, colors.$black);
 
                         @include mixin.flex(flex, row, center, 0.5rem);
                         border: 1px solid colors.$light-grey;

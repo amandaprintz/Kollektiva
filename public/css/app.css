@@ -395,9 +395,11 @@ section.hero .hero-content .hero-buttons .button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
 }
 section.hero .hero-content .hero-buttons .button:hover {
-  background-color: #37455d;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 section.hero img {
   width: 100%;
@@ -500,9 +502,11 @@ section.two-card .option a.button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
 }
 section.two-card .option a.button:hover {
-  background-color: #37455d;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 section.two-card .option img {
   min-width: 12rem;
@@ -867,9 +871,11 @@ section.review-cards .review-container .review .user-content .review-text .butto
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
 }
 section.review-cards .review-container .review .user-content .review-text .button:hover {
-  background-color: #37455d;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 section.review-cards .review-container .review-quote {
   font-size: 1rem;
@@ -959,6 +965,7 @@ section.login .login-container .login-form .button-container .button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
   margin: 0;
   width: 100%;
   display: flex;
@@ -966,7 +973,8 @@ section.login .login-container .login-form .button-container .button {
   align-items: center;
 }
 section.login .login-container .login-form .button-container .button:hover {
-  background-color: #37455d;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 section.login .login-container .login-form .button-container .google,
 section.login .login-container .login-form .button-container .facebook {
@@ -979,6 +987,7 @@ section.login .login-container .login-form .button-container .facebook {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -987,7 +996,8 @@ section.login .login-container .login-form .button-container .facebook {
 }
 section.login .login-container .login-form .button-container .google:hover,
 section.login .login-container .login-form .button-container .facebook:hover {
-  background-color: #fff;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 section.login .login-container .login-form p {
   text-align: center;
@@ -1105,6 +1115,7 @@ section.register .register-container .register-form .button-container .button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
   margin: 0;
   width: 100%;
   display: flex;
@@ -1112,7 +1123,8 @@ section.register .register-container .register-form .button-container .button {
   align-items: center;
 }
 section.register .register-container .register-form .button-container .button:hover {
-  background-color: #37455d;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 section.register .register-container .register-form .button-container .google,
 section.register .register-container .register-form .button-container .facebook {
@@ -1125,6 +1137,7 @@ section.register .register-container .register-form .button-container .facebook 
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1133,7 +1146,8 @@ section.register .register-container .register-form .button-container .facebook 
 }
 section.register .register-container .register-form .button-container .google:hover,
 section.register .register-container .register-form .button-container .facebook:hover {
-  background-color: #fff;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 section.register .register-container .register-form p {
   text-align: center;
@@ -1321,7 +1335,7 @@ section.ad .ad-container .form-container .ad-form form .checkboxes .check-contai
   width: 1.5rem;
   height: 1.5rem;
   background-color: #fff;
-  border: 1px solid #d9e6fb;
+  border: 1px solid #37455d;
   border-radius: 1rem;
 }
 section.ad .ad-container .form-container .ad-form form .checkboxes .check-container:hover input ~ .checkmark {
@@ -1394,6 +1408,7 @@ section.ad .ad-container .form-container .ad-form .buttons-container .button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
   margin: 0;
   width: 100%;
   display: flex;
@@ -1401,7 +1416,8 @@ section.ad .ad-container .form-container .ad-form .buttons-container .button {
   align-items: center;
 }
 section.ad .ad-container .form-container .ad-form .buttons-container .button:hover {
-  background-color: #37455d;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 section.ad .ad-container .form-container .ad-form .buttons-container .google,
 section.ad .ad-container .form-container .ad-form .buttons-container .facebook {
@@ -1414,6 +1430,7 @@ section.ad .ad-container .form-container .ad-form .buttons-container .facebook {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1422,7 +1439,8 @@ section.ad .ad-container .form-container .ad-form .buttons-container .facebook {
 }
 section.ad .ad-container .form-container .ad-form .buttons-container .google:hover,
 section.ad .ad-container .form-container .ad-form .buttons-container .facebook:hover {
-  background-color: #fff;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 section.ad .ad-container .form-container .ad-form p {
   text-align: center;
@@ -1506,7 +1524,7 @@ section.preview-intro h2 {
 }
 
 section.preview-ad-card {
-  padding: 1rem;
+  padding: 3rem 1rem 1rem 1rem;
 }
 section.preview-ad-card .preview-container {
   display: flex;
@@ -1518,18 +1536,12 @@ section.preview-ad-card .preview-container {
   color: #37455d;
   border-radius: 0.5rem;
   overflow: hidden;
-  height: 57rem;
-  /*     .preview-image,
-  .preview-text {
-      height: 50%;
-      height: 65%;
-  } */
 }
 section.preview-ad-card .preview-container hr {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid;
-  width: 20rem;
+  width: 100%;
 }
 section.preview-ad-card .preview-container .preview-image img {
   width: 100%;
@@ -1544,9 +1556,7 @@ section.preview-ad-card .preview-container .preview-text {
   flex-direction: column;
   justify-content: flex-start;
   gap: 0;
-  padding-left: 1.5rem;
-  padding-right: 4rem;
-  margin-top: 3rem;
+  padding: 2rem 1rem;
 }
 section.preview-ad-card .preview-container .preview-text h2 {
   font-size: 1.5rem;
@@ -1567,7 +1577,6 @@ section.preview-ad-card .preview-container .preview-text .details-container {
 }
 section.preview-ad-card .preview-container .preview-text .tag-container {
   gap: 0.5rem;
-  margin-top: 2.5rem;
 }
 section.preview-ad-card .preview-container .preview-text .tag-container .tags {
   background-color: #fff;
@@ -1575,6 +1584,7 @@ section.preview-ad-card .preview-container .preview-text .tag-container .tags {
   border-style: solid;
   padding: 0.6rem 0.5rem;
   border-color: #37455d;
+  color: #37455d;
   border-radius: 1.2rem;
   /*      cursor: pointer; */
   margin-top: 1.5rem;
@@ -1595,22 +1605,31 @@ section.preview-ad-card .preview-buttons {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
   gap: 1rem;
 }
 section.preview-ad-card .preview-buttons .button {
+  padding: 1rem 2rem;
   background-color: #37455d;
-  color: #f9fafb;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 4rem;
-  margin: auto 0;
+  color: #fff;
+  border-style: none;
+  padding: 1.25rem 2rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  font-size: 1.125rem;
   text-align: center;
-  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+section.preview-ad-card .preview-buttons .button:hover {
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 @media only screen and (min-width: 768px) {
   section.preview-ad-card {
+    max-width: 1568px;
+    margin: 0 auto;
     padding: 4rem;
   }
   section.preview-ad-card hr {
@@ -1656,17 +1675,25 @@ section.preview-ad-card .preview-container .preview-text {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
-    gap: 54.5rem;
+    justify-content: space-between;
+    gap: 0;
   }
   section.preview-ad-card .preview-buttons .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 21rem;
-    height: 6rem;
-    margin: auto 0;
+    width: 25%;
+    background-color: #37455d;
+    color: #fff;
+    border-style: none;
+    padding: 1.25rem 2rem;
+    border-radius: 1.25rem;
+    text-decoration: none;
+    font-size: 1.125rem;
     text-align: center;
-    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  section.preview-ad-card .preview-buttons .button:hover {
+    background-color: #d9e6fb;
+    color: #37455d;
   }
 }
 
@@ -1914,9 +1941,11 @@ section.filter .preferences-group .button-container .button {
   font-size: 1.125rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.15s;
 }
 section.filter .preferences-group .button-container .button:hover {
-  background-color: #37455d;
+  background-color: #d9e6fb;
+  color: #37455d;
 }
 @media only screen and (min-width: 1335px) {
   section.filter {
@@ -1966,9 +1995,11 @@ section.filter .preferences-group .button-container .button:hover {
     font-size: 1.125rem;
     text-align: center;
     cursor: pointer;
+    transition: all 0.15s;
   }
   section.filter .preferences-group .button:hover {
-    background-color: #37455d;
+    background-color: #d9e6fb;
+    color: #37455d;
   }
 }
 
