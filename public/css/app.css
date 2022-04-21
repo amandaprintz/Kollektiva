@@ -533,7 +533,7 @@ section.two-card .option img {
 }
 @media only screen and (min-width: 1335px) {
   section.two-card .option a.button {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -2130,7 +2130,7 @@ body textarea {
   font-family: "Proxima-Nova Regular";
   background-color: #fff;
   color: #37455d;
-  border: 1px solid #d9e6fb;
+  border: 1px solid #37455d;
   border-radius: 1.125rem;
   outline: none;
   padding: 1rem;

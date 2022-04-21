@@ -210,7 +210,6 @@
 
                     <div class="tag-container">
                         <button class="tags">Lägenhet</button>
-                        <button class="tags">Hiss</button>
                         <button class="tags">Tvättmaskin</button>
                         <button class="tags">Balkong</button>
                     </div>
