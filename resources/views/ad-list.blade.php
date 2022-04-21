@@ -39,7 +39,7 @@
 
     <section class="ad-list">
         <div class="list-container">
-            <div class="preview-container">
+            <a href="{{ route('final') }}" class="preview-container">
                 <div class="preview-image">
                     <img src="https://images.unsplash.com/photo-1593604341107-12f3981d929b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="update image">
                 </div>
@@ -86,9 +86,9 @@
                         </svg>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="preview-container">
+            <a href="#" class="preview-container">
                 <div class="preview-image">
                     <img src="https://images.unsplash.com/photo-1600566752871-041b45cf7173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2413&q=80" alt="update image">
                 </div>
@@ -133,9 +133,8 @@
                         </svg>
                     </div>
                 </div>
-            </div>
-
-            <div class="preview-container">
+            </a>
+            <a href="#" class="preview-container">
                 <div class="preview-image">
                     <img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="update image">
                 </div>
@@ -182,9 +181,9 @@
                         </svg>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="preview-container">
+            <a href="#" class="preview-container">
                 <div class="preview-image">
                     <img src="https://images.unsplash.com/photo-1633110187937-6e3b2f36dfca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80" alt="update image">
                 </div>
@@ -230,9 +229,9 @@
                         </svg>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="preview-container">
+            <a href="#" class="preview-container">
                 <div class="preview-image">
                     <img src="https://images.unsplash.com/photo-1586982599726-11708daaceca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="update image">
                 </div>
@@ -279,9 +278,9 @@
                         </svg>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="preview-container">
+            <a href="#" class="preview-container">
                 <div class="preview-image">
                     <img src="https://images.unsplash.com/photo-1622653533660-a1538fe8424c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="update image">
                 </div>
@@ -330,7 +329,7 @@
                         </svg>
                     </div>
                 </div>
-            </div>
+            </a>
 
     </section>
 </main>

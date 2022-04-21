@@ -110,14 +110,15 @@ section.ad-list {
 
     .list-container {
         @include mixin.flex(flex, column, flex-start, 1.5rem);
-        .preview-container {
+        a.preview-container {
             @include mixin.flex(flex, column, flex-start, 0);
             background-color: colors.$base-white;
             box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.15);
             color: colors.$blue;
             border-radius: 0.5rem;
             overflow: hidden;
-            // height: 55rem;
+            text-decoration: none;
+            cursor: pointer;
 
             hr {
                 margin: 1rem 0;

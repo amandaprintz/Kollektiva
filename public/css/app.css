@@ -2039,7 +2039,7 @@ section.ad-list .list-container {
   justify-content: flex-start;
   gap: 1.5rem;
 }
-section.ad-list .list-container .preview-container {
+section.ad-list .list-container a.preview-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2049,13 +2049,15 @@ section.ad-list .list-container .preview-container {
   color: #37455d;
   border-radius: 0.5rem;
   overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
 }
-section.ad-list .list-container .preview-container hr {
+section.ad-list .list-container a.preview-container hr {
   margin: 1rem 0;
   border: 1px solid;
   width: 100%;
 }
-section.ad-list .list-container .preview-container .preview-image img {
+section.ad-list .list-container a.preview-container .preview-image img {
   width: 100%;
   height: 20rem;
   -o-object-fit: cover;
@@ -2063,7 +2065,7 @@ section.ad-list .list-container .preview-container .preview-image img {
   -o-object-position: center;
      object-position: center;
 }
-section.ad-list .list-container .preview-container .preview-text {
+section.ad-list .list-container a.preview-container .preview-text {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2071,24 +2073,24 @@ section.ad-list .list-container .preview-container .preview-text {
   gap: 0;
   padding: 1rem 1rem 1.5rem 1rem;
 }
-section.ad-list .list-container .preview-container .preview-text h2 {
+section.ad-list .list-container a.preview-container .preview-text h2 {
   font-size: 1.5rem;
   margin-bottom: 1.2rem;
 }
-section.ad-list .list-container .preview-container .preview-text p {
+section.ad-list .list-container a.preview-container .preview-text p {
   font-size: 1.125rem;
   line-height: 1.5;
 }
-section.ad-list .list-container .preview-container .preview-text .details-container {
+section.ad-list .list-container a.preview-container .preview-text .details-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 0;
 }
-section.ad-list .list-container .preview-container .preview-text .details-container p {
+section.ad-list .list-container a.preview-container .preview-text .details-container p {
   font-size: 1.125rem;
 }
-section.ad-list .list-container .preview-container .preview-text .tag-container {
+section.ad-list .list-container a.preview-container .preview-text .tag-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -2096,7 +2098,7 @@ section.ad-list .list-container .preview-container .preview-text .tag-container 
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
-section.ad-list .list-container .preview-container .preview-text .tag-container .tags {
+section.ad-list .list-container a.preview-container .preview-text .tag-container .tags {
   background-color: #fff;
   font-size: 1.125rem;
   border-style: solid;
@@ -2104,7 +2106,7 @@ section.ad-list .list-container .preview-container .preview-text .tag-container 
   border-color: #37455d;
   border-radius: 1.5rem;
 }
-section.ad-list .list-container .preview-container .preview-text .ad-icons {
+section.ad-list .list-container a.preview-container .preview-text .ad-icons {
   margin-top: 1rem;
   width: 100%;
   display: flex;
@@ -2112,7 +2114,7 @@ section.ad-list .list-container .preview-container .preview-text .ad-icons {
   justify-content: center;
   gap: 0.5rem;
 }
-section.ad-list .list-container .preview-container .preview-text .ad-icons svg {
+section.ad-list .list-container a.preview-container .preview-text .ad-icons svg {
   fill: #37455d;
   height: 3rem;
 }
