@@ -1992,11 +1992,6 @@ section.ad-list .list-container .preview-container {
   color: #37455d;
   border-radius: 0.5rem;
   overflow: hidden;
-  /*     .preview-image,
-  .preview-text {
-      height: 50%;
-      height: 65%;
-  } */
 }
 section.ad-list .list-container .preview-container hr {
   margin: 1rem 0;
@@ -2005,6 +2000,7 @@ section.ad-list .list-container .preview-container hr {
 }
 section.ad-list .list-container .preview-container .preview-image img {
   width: 100%;
+  height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
