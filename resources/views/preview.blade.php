@@ -61,7 +61,7 @@
         <div class="preview-buttons">
             <a href="{{ route('ad') }}" class="button" type="submit">Gå tillbaka</a>
 
-            <a href="{{ route('preview') }}" class="button" type="submit">Spara annons</a>
+            <a href="{{ route('final') }}" class="button" type="submit">Spara annons</a>
         </div>
     </section>
 

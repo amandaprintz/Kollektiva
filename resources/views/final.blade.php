@@ -58,9 +58,9 @@
 
 
         <div class="final-buttons">
-            <a href="{{ route('preview') }}" class="button" type="submit">Lägg till i favoriter ♡ </a>
+            <a href="#" class="button" type="submit">Lägg till i favoriter ♡ </a>
 
-            <a href="{{ route('preview') }}" class="button" type="submit">Skicka intresseanmälan</a>
+            <a href="#" class="button" type="submit">Skicka intresseanmälan</a>
         </div>
     </section>
 

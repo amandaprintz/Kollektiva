@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg" href="../../../public/images/logo-mobile.svg">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <title>Kollektiva</title>
     <!-- Styles -->
     <link rel="stylesheet" href="/css/app.css">
@@ -64,8 +64,8 @@
                 <a href="{{ route('index') }}">Hem</a>
                 <a href="{{ route('ad') }}">Hyr ut</a>
                 <a href="{{ route('ad-list') }}">Sök bostad</a>
-                <a href="{{ route('ad-list') }}">Om oss</a>
-                <a href="{{ route('ad-list') }}">Kontakta oss</a>
+                <a href="#">Om oss</a>
+                <a href="#">Kontakta oss</a>
             </div>
         </nav>
 
