@@ -18,7 +18,7 @@ section.filter {
         }
 
         h4 {
-            margin-top: 3rem;
+            margin: 3rem 0;
         }
     }
 
@@ -30,11 +30,15 @@ section.filter {
             }
             ul {
                 @include mixin.flex(flex, row, flex-start, 1rem);
+                flex-wrap: wrap;
                 list-style: none;
                 padding: 0;
+                margin-top: 2rem;
 
                 li {
+                    width: calc(50% - 0.5rem);
                     h4 {
+                        margin-top: 0;
                         margin-bottom: 1rem;
                     }
                     a.values {
@@ -62,13 +66,17 @@ section.filter {
         }
     }
 
-    @include media-queries.breakpoint(tablet) {
+    @include media-queries.breakpoint(desktop) {
         @include mixin.max-width();
         padding: 4rem;
         .filter-container {
             h1 {
                 font-size: fonts.$h2;
                 margin: 4rem 0;
+            }
+
+            h4 {
+                margin: 3rem 0 0 0;
             }
         }
 
@@ -81,8 +89,10 @@ section.filter {
                 }
                 ul {
                     @include mixin.flex(flex, row, flex-start, 3rem);
+                    flex-wrap: nowrap;
 
                     li {
+                        width: auto;
                         h4 {
                             font-size: fonts.$h3;
                         }
@@ -162,6 +172,8 @@ section.ad-list {
                 }
                 .tag-container {
                     @include mixin.flex(flex, row, flex-start, 0.75rem);
+                    flex-wrap: wrap;
+                    margin-top: 1.5rem;
                     .tags {
                         background-color: colors.$white;
                         font-size: fonts.$p;
@@ -169,8 +181,6 @@ section.ad-list {
                         padding: 0.4rem 0.8rem;
                         border-color: colors.$blue;
                         border-radius: 1.5rem;
-                        /*      cursor: pointer; */
-                        margin-top: 1.5rem;
                     }
                 }
 

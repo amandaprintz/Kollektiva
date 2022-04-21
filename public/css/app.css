@@ -33,7 +33,7 @@ header {
 }
 header nav.menu-hamburger {
   position: fixed;
-  top: 4rem;
+  top: 6rem;
   right: 0;
   width: 100vw;
   height: 100vh;
@@ -1861,7 +1861,7 @@ section.filter .filter-container h1 {
   margin: 3rem 0;
 }
 section.filter .filter-container h4 {
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 section.filter .preferences-group {
   display: flex;
@@ -1877,10 +1877,16 @@ section.filter .preferences-group .preferences ul {
   flex-direction: row;
   justify-content: flex-start;
   gap: 1rem;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin-top: 2rem;
+}
+section.filter .preferences-group .preferences ul li {
+  width: calc(50% - 0.5rem);
 }
 section.filter .preferences-group .preferences ul li h4 {
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 section.filter .preferences-group .preferences ul li a.values {
@@ -1912,7 +1918,7 @@ section.filter .preferences-group .button-container .button {
 section.filter .preferences-group .button-container .button:hover {
   background-color: #37455d;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1335px) {
   section.filter {
     max-width: 1568px;
     margin: 0 auto;
@@ -1921,6 +1927,9 @@ section.filter .preferences-group .button-container .button:hover {
   section.filter .filter-container h1 {
     font-size: 2.5rem;
     margin: 4rem 0;
+  }
+  section.filter .filter-container h4 {
+    margin: 3rem 0 0 0;
   }
   section.filter .preferences-group {
     display: flex;
@@ -1937,6 +1946,10 @@ section.filter .preferences-group .button-container .button:hover {
     flex-direction: row;
     justify-content: flex-start;
     gap: 3rem;
+    flex-wrap: nowrap;
+  }
+  section.filter .preferences-group .preferences ul li {
+    width: auto;
   }
   section.filter .preferences-group .preferences ul li h4 {
     font-size: 1.5rem;
@@ -2027,6 +2040,8 @@ section.ad-list .list-container .preview-container .preview-text .tag-container 
   flex-direction: row;
   justify-content: flex-start;
   gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 section.ad-list .list-container .preview-container .preview-text .tag-container .tags {
   background-color: #fff;
@@ -2035,8 +2050,6 @@ section.ad-list .list-container .preview-container .preview-text .tag-container 
   padding: 0.4rem 0.8rem;
   border-color: #37455d;
   border-radius: 1.5rem;
-  /*      cursor: pointer; */
-  margin-top: 1.5rem;
 }
 section.ad-list .list-container .preview-container .preview-text .ad-icons {
   margin-top: 1rem;
